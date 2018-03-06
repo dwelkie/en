@@ -6,21 +6,16 @@
   image: cv.gif
 
 - title: Study Notes
-  url: /articles/
-  excerpt: "Examples of long form posts."
-  image: 400x250.gif
+  url: /Notes/
+  excerpt: "ML/DL, Python, C++, Database,..."
+  image: bat.gif
 
 - title: Project
-  url: /media/
-  excerpt: "Examples of media posts perfect for showcasing work, photographs, etc."
-  image: 400x250.gif
+  url: /project/
+  excerpt: "Engineer's Portfolio"
+  image: IOT-400x250.gif
 
 - title: About Me
   url: /about/
-  excerpt: "MMMMEEEEEEE"
-  image: blue.gif
-
-- title: MotherF
-  url: /MotherF/
-  excerpt: "Things I’ve designed, illustrated, developed, coded, and whatever."
-  image: blue.gif
+  excerpt: "Not just my name."
+  image: gtp.gif
