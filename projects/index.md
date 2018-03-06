@@ -3,7 +3,7 @@ layout: archive
 title: "Projects"
 date: 2014-05-30T11:40:45-04:00
 modified:
-excerpt: "PORTFOLIO"
+#excerpt: "PORTFOLIO"
 tags: []
 image:
   feature:
@@ -11,7 +11,7 @@ image:
 ---
 
 <div class="tiles">
-{% for post in site.categories.media %}
+{% for post in site.categories.projects %}
   {% include post-grid.html %}
 {% endfor %}
 </div><!-- /.tiles -->

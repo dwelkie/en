@@ -1,13 +1,25 @@
 # Footer navigation links
 
-- title: Home
-  url: /
+- title: Facebook
+  url: https://www.facebook.com/profile.php?id=100000194291071
 
-- title: Getting Started
-  url: /getting-started/
+- title: Linkedin
+  url: https://www.linkedin.com/in/wei-hsiang-wang-60841b108/
+  
+- title: Github
+  url: https://www.github.com/mattwang44
 
-- title: About
-  url: /about/
 
-- title: Terms
-  url: /terms/
+
+#- title: About
+#  url: /about/
+
+#- title: Getting Started
+#  url: /getting-started/
+
+#- title: About
+#  url: /about/
+
+
+#- title: Terms
+#  url: /terms/

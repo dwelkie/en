@@ -2,16 +2,16 @@
 
 - title: CV
   url: /cv/
-  excerpt: "2 pages of me"
+  excerpt: "Me in 2 pages"
   image: cv.gif
 
 - title: Study Notes
-  url: /Notes/
+  url: /notes/
   excerpt: "ML/DL, Python, C++, Database,..."
   image: bat.gif
 
-- title: Project
-  url: /project/
+- title: Projects
+  url: /projects/
   excerpt: "Engineer's Portfolio"
   image: IOT-400x250.gif
 

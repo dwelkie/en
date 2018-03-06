@@ -1,9 +1,9 @@
 ---
 layout: media
 title: "Another Media Post with Large Feature Image"
-categories: media
+categories: examples
 excerpt: "Custom written post descriptions are the way to go... if you're not lazy."
-ads: true
+#ads: true
 share: false
 image:
   feature: branch-1600x800.jpg
