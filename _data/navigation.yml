@@ -1,21 +1,21 @@
 # Site navigation links
 
-- title: Getting Startedddd
+- title: CV
   url: /getting-started/
-  excerpt: "Everything you need to know to get started with Skinny Bones and Jekyll."
+  excerpt: "2 pages of me"
   image: 400x250.gif
 
-- title: Sample Articlessss
+- title: Study Notes
   url: /articles/
   excerpt: "Examples of long form posts."
   image: 400x250.gif
 
-- title: Mediaaaa
+- title: Project
   url: /media/
   excerpt: "Examples of media posts perfect for showcasing work, photographs, etc."
   image: 400x250.gif
 
-- title: Aboutttt
+- title: About Me
   url: /about/
-  excerpt: "All about Skinny Bones for Jekyll."
-  image: 400x250.gif
+  excerpt: "MMMMEEEEEEE"
+  image: blue.gif
