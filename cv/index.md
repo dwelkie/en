@@ -9,7 +9,7 @@ image:
   feature:cv.gif
   teaser:cv.gif
   thumb:cv.gif
-share: false
+share: true
 ---
 
 <iframe src="https://drive.google.com/file/d/187pRBZWSCQry1AxB9E4DExWZLnvAtbxx/preview" width="930" height="2300"></iframe>
