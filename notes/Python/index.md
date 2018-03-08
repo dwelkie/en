@@ -6,7 +6,7 @@ modified:
 #excerpt: ""
 tags: []
 image:
-  feature: python-header1.jpg
+  feature: 1.jpg #python-header
 
 ---
 
