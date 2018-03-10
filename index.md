@@ -2,14 +2,14 @@
 layout: home
 permalink: /
 image:
-  feature: wood-texture-1600x800.jpg
+  feature: taipei-1851948_1920.jpg
 ---
 
 <div class="tiles">
 
 <div class="tile">
   <h2 class="post-title">I come from Taiwan</h2>
-  <p class="post-excerpt"> The most populous country and largest economy that is not a member of the UN. It has a shape like a sweet potato on the map (Look at my favicon!).</p>
+  <p class="post-excerpt"> A beautiful country in East Asia. The most populous country and largest economy that is not a member of the UN.</p>
 </div><!-- /.tile -->
 
 <div class="tile">
@@ -23,7 +23,7 @@ image:
 </div><!-- /.tile -->
 
 <div class="tile">
-  <h2 class="post-title">Future Plan</h2>
+  <h2 class="post-title">Future Plans</h2>
   <p class="post-excerpt">Plan to begin pursuing Ph.D. degree abroad couple years later and the devote myself to the Taiwanese industrial. </p>
 </div><!-- /.tile -->
 
