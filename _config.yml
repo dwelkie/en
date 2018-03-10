@@ -28,12 +28,12 @@ gems:
 # Site owner
 owner:
   name: "Wei-Hsiang Wang"
-  web: "https://mattwang44.github.io/en"
+  web: "https://mattwang44.github.io/en/about"
   #twitter: "mattwang44"
   bio: "Grad. student, Dept. of Mechanical Engineering, National Taiwan University, Taiwan"
   avatar: "bio.jpg" # 160x160 px image for author byline
   #google:
-  #  plus: "+MichaelRoseDesign"
+  #  plus: 
   #  ad-client: "ca-pub-7328585512091257"
   #  ad-slot: 3049671934
   disqus-shortname:

@@ -23,21 +23,23 @@ date: 2018-03-09
 
 1. 經典論文導讀
  - 預計進行18周(共19篇論文)
- - 參加者建議已具備ML/DL基礎知識
+ - 參加者建議已具備
+     - 機器學習基礎知識
+     - [CNN 基礎知識]
  
 2. PyTorch實作
  - 由台大CS+X計畫負責人[Pecu老師](https://github.com/pecu){:target="_blank"}及其團隊負責帶領
  - [進度表](https://github.com/pecu/PyTorch_CSX){:target="_blank"}
 
-地點: 台灣大學普通教學館305教室
+地點: 台灣大學普通教學館305教室 ([停車地點](http://general.ga.ntu.edu.tw/uploads/archive_file_multiple/file/56d1ee4f48b8a10b9200024b/%E6%A0%A1%E7%B8%BD%E5%8D%80%E6%B1%BD%E6%A9%9F%E8%BB%8A%E5%81%9C%E8%BB%8A%E5%A0%B4%E5%8D%80%E4%BD%8D%E5%9C%96-103-09.pdf){:target="_blank"}及[收費規則](http://general.ga.ntu.edu.tw/zh_tw/qa/校園臨時停車收費費率-22859878){:target="_blank"})
 <div class="mapouter"><div class="gmap_canvas"><iframe width="600" height="350" id="gmap_canvas" src="https://maps.google.com/maps?q=普通教學館&t=&z=17&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe></div><a href="https://www.maps-erstellen.de"></a><style>.mapouter{overflow:hidden;height:350px;width:600px;}.gmap_canvas {background:none!important;height:350px;width:600px;}</style></div>
 
 ### 論文導讀進度表(附論文連結)
 
-| CNN                            | Pre R-CNN      | R-CNN             |
-| ------------------------------ |--------------- | ----------------- |
-| 3/08 [LeNet][1]{:target="_blank"} & [AlexNet][2]{:target="_blank"} | 4/26 [PreVGGNet][8]{:target="_blank"} | 6/07 [R-CNN][14]{:target="_blank"}        |
-| 3/15 [ZFNet][3]{:target="_blank"}                | 5/03 [SVM][9]{:target="_blank"}       | 6/14 [SPPNet][15]{:target="_blank"}       |
+| CNN                                              | Pre R-CNN                              | R-CNN                                     |
+| ------------------------------------------------ |--------------------------------------- | ----------------------------------------- |
+| 3/08 [LeNet][1]{:target="_blank"} & [AlexNet][2]{:target="_blank"} | 4/26 [PreVGGNet][8]{:target="_blank"} | 6/07 [R-CNN][14]{:target="_blank"} |
+| 3/15 [ZFNet][3]{:target="_blank"}                | 5/03 [SVM][9]{:target="_blank"}        | 6/14 [SPPNet][15]{:target="_blank"}       |
 | 3/22 [NIN][4]{:target="_blank"}                  | 5/10 [SMO][10]{:target="_blank"}       | 6/21 [Fast R-CNN][16]{:target="_blank"}   |
 | 3/29 [GoogLeNet][5]{:target="_blank"}            | 5/17 [DPM][11]{:target="_blank"}       | 6/28 [Faster R-CNN][17]{:target="_blank"} |
 | 4/12 [VGGNet][6]{:target="_blank"}               | 5/24 [SS][12]{:target="_blank"}        | 7/05 [YOLO][18]{:target="_blank"}         |
@@ -74,5 +76,5 @@ Week1:
 * [AlexNet](../PyTorchTP-AlexNet){:target="_blank"}
 * PyTorch
   - [Fundamentals of PyTorch Tensor](https://github.com/mattwang44/PyTorch_Taipei/blob/master/PyTorch%20Tutorial/1.%20Fundamentals%20of%20PyTorch%20Tensor.ipynb){:target="_blank"}
-  - Variables & Gradients (Linear Regression Implementation)
+  - [Variables & Gradients (Linear Regression Implementation)](https://github.com/mattwang44/PyTorch_Taipei/blob/master/PyTorch%20Tutorial/2.%20Variables%20%26%20Gradients.ipynb){:target="_blank"}
   - Neural Networks & LeNet Implementation for MNIST Dataset
