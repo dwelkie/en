@@ -70,8 +70,8 @@ P.S. 4/5 清明連假 暫停一次
 
 Week1:
 
-* [LeNet](/articles/LeNet){:target="_blank"}
-* [AlexNet](/articles/AlexNet){:target="_blank"}
+* [LeNet](/articles/PyTorchTP-LeNet){:target="_blank"}
+* [AlexNet](/articles/PyTorchTP-AlexNet){:target="_blank"}
 * PyTorch
   - [Fundamentals of PyTorch Tensor](https://github.com/mattwang44/PyTorch_Taipei/blob/master/PyTorch%20Tutorial/1.%20Fundamentals%20of%20PyTorch%20Tensor.ipynb){:target="_blank"}
   - Variables & Gradients (Linear Regression Implementation)
