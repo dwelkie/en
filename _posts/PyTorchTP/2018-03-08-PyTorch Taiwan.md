@@ -23,9 +23,7 @@ date: 2018-03-09
 
 1. 經典論文導讀
  - 預計進行18周(共19篇論文)
- - 參加者建議已具備
-     - 機器學習基礎知識
-     - [CNN 基礎知識]
+ - 參加者建議已具備ML/DL/[CNN](../basic-CNN-FP){:target="_blank"}基礎知識
  
 2. PyTorch實作
  - 由台大CS+X計畫負責人[Pecu老師](https://github.com/pecu){:target="_blank"}及其團隊負責帶領
