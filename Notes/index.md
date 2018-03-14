@@ -13,7 +13,7 @@ image:
 
 <div class="tiles">
 <div class="tile">
-  <a href="{{ site.url }}/notes/PyTorchTaiwan">
+  <a href="{{ site.url }}/notes/PyTorchTP">
     <img src="{{ site.url }}/images/pytorch.jpg">
     <h2 class="post-title">PyTorch Taipei 2018</h2>
     <p class="post-excerpt">深度學習論文及PyTorch實作會</p>
@@ -52,7 +52,7 @@ image:
 
 
 <div class="tile">
-  <a href="{{ site.url }}/notes/other">
+  <a href="{{ site.url }}/notes/OT">
     <img src="{{ site.url }}/images/IOT-400x250.gif">
     <h2 class="post-title">other</h2>
     <p class="post-excerpt">Misc.</p>
