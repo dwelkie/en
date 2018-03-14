@@ -6,7 +6,7 @@ categories: articles
 excerpt: ""
 tags: [other, jupyter]
 image:
-  feature: jupyter.jpg
+  feature: 
   teaser: jupyter.jpg
   thumb: jupyter.jpg
 date: 2018-03-09
