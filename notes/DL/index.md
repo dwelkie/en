@@ -16,8 +16,9 @@ image:
 {% endfor %}
 </div><!-- /.tiles -->
 
-<br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
-#### Photo credit
+## Photo credit
+
 1. banner photo: [global-engage.com](http://www.global-engage.com/life-science/deep-learning-in-digital-pathology/)
 2. thumbnail: [gfycat.com](https://gfycat.com/gifs/detail/ImmaterialBareEasternglasslizard)
