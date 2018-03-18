@@ -1,6 +1,6 @@
 ---
 layout: article
-title: "吳恩達 Deep Learning Specialization -- 課程介紹與心得1"
+title: "吳恩達 Deep Learning Specialization -- 課程介紹與心得"
 modified:
 categories: articles
 excerpt: ""
