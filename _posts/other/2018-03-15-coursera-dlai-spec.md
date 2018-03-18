@@ -1,7 +1,7 @@
 ---
 layout: article
 title: "吳恩達 Deep Learning Specialization -- 課程介紹與心得"
-modified:2018-03-18
+modified:
 categories: articles
 excerpt: ""
 tags: [Coursera, DL]
