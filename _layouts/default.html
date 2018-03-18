@@ -9,7 +9,7 @@
       {% assign author = site.data.authors[page.author] %}{% else %}{% assign author = site.owner %}
     {% endif %}
     {% include open-graph.html %}
-
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.url }}">
 
     <link href="{{ site.url }}/atom.xml" type="application/atom+xml" rel="alternate" title="{{ site.title }} Atom Feed">
@@ -39,6 +39,8 @@
       {% include footer.html %}
     </div>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="{{ site.url }}/js/vendor/jquery-1.9.1.min.js"></script>
     <script src="{{ site.url }}/js/main.js"></script>
     <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>

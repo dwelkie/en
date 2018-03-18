@@ -12,7 +12,7 @@ image:
 date: 2018-03-10
 ---
 
-
+深度學習領域中電腦視覺相關的研究可以說是發展最為快速的一門，可被運用於無人車、視訊監控、人體動作分析等技術，而卷積神經網絡(Convolutional Neural Network, ConvNet, or CNN)可以說是最為重要的技術之一，本文嘗試以淺白的方式講解<strong>基本CNN架構中的一個卷積層是如何運作</strong>。
 
 
   <div tabindex="-1" id="notebook" class="border-box-sizing">
@@ -22,7 +22,6 @@ date: 2018-03-10
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>深度學習領域中電腦視覺相關的研究可以說是發展最為快速的一門，可被運用於無人車、視訊監控、人體動作分析等技術，而卷積神經網絡(Convolutional Neural Network, ConvNet, or CNN)可以說是最為重要的技術之一，本文嘗試以淺白的方式講解<strong>基本CNN架構中的一個卷積層是如何運作</strong>。</p>
 
 </div>
 </div>

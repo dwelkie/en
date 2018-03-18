@@ -1,6 +1,6 @@
 ---
 layout: ipynb
-title: "regcsnerknsen"
+title: "PyTorch Taipei 2018 week2: ZFNet"
 modified:
 categories: articles
 excerpt: ""

@@ -1,6 +1,6 @@
 ---
 layout: article
-title: "PyTorch Taipei week1: AlexNet"
+title: "PyTorch Taipei 2018 week1: AlexNet"
 modified:
 categories: articles
 excerpt: ""
