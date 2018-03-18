@@ -4,7 +4,7 @@ title: "PyTorch Taipei 2018 week2: ZFNet"
 modified:
 categories: articles
 excerpt: ""
-tags: [DL]
+tags: [DL, PyTorchTP]
 image:
   feature:
   teaser:

@@ -17,7 +17,9 @@ image:
 </div><!-- /.tiles -->
 
 <div class="tiles">
-#### Photo credit
-1. [banner photo](http://herodotohistoriant.blogspot.tw/2017/06/la-alquimia-de-los-planetas.html)
-2. [thumbnail](http://www.dxmonline.com/wp-content/uploads/2016/08/?MA)
+<div class="tile">
+<h3> Photo credit</h3>
+<p>1. banner: <a target="blank" href="http://herodotohistoriant.blogspot.tw/2017/06/la-alquimia-de-los-planetas.html">herodotohistoriant.blogspot.tw</a></p>
+<p>2. thumbnail: <a target="blank" href="http://www.dxmonline.com/wp-content/uploads/2016/08/?MA">dxmonline.com</a></p>
+</div><!-- /.tile -->
 </div><!-- /.tiles -->

@@ -11,7 +11,7 @@ image:
 ---
 
 <div class="tiles">
-{% for post in site.tags.python %}
+{% for post in site.tags.Python %}
   {% include post-grid.html %}
 {% endfor %}
 </div><!-- /.tiles -->

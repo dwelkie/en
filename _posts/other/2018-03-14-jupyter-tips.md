@@ -1,6 +1,6 @@
 ---
 layout: article
-title: "Jupyter Notebook Extensions"
+title: "The Jupyter Notebook Extensions"
 modified:
 categories: articles
 excerpt: ""
@@ -12,7 +12,7 @@ image:
 date: 2018-03-09
 ---
 The [Jupyter Notebook App](http://jupyter.org){:target="_blank"} is a server-client application that allows editing and running notebook documents via a web browser.
-It also can be convert into LaTex, Markdown, or PDF. etc. I mostly convert the code into HTML to show them in my blog posts.
+It also can be convert into LaTex, Markdown, or PDF. etc. I mostly convert the codes into HTML to show them in my blog posts.
 
 
 With [Unofficial Jupyter Notebook Extensions](http://jupyter-contrib-nbextensions.readthedocs.io/en/latest/exporting.html){:target="_blank"}

@@ -10,7 +10,7 @@ image:
   teaser: HMA.png
 ---
 
-[github link](https://github.com/mattwang44/Human-Motion-Analysis)
+[github link](https://github.com/mattwang44/Human-Motion-Analysis){:target="_blank"}
 
 *Supervised by Prof. [Tung-Wu Lu](http://oemal.bme.ntu.edu.tw/professor/professorE.htm), Dept. of BioMedical Engineering, NTU*
 

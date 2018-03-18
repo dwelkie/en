@@ -52,6 +52,14 @@ image:
 
 
 <div class="tile">
+  <a href="{{ site.url }}/notes/MATLAB">
+    <img src="{{ site.url }}/images/MATLAB.jpg">
+    <h2 class="post-title">MATLAB</h2>
+    <p class="post-excerpt"></p>
+  </a>
+</div><!-- /.tile -->
+
+<div class="tile">
   <a href="{{ site.url }}/notes/OT">
     <img src="{{ site.url }}/images/IOT-400x250.gif">
     <h2 class="post-title">other</h2>

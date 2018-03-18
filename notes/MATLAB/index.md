@@ -16,3 +16,9 @@ image:
 {% endfor %}
 </div><!-- /.tiles -->
 
+<div class="tiles">
+<div class="tile">
+<h3> Photo credit</h3>
+<p>banner & thumbnail: Mathwork.com</p>
+</div><!-- /.tile -->
+</div><!-- /.tiles -->
