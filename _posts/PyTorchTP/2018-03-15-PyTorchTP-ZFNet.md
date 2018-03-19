@@ -1,5 +1,5 @@
 ---
-layout: ipynb
+layout: article
 title: "PyTorch Taipei 2018 week2: ZFNet"
 modified:
 categories: articles
@@ -8,10 +8,44 @@ tags: [DL, PyTorchTP]
 image:
   feature:
   teaser:
-  thumb: 
+  thumb:
 date: 2018-03-10
 ---
+<script src="/3d/three.js"></script>
 
+<script>
+  var camera, scene, renderer;
+  var mesh;
+  init();
+  animate();
+  function init() {
+    camera = new THREE.PerspectiveCamera( 70, window.innerWidth / window.innerHeight, 1, 1000 );
+    camera.position.z = 400;
+    scene = new THREE.Scene();
+    var texture = new THREE.TextureLoader().load( 'textures/crate.gif' );
+    var geometry = new THREE.BoxBufferGeometry( 200, 200, 200 );
+    var material = new THREE.MeshBasicMaterial( { map: texture } );
+    mesh = new THREE.Mesh( geometry, material );
+    scene.add( mesh );
+    renderer = new THREE.WebGLRenderer();
+    renderer.setPixelRatio( window.devicePixelRatio );
+    renderer.setSize( window.innerWidth, window.innerHeight );
+    document.body.appendChild( renderer.domElement );
+    //
+    window.addEventListener( 'resize', onWindowResize, false );
+  }
+  function onWindowResize() {
+    camera.aspect = window.innerWidth / window.innerHeight;
+    camera.updateProjectionMatrix();
+    renderer.setSize( window.innerWidth, window.innerHeight );
+  }
+  function animate() {
+    requestAnimationFrame( animate );
+    mesh.rotation.x += 0.005;
+    mesh.rotation.y += 0.01;
+    renderer.render( scene, camera );
+  }
+</script>
 
 2013 ImageNet 冠軍
 以視覺化方法洞察AlexNet並作微調
@@ -26,7 +60,7 @@ switches會記錄max pooling 出現最大值的位置， unpooling的時候還�
 
 
 DeconvNet用途:
-生成圖片unsupervised feature learning 
+生成圖片unsupervised feature learning
 GAN生成圖
 etc
 
@@ -64,5 +98,3 @@ output層輸出圖已經無法被人理解
 
 
 111111111111111
-
-

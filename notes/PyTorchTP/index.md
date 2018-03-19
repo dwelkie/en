@@ -10,7 +10,6 @@ image:
 
 ---
 
-
 ### 1. PyTorch Taipei 緣起
 
 [PyTorch Taiwan](https://www.facebook.com/groups/2027602154187130/){:target="_blank"}是[Marcel Wang](https://www.linkedin.com/in/marcel-wang-3a988b7a/){:target="_blank"}先生為促進台灣深度學習發展，在網路上號召成立的深度學習讀書會，
@@ -23,12 +22,12 @@ image:
 ### 2. 讀書會資訊
 時間: 每週四19:00~21:00
 
-內容: 
+內容:
 
-1. 經典論文導讀 
+1. 經典論文導讀
  - 預計進行18周(共19篇論文)
  - 參加者建議已具備ML/DL/[CNN](../basic-CNN-FP){:target="_blank"}基礎知識
- 
+
 2. PyTorch實作
  - 由台大CS+X計畫負責人[Pecu老師](https://github.com/pecu){:target="_blank"}及其團隊負責帶領
  - [進度表](https://github.com/pecu/PyTorch_CSX){:target="_blank"}
@@ -50,12 +49,12 @@ image:
 
 
 [1]: http://yann.lecun.com/exdb/publis/pdf/lecun-98.pdf
-[2]: http://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf 
-[3]: https://arxiv.org/pdf/1311.2901.pdf 
-[4]: https://arxiv.org/pdf/1312.4400.pdf 
+[2]: http://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf
+[3]: https://arxiv.org/pdf/1311.2901.pdf
+[4]: https://arxiv.org/pdf/1312.4400.pdf
 [5]: http://openaccess.thecvf.com/content_cvpr_2015/papers/Szegedy_Going_Deeper_With_2015_CVPR_paper.pdf
-[6]: https://arxiv.org/pdf/1409.1556/ 
-[7]: https://arxiv.org/pdf/1602.07360.pdf 
+[6]: https://arxiv.org/pdf/1409.1556/
+[7]: https://arxiv.org/pdf/1602.07360.pdf
 [8]: http://people.idsia.ch/~juergen/ijcai2011.pdf
 [9]: http://w.svms.org/training/BOGV92.pdf
 [10]: https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/tr-98-14.pdf
@@ -156,7 +155,7 @@ P.S. 4/5 清明連假 暫停一次
             Neural Networks & LeNet Implementation for MNIST Dataset (整理中)
           </a>
         </div>
-        
+
       </div>
 <!-- 3 --><!--
       <div class="panel-heading">
@@ -166,8 +165,8 @@ P.S. 4/5 清明連假 暫停一次
       </div>
       <div id="collapse3" class="panel-collapse collapse">
         <div class="panel-body">
-        
-        
+
+
         </div>
       </div> -->
 <!-- 4 --><!--
@@ -178,8 +177,8 @@ P.S. 4/5 清明連假 暫停一次
       </div>
       <div id="collapse4" class="panel-collapse collapse">
         <div class="panel-body">
-        
-        
+
+
         </div>
       </div> -->
 <!-- 5 --><!--
@@ -190,8 +189,8 @@ P.S. 4/5 清明連假 暫停一次
       </div>
       <div id="collapse5" class="panel-collapse collapse">
         <div class="panel-body">
-        
-        
+
+
         </div>
       </div> -->
 <!-- 6 --><!--
@@ -202,8 +201,8 @@ P.S. 4/5 清明連假 暫停一次
       </div>
       <div id="collapse6" class="panel-collapse collapse">
         <div class="panel-body">
-        
-        
+
+
         </div>
       </div> -->
 <!-- 7 --><!--
@@ -214,8 +213,8 @@ P.S. 4/5 清明連假 暫停一次
       </div>
       <div id="collapse7" class="panel-collapse collapse">
         <div class="panel-body">
-        
-        
+
+
         </div>
       </div> -->
 <!-- 8 --><!--
@@ -226,8 +225,8 @@ P.S. 4/5 清明連假 暫停一次
       </div>
       <div id="collapse8" class="panel-collapse collapse">
         <div class="panel-body">
-        
-        
+
+
         </div>
       </div> -->
 <!-- 9 --><!--
@@ -238,8 +237,8 @@ P.S. 4/5 清明連假 暫停一次
       </div>
       <div id="collapse9" class="panel-collapse collapse">
         <div class="panel-body">
-        
-        
+
+
         </div>
       </div> -->
 <!-- 10--><!--
@@ -250,8 +249,8 @@ P.S. 4/5 清明連假 暫停一次
       </div>
       <div id="collapse10" class="panel-collapse collapse">
         <div class="panel-body">
-        
-        
+
+
         </div>
       </div> -->
 <!-- 11--><!--
@@ -262,8 +261,8 @@ P.S. 4/5 清明連假 暫停一次
       </div>
       <div id="collapse11" class="panel-collapse collapse">
         <div class="panel-body">
-        
-        
+
+
         </div>
       </div> -->
 <!-- 12--><!--
@@ -274,8 +273,8 @@ P.S. 4/5 清明連假 暫停一次
       </div>
       <div id="collapse12" class="panel-collapse collapse">
         <div class="panel-body">
-        
-        
+
+
         </div>
       </div> -->
 <!-- 13--><!--
@@ -286,8 +285,8 @@ P.S. 4/5 清明連假 暫停一次
       </div>
       <div id="collapse13" class="panel-collapse collapse">
         <div class="panel-body">
-        
-        
+
+
         </div>
       </div> -->
 <!-- 14--><!--
@@ -298,8 +297,8 @@ P.S. 4/5 清明連假 暫停一次
       </div>
       <div id="collapse14" class="panel-collapse collapse">
         <div class="panel-body">
-        
-        
+
+
         </div>
       </div> -->
 <!-- 15--><!--
@@ -310,8 +309,8 @@ P.S. 4/5 清明連假 暫停一次
       </div>
       <div id="collapse15" class="panel-collapse collapse">
         <div class="panel-body">
-        
-        
+
+
         </div>
       </div> -->
 <!-- 16--><!--
@@ -322,8 +321,8 @@ P.S. 4/5 清明連假 暫停一次
       </div>
       <div id="collapse16" class="panel-collapse collapse">
         <div class="panel-body">
-        
-        
+
+
         </div>
       </div> -->
 <!-- 17--><!--
@@ -334,8 +333,8 @@ P.S. 4/5 清明連假 暫停一次
       </div>
       <div id="collapse17" class="panel-collapse collapse">
         <div class="panel-body">
-        
-        
+
+
         </div>
       </div> -->
 <!-- 18--><!--
@@ -346,8 +345,8 @@ P.S. 4/5 清明連假 暫停一次
       </div>
       <div id="collapse18" class="panel-collapse collapse">
         <div class="panel-body">
-        
-        
+
+
         </div>
       </div> -->
 <!-- 19--><!--
@@ -358,8 +357,8 @@ P.S. 4/5 清明連假 暫停一次
       </div>
       <div id="collapse19" class="panel-collapse collapse">
         <div class="panel-body">
-        
-        
+
+
         </div>
       </div> -->
 <!-- 20--><!--
@@ -370,8 +369,8 @@ P.S. 4/5 清明連假 暫停一次
       </div>
       <div id="collapse20" class="panel-collapse collapse">
         <div class="panel-body">
-        
-        
+
+
         </div>
       </div> -->
 <!-- 21--><!--
@@ -382,8 +381,8 @@ P.S. 4/5 清明連假 暫停一次
       </div>
       <div id="collapse21" class="panel-collapse collapse">
         <div class="panel-body">
-        
-        
+
+
         </div>
       </div> -->
 <!-- 22--><!--
@@ -394,8 +393,8 @@ P.S. 4/5 清明連假 暫停一次
       </div>
       <div id="collapse22" class="panel-collapse collapse">
         <div class="panel-body">
-        
-        
+
+
         </div>
       </div> -->
 
