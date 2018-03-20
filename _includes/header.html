@@ -1,15 +1,15 @@
 <header id="masthead">
   <div class="inner-wrap">
     <a href="{{ site.url }}/" class="site-title">{{ site.title }}</a>
-    <script type="text/x-mathjax-config">
+    <nav role="navigation" class="menu top-menu">
+        {% include navigation.html %}
+    </nav>
+  </div><!-- /.inner-wrap -->
+  <script type="text/x-mathjax-config">
 MathJax.Hub.Config({
   tex2jax: {
     skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
     inlineMath: [['$','$']]
   }
 });
-    <nav role="navigation" class="menu top-menu">
-        {% include navigation.html %}
-    </nav>
-  </div><!-- /.inner-wrap -->
 </header><!-- /.masthead -->
