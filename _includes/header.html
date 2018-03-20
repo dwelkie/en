@@ -1,4 +1,10 @@
 <header id="masthead">
+  <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  <script type="text/x-mathjax-config"> MathJax.Hub.Config({ TeX: { equationNumbers: {autoNumber: "all"} } });       </script>
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['$$','$$']]}});
+  </script>
+
   <div class="inner-wrap">
     <a href="{{ site.url }}/" class="site-title">{{ site.title }}</a>
     <nav role="navigation" class="menu top-menu">
@@ -6,8 +12,3 @@
     </nav>
   </div><!-- /.inner-wrap -->
 </header><!-- /.masthead -->
-<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-<script type="text/x-mathjax-config"> MathJax.Hub.Config({ TeX: { equationNumbers: {autoNumber: "all"} } });       </script>
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['$$','$$']]}});
-</script>
