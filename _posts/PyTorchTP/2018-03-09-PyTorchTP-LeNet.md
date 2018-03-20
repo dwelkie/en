@@ -112,7 +112,7 @@ LeNet-5前六層的輸出值皆會通過Squashing Function(應該和現今所稱
 <br/>
 
 #### Output
-並非像一般FC layer為 $$y_i=\sigma(w_ij\bullet x_j+b)$$，這裡使用的是RBF(Euclidean Radius Basis function)
+並非像一般FC layer為 $$y_i=\sigma(w_{ij}\bullet x_j+b)$$，這裡使用的是RBF(Euclidean Radius Basis function)
 $$ y_i = \sum_j(x_j-w_{ij})^2 $$
 
 <br/>
