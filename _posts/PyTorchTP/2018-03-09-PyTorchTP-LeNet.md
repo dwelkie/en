@@ -11,7 +11,10 @@ image:
   thumb: PyTorchTP/LeNet5.png
 date: 2018-03-09
 ---
-<script type="text/x-mathjax-config"> MathJax.Hub.Config({ TeX: { equationNumbers: { autoNumber: "AMS" } }, tex2jax: { inlineMath: [ ['$','$']], displayMath: [ ['$$','$$'] ], processEscapes: true, } }); </script> <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"> </script>
+<script type="text/x-mathjax-config">
+ MathJax.Hub.Config({ TeX: { equationNumbers: { autoNumber: "AMS" } }, tex2jax: { inlineMath: [ ['$','$']], displayMath: [ ['$$','$$'] ], processEscapes: true, } });
+</script> 
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"> </script>
 
 1998年Yann LeCun於《[Gradient-Based Learning Applied to Document Recognition][1]{:target="_blank"}》
 一文中提出的手寫字辨識技術，為CNN領域中的經典架構。
@@ -28,10 +31,10 @@ LeNet-5 的架構如下圖所示，一共七層。
 <img src="../../images/PyTorchTP/LeNet5-structure.png" width="4200">
 
 #### Input
-輸入為一張張 32x32x1 的圖。
+輸入為一張張 32×32×1 的圖。
 
 1. 刻意放大邊緣空白處:
-* 文中有提到輸入圖形的尺寸遠大於手寫字大小(20x20)，是因為leNet-5對於抽取位於圖片邊緣之特徵的能力較差(此時還沒有padding的設計)，
+* 文中有提到輸入圖形的尺寸遠大於手寫字大小(20×20)，是因為leNet-5對於抽取位於圖片邊緣之特徵的能力較差(此時還沒有padding的設計)，
 刻意放大圖片邊緣可以讓手寫字範圍皆位在圖片中央。
 2. Normalization:
 * 為使整張圖的平均值約略等於0，故輸入圖形normalize使白色背景的值為-0.1、筆畫黑色範圍之值為1.175。
@@ -39,7 +42,7 @@ LeNet-5 的架構如下圖所示，一共七層。
 <br/>
 
 #### Squashing Function(原文解釋部分在附錄A)
-LeNet-5前六層的輸出值皆會通過Squashing Function(應該和現今所稱的activation相似)，原作選用 $ f(a)=Atanh(Sa) $，其中a為該層輸出值, A為1.7159, S為$$\frac{2}{3}$$，該方程式(藍線)、其一階導數(紅色)與其二階導數(橘色)圖形如下 (plot by [Google Calculator](https://www.google.com.tw/search?ei=CH2wWsfYEIqn8QXepJyYDw&q=1.7159*tanh%282%2F3*x%29%2C+1.14393*%281-%28tanh%282%2F3*x%29%29%5E2%29%2C+-1.52524*%28%28tanh%282%2F3*x%29%29%29*%281-%28tanh%282%2F3*x%29%29%5E2%29&oq=1.7159*tanh%282%2F3*x%29%2C+1.14393*%281-%28tanh%282%2F3*x%29%29%5E2%29%2C+-1.52524*%28%28tanh%282%2F3*x%29%29%29*%281-%28tanh%282%2F3*x%29%29%5E2%29&gs_l=psy-ab.3...41855.43872.0.46329.2.2.0.0.0.0.34.62.2.2.0....0...1c.1.64.psy-ab..0.0.0....0.-TLCZyd_oos){:target="_blank"})
+LeNet-5前六層的輸出值皆會通過Squashing Function(應該和現今所稱的activation相似)，原作選用 $ f(a)=Atanh(Sa) $，其中a為該層輸出值, A為1.7159, S為$$2/3$$，該方程式(藍線)、其一階導數(紅色)與其二階導數(橘色)圖形如下 (plot by [Google Calculator](https://www.google.com.tw/search?ei=CH2wWsfYEIqn8QXepJyYDw&q=1.7159*tanh%282%2F3*x%29%2C+1.14393*%281-%28tanh%282%2F3*x%29%29%5E2%29%2C+-1.52524*%28%28tanh%282%2F3*x%29%29%29*%281-%28tanh%282%2F3*x%29%29%5E2%29&oq=1.7159*tanh%282%2F3*x%29%2C+1.14393*%281-%28tanh%282%2F3*x%29%29%5E2%29%2C+-1.52524*%28%28tanh%282%2F3*x%29%29%29*%281-%28tanh%282%2F3*x%29%29%5E2%29&gs_l=psy-ab.3...41855.43872.0.46329.2.2.0.0.0.0.34.62.2.2.0....0...1c.1.64.psy-ab..0.0.0....0.-TLCZyd_oos){:target="_blank"})
 
 <img src="../../images/PyTorchTP/LeNet5-tanh.png" width="600">
 
