@@ -12,15 +12,6 @@ image:
 date: 2018-03-09
 ---
 
-CANNOT RENDER LATEX:
-
-1. <script type="math/tex">f(\pm 1)=\pm 1</script>
-2. $ f(\pm 1)=\pm 1 $
-3. $$ f(\pm 1)=\pm 1 $$
-
-<br/>
-
-
 1998年Yann LeCun於《[Gradient-Based Learning Applied to Document Recognition][1]{:target="_blank"}》
 一文中提出的手寫字辨識技術，為CNN領域中的經典架構。
 
@@ -47,7 +38,7 @@ LeNet-5 的架構如下圖所示，一共七層。
 <br/>
 
 #### Squashing Function(原文解釋部分在附錄A)
-LeNet-5前六層的輸出值皆會通過Squashing Function(應該和現今所稱的activation相似)，原作選用 $ f(a)=Atanh(Sa) $，其中$a$為該層輸出值, $A$為1.7159, S為$\frac{2}{3}$，該方程式(藍線)、其一階導數(紅線)與其二階導數(橘線)圖形如下 (plot by [Google Calculator](https://www.google.com.tw/search?ei=CH2wWsfYEIqn8QXepJyYDw&q=1.7159*tanh%282%2F3*x%29%2C+1.14393*%281-%28tanh%282%2F3*x%29%29%5E2%29%2C+-1.52524*%28%28tanh%282%2F3*x%29%29%29*%281-%28tanh%282%2F3*x%29%29%5E2%29&oq=1.7159*tanh%282%2F3*x%29%2C+1.14393*%281-%28tanh%282%2F3*x%29%29%5E2%29%2C+-1.52524*%28%28tanh%282%2F3*x%29%29%29*%281-%28tanh%282%2F3*x%29%29%5E2%29&gs_l=psy-ab.3...41855.43872.0.46329.2.2.0.0.0.0.34.62.2.2.0....0...1c.1.64.psy-ab..0.0.0....0.-TLCZyd_oos){:target="_blank"})
+LeNet-5前六層的輸出值皆會通過Squashing Function(應該和現今所稱的activation相似)，原作選用 $ f(a)=Atanh(Sa) $，其中$a$為該層輸出值, $A$為1.7159, $S$為$\frac{2}{3}$，該方程式(藍線)、其一階導數(紅線)與其二階導數(橘線)圖形如下 (plot by [Google Calculator](https://www.google.com.tw/search?ei=CH2wWsfYEIqn8QXepJyYDw&q=1.7159*tanh%282%2F3*x%29%2C+1.14393*%281-%28tanh%282%2F3*x%29%29%5E2%29%2C+-1.52524*%28%28tanh%282%2F3*x%29%29%29*%281-%28tanh%282%2F3*x%29%29%5E2%29&oq=1.7159*tanh%282%2F3*x%29%2C+1.14393*%281-%28tanh%282%2F3*x%29%29%5E2%29%2C+-1.52524*%28%28tanh%282%2F3*x%29%29%29*%281-%28tanh%282%2F3*x%29%29%5E2%29&gs_l=psy-ab.3...41855.43872.0.46329.2.2.0.0.0.0.34.62.2.2.0....0...1c.1.64.psy-ab..0.0.0....0.-TLCZyd_oos){:target="_blank"})
 
 <img src="../../images/PyTorchTP/LeNet5-tanh.png" width="600">
 
@@ -65,7 +56,7 @@ LeNet-5前六層的輸出值皆會通過Squashing Function(應該和現今所稱
 第一層為卷積層，卷積的細節在另一文章有寫過了，不再複述。
 
 1. 用了6個大小為5×5×1的filter。
-2. feature map大小為28×28 $(32-5+1=28)$ 共6個。
+2. feature map大小為28×28 ($32-5+1=28$) 共6個。
 3. trainable parameters個數為156 ($(5^2×1)×6+6=156$，含bias)。
 4. connections個數為122,304 ($156×(28^2)=122,304$)。
 
