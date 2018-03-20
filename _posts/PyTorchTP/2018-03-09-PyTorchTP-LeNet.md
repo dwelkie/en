@@ -56,18 +56,18 @@ LeNet-5前六層的輸出值皆會通過Squashing Function(應該和現今所稱
 第一層為卷積層，卷積的細節在另一文章有寫過了，不再複述。
 
 1. 用了6個大小為5×5×1的filter。
-2. feature map大小為28×28 $$(32-5+1=28)$$ 共6個。
-3. trainable parameters個數為156 ($$(5^2×1)×6+6=156$$，含bias)。
-4. connections個數為122,304 ($$156×(28^2)=122,304$$)。
+2. feature map大小為28×28 $(32-5+1=28)$ 共6個。
+3. trainable parameters個數為156 ($(5^2×1)×6+6=156$，含bias)。
+4. connections個數為122,304 ($156×(28^2)=122,304$)。
 
 <br/>
 
 #### S2
 和現在常用的pooling layer相近，選取用法相同但計算方式不同，是將大小2×2的kernel(stride=2)所選取到的4個數加總，乘以一個訓練參數，再加上一個訓練參數。
 
-1. feature map大小為14×14 $$(28/2=14)$$ 共6個。
-2. trainable parameters個數為12 ($$6×2$$)。
-3. connections個數為5,880 ($$(2^2+1)×14^2×6=5,880$$)。
+1. feature map大小為14×14 $(28/2=14)$ 共6個。
+2. trainable parameters個數為12 ($6×2$)。
+3. connections個數為5,880 ($(2^2+1)×14^2×6=5,880$)。
 
 <br/>
 
@@ -76,18 +76,18 @@ LeNet-5前六層的輸出值皆會通過Squashing Function(應該和現今所稱
 <img src="../../images/PyTorchTP/lenet5-c3.jpg" width="420"><br/>
 
 1. 用了16個大小為5×5×6的filter。
-2. feature map大小為10×10 $$(14-5+1=10)$$ 共16個。
-3. trainable parameters個數為1516 ($$(3×6+4×6+4×3+6×1)×(5^2)+16=1516$$)。
-4. connections個數為151,600 ($$1516×(10^2)=151,600$$)。
+2. feature map大小為10×10 $(14-5+1=10)$ 共16個。
+3. trainable parameters個數為1516 ($(3×6+4×6+4×3+6×1)×(5^2)+16=1516$)。
+4. connections個數為151,600 ($1516×(10^2)=151,600$)。
 
 <br/>
 
 #### S4
 同S2。
 
-1. feature map大小為5×5 $$(10/2=5)$$ 共16個。
-2. trainable parameters個數為32 ($$16×2$$)。
-3. connections個數為2,000 ($$(2^2+1)×5^2×16=2,000$$)。
+1. feature map大小為5×5 $(10/2=5)$ 共16個。
+2. trainable parameters個數為32 ($16×2$)。
+3. connections個數為2,000 ($(2^2+1)×5^2×16=2,000$)。
 
 <br/>
 
@@ -95,8 +95,8 @@ LeNet-5前六層的輸出值皆會通過Squashing Function(應該和現今所稱
 同樣為卷積層，雖輸出的每張feature maps大小為1×1(使得實際上做的事情等同於全連接層)，但若最一開始的輸入圖形大於32×32，這裡的輸出便會大於1×1，故不稱之為全連接層(FC)。
 
 1. 用了120個大小為5×5×16的filter。
-2. feature map大小為1×1 $$(5-5+1=1)$$ 共120個。
-3. trainable parameters個數為48,120 ($$(5^2×16)×120+120=48,120$$)。
+2. feature map大小為1×1 $(5-5+1=1)$ 共120個。
+3. trainable parameters個數為48,120 ($(5^2×16)×120+120=48,120$)。
 4. FC層之connections個數同trainable parameters。
 
 <br/>
@@ -104,7 +104,7 @@ LeNet-5前六層的輸出值皆會通過Squashing Function(應該和現今所稱
 #### F6
 全連接層，84個neurons。
 
-1. trainable parameters個數為10,164 ($$120×84+84=10,164$$)。
+1. trainable parameters個數為10,164 ($120×84+84=10,16$)。
 2. FC層之connections個數同trainable parameters。
 3. 選擇使用84個neurons之原因:
 - 整理中
@@ -112,8 +112,7 @@ LeNet-5前六層的輸出值皆會通過Squashing Function(應該和現今所稱
 <br/>
 
 #### Output
-並非像一般FC layer為 $$y_i=\sigma(w_{ij}\bullet x_j+b)$$，這裡使用的是RBF(Euclidean Radius Basis function)
-$$ y_i = \sum_j(x_j-w_{ij})^2 $$
+並非像一般FC layer為 $y_i=\sigma(w_{ij}\bullet x_j+b)$，這裡使用的是RBF(Euclidean Radius Basis function)$ y_i = \sum_j(x_j-w_{ij})^2 $
 
 <br/>
 
