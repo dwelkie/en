@@ -1,7 +1,7 @@
 ---
 layout: article
 title: "PyTorch Taipei 2018 week1: LeNet-5"
-modified:
+modified: 2018-03-20
 categories: articles
 excerpt: ""
 tags: [PyTorchTP, DL]
@@ -10,7 +10,6 @@ image:
   teaser: PyTorchTP/LeNet5.png
   thumb: PyTorchTP/LeNet5.png
 date: 2018-03-09
-comments: true
 ---
 
 CANNOT RENDER LATEX:
