@@ -8,9 +8,81 @@ tags: []
 image:
   feature:
   teaser:
-  thumb: 
+  thumb:
 date: 2018-03-10
 ---
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<base href="../../" />
+		<script src="list.js"></script>
+		<script src="page.js"></script>
+		<link type="text/css" rel="stylesheet" href="page.css" />
+	</head>
+	<body>
+		[page:Geometry] &rarr;
+
+		<h1>[name]</h1>
+
+		<div class="desc">BoxGeometry is the quadrilateral primitive geometry class. It is typically used for creating a cube or irregular quadrilateral of the dimensions provided with the 'width', 'height', and 'depth' constructor arguments.</div>
+
+		<iframe id="scene" src="scenes/geometry-browser.html#BoxGeometry"></iframe>
+
+		<script>
+
+		// iOS iframe auto-resize workaround
+
+		if ( /(iPad|iPhone|iPod)/g.test( navigator.userAgent ) ) {
+
+			var scene = document.getElementById( 'scene' );
+
+			scene.style.width = getComputedStyle( scene ).width;
+			scene.style.height = getComputedStyle( scene ).height;
+			scene.setAttribute( 'scrolling', 'no' );
+
+		}
+
+		</script>
+
+		<h2>Example</h2>
+
+		<code>var geometry = new THREE.BoxGeometry( 1, 1, 1 );
+		var material = new THREE.MeshBasicMaterial( {color: 0x00ff00} );
+		var cube = new THREE.Mesh( geometry, material );
+		scene.add( cube );
+		</code>
+
+		<h2>Constructor</h2>
+
+		<h3>[name]([param:Float width], [param:Float height], [param:Float depth], [param:Integer widthSegments], [param:Integer heightSegments], [param:Integer depthSegments])</h3>
+		<div>
+		width — Width of the sides on the X axis. Default is 1.<br />
+		height — Height of the sides on the Y axis. Default is 1.<br />
+		depth — Depth of the sides on the Z axis. Default is 1.<br />
+		widthSegments — Optional. Number of segmented faces along the width of the sides. Default is 1.<br />
+		heightSegments — Optional. Number of segmented faces along the height of the sides. Default is 1.<br />
+		depthSegments — Optional. Number of segmented faces along the depth of the sides. Default is 1.
+		</div>
+
+		<h2>Properties</h2>
+
+		<h3>.parameters</h3>
+ 		<div>
+			<p>Using the above example code above as our basis:</p>
+			<code>
+				geometry.parameters; // outputs an object {width: 1, height: 1, depth: 1, widthSegments: undefined, heightSegments: undefined}
+				cube.geometry.parameters; // as above
+				cube.geometry.parameters.width; // === 1
+				cube.geometry.parameters.widthSegments // === undefined.
+			</code>
+ 		</div>
+
+		<h2>Source</h2>
+
+		[link:https://github.com/mrdoob/three.js/blob/master/src/[path].js src/[path].js]
+	</body>
+</html>
 
 深度學習領域中電腦視覺相關的研究可以說是發展最為快速的一門，可被運用於無人車、視訊監控、人體動作分析等技術，而卷積神經網絡(Convolutional Neural Network, ConvNet, or CNN)可以說是最為重要的技術之一，本文嘗試以淺白的方式講解<strong>基本CNN架構中的一個卷積層是如何運作</strong>。
 
@@ -208,7 +280,7 @@ P.S.: 如同機器學習中的$y = wx+b$公式，通常做完卷積後還會加�
  [ 1  1  1  1  1]
  [ 0  0  0  0  0]
  [-1 -1 -1 -1 -1]
- [-2 -2 -2 -2 -2]] 
+ [-2 -2 -2 -2 -2]]
 
 垂直線Filter為:
  [[ 2  1  0 -1 -2]

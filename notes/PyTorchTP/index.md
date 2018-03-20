@@ -36,6 +36,8 @@ image:
 停車資訊: [台大校內停車地點](http://general.ga.ntu.edu.tw/uploads/archive_file_multiple/file/56d1ee4f48b8a10b9200024b/%E6%A0%A1%E7%B8%BD%E5%8D%80%E6%B1%BD%E6%A9%9F%E8%BB%8A%E5%81%9C%E8%BB%8A%E5%A0%B4%E5%8D%80%E4%BD%8D%E5%9C%96-103-09.pdf){:target="_blank"}及[收費規則](http://general.ga.ntu.edu.tw/zh_tw/qa/校園臨時停車收費費率-22859878){:target="_blank"}，校友若持[校友證]( http://www.alumni.ntu.edu.tw/card_benefits.html ){:target="_blank"}則能以優惠價格停車
 <div class="mapouter"><div class="gmap_canvas"><iframe width="600" height="350" id="gmap_canvas" src="https://maps.google.com/maps?q=普通教學館&t=&z=17&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe></div><a href="https://www.maps-erstellen.de"></a><style>.mapouter{overflow:hidden;height:350px;width:600px;}.gmap_canvas {background:none!important;height:350px;width:600px;}</style></div>
 
+<br/>
+
 ### 3. 論文導讀進度表(附論文連結&講者投影片連結)
 
 | CNN                                              | Pre R-CNN                              | R-CNN                                     |
@@ -72,6 +74,8 @@ image:
 [22]:https://www.dropbox.com/s/rrgc205ffedims8/ZFNet_shape.pdf
 
 P.S. 4/5 清明連假 暫停一次
+
+<br/>
 
 ### 4. 每周整理
 
@@ -117,7 +121,7 @@ P.S. 4/5 清明連假 暫停一次
 
 #### 4.2 PyTorch實作
 
-這裡的整理與論文導讀和Pecu老師的教學都不同步，純粹只是自己的學習紀錄，可至[我的GitHub](https://github.com/mattwang44/PyTorch_Taipei/tree/master/PyTorch%20Tutorial){:target="_blank"}下載
+這裡的整理與論文導讀和Pecu老師的教學都不同步，純粹只是自己的學習紀錄，定期在[我的GitHub](https://github.com/mattwang44/PyTorch_Taipei/tree/master/PyTorch%20Tutorial){:target="_blank"}上更新
 
 
 <div class="container">
