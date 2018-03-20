@@ -7,7 +7,8 @@ modified:
 tags: []
 image:
   feature: DL-header.jpg
-
+  credit: global-engage.com
+  creditlink: http://www.global-engage.com/life-science/deep-learning-in-digital-pathology/
 ---
 
 <div class="tiles">

@@ -2,7 +2,7 @@
 
 title: "Wei-Hsiang Wang"
 description: "STILL TRYING"
-logo: red.gif
+logo: 12.png
 teaser: 400x250.gif
 locale: en_US
 url: "https://mattwang44.github.io/en"
@@ -37,7 +37,7 @@ owner:
   #  plus:
   #  ad-client: "ca-pub-7328585512091257"
   #  ad-slot: 3049671934
-  disqus-shortname:
+  #disqus-shortname: disqus_PsSheBi9DO
 
 
 include:

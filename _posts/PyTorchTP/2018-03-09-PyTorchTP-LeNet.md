@@ -10,13 +10,14 @@ image:
   teaser: PyTorchTP/LeNet5.png
   thumb: PyTorchTP/LeNet5.png
 date: 2018-03-09
+comments: true
 ---
 
 CANNOT RENDER LATEX:
 
 1. <script type="math/tex">f(\pm 1)=\pm 1</script>
-2. $f(\pm 1)=\pm 1$
-3. $$f(\pm 1)=\pm 1$$
+2. $ f(\pm 1)=\pm 1 $
+3. $$ f(\pm 1)=\pm 1 $$
 
 <br/>
 
