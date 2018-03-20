@@ -11,10 +11,6 @@ image:
   thumb: PyTorchTP/LeNet5.png
 date: 2018-03-09
 ---
-<script type="text/x-mathjax-config">
- MathJax.Hub.Config({ TeX: { equationNumbers: { autoNumber: "AMS" } }, tex2jax: { inlineMath: [ ['$','$']], displayMath: [ ['$$','$$'] ], processEscapes: true, } });
-</script> 
-<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"> </script>
 
 1998年Yann LeCun於《[Gradient-Based Learning Applied to Document Recognition][1]{:target="_blank"}》
 一文中提出的手寫字辨識技術，為CNN領域中的經典架構。
