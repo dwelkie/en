@@ -20,12 +20,12 @@ CNN基礎架構(如convolution, pooling)早在1980年代就被[Kunihiko Fukishim
 提出，但並未使用backpropagation(逆向傳播法)來更新權重。Yann LeCun重要貢獻為結合BP於CNN架構中並
 大幅提高了辨識成功率，該技術被當時許多知名公司所運用，也是現今許多CNN研究的重要基礎。
 
-LeNet-5由數層卷積層(C1、C3、C5)、sub-sampling層(S2、S4)和全連接層組成，和單純的只有全連接層的神經網路相比，LeNet-5需要訓練的權重是被共用的，
-故雖連接(connections)數量多但trainable parameters(訓練參數)數量較少，減少overfitting的發生。
+LeNet-5由數層卷積層(C1、C3、C5)、sub-sampling層(S2、S4)和最後幾層全連接層組成，和單純只有全連接層的神經網路相比，LeNet-5需要訓練的權重是被共用的，
+故雖連接(connections)數量多但trainable parameters(訓練參數)數量較少，能有效減少overfitting的發生。
 
 ## LeNet-5 架構
 LeNet-5 的架構如下圖所示，一共七層。
-<img src="/images/PyTorchTP/LeNet5-structure.png" width="4200">
+<img src="../../images/PyTorchTP/LeNet5-structure.png" width="4200">
 
 #### Input
 輸入為一張張 32x32x1 的圖。
@@ -41,7 +41,7 @@ LeNet-5 的架構如下圖所示，一共七層。
 #### Squashing Function(原文解釋部分在附錄A)
 LeNet-5前六層的輸出值皆會通過Squashing Function(應該和現今所稱的activation相似)，原作選用 $ f(a)=Atanh(Sa) $，其中a為該層輸出值, A為1.7159, S為$$\frac{2}{3}$$，該方程式(藍線)、其一階導數(紅色)與其二階導數(橘色)圖形如下 (plot by [Google Calculator](https://www.google.com.tw/search?ei=CH2wWsfYEIqn8QXepJyYDw&q=1.7159*tanh%282%2F3*x%29%2C+1.14393*%281-%28tanh%282%2F3*x%29%29%5E2%29%2C+-1.52524*%28%28tanh%282%2F3*x%29%29%29*%281-%28tanh%282%2F3*x%29%29%5E2%29&oq=1.7159*tanh%282%2F3*x%29%2C+1.14393*%281-%28tanh%282%2F3*x%29%29%5E2%29%2C+-1.52524*%28%28tanh%282%2F3*x%29%29%29*%281-%28tanh%282%2F3*x%29%29%5E2%29&gs_l=psy-ab.3...41855.43872.0.46329.2.2.0.0.0.0.34.62.2.2.0....0...1c.1.64.psy-ab..0.0.0....0.-TLCZyd_oos){:target="_blank"})
 
-<img src="/images/PyTorchTP/LeNet5-tanh.png" width="600">
+<img src="../../images/PyTorchTP/LeNet5-tanh.png" width="600">
 
 優點:
 
@@ -73,7 +73,7 @@ LeNet-5前六層的輸出值皆會通過Squashing Function(應該和現今所稱
 
 #### C3
 同樣為卷積層，但為了減少運算量，並不是所有filter都會和輸入圖形做convolution，有做convolution的配對如下圖。不過目前運算能力和當時相比已經大幅增加，故此配對方法大多棄用。
-<img src="/images/PyTorchTP/lenet5-c3.jpg" width="420"><br/>
+<img src="../../images/PyTorchTP/lenet5-c3.jpg" width="420"><br/>
 
 1. 用了16個大小為5x5x6的filter。
 2. feature map大小為10x10 $$(14-5+1=10)$$ 共16個。
