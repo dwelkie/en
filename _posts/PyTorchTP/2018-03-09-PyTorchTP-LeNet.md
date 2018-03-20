@@ -95,7 +95,7 @@ LeNet-5前六層的輸出值皆會通過Squashing Function(應該和現今所稱
 同樣為卷積層，雖輸出的每張feature maps大小為1×1(使得實際上做的事情等同於全連接層)，但若最一開始的輸入圖形大於32×32，這裡的輸出便會大於1×1，故不稱之為全連接層(FC)。
 
 1. 用了120個大小為5×5×16的filter。
-2. feature map大小為1×1 $(5-5+1=1)$ 共120個。
+2. feature map大小為1×1 ($5-5+1=1$) 共120個。
 3. trainable parameters個數為48,120 ($(5^2×16)×120+120=48,120$)。
 4. FC層之connections個數同trainable parameters。
 
