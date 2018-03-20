@@ -55,8 +55,8 @@ LeNet-5前六層的輸出值皆會通過Squashing Function(應該和現今所稱
 #### C1
 第一層為卷積層，卷積的細節在另一文章有寫過了，不再複述。
 
-1. 用了6個大小為5x5x1的filter。
-2. feature map大小為28x28 $$(32-5+1=28)$$ 共6個。
+1. 用了6個大小為5×5×1的filter。
+2. feature map大小為28×28 $$(32-5+1=28)$$ 共6個。
 3. trainable parameters個數為156 ($$(5^2×1)×6+6=156$$，含bias)。
 4. connections個數為122,304 ($$156×(28^2)=122,304$$)。
 
@@ -65,18 +65,18 @@ LeNet-5前六層的輸出值皆會通過Squashing Function(應該和現今所稱
 #### S2
 和現在常用的pooling layer相近，選取用法相同但計算方式不同，是將大小2×2的kernel(stride=2)所選取到的4個數加總，乘以一個訓練參數，再加上一個訓練參數。
 
-1. feature map大小為14x14 $$(28/2=14)$$ 共6個。
+1. feature map大小為14×14 $$(28/2=14)$$ 共6個。
 2. trainable parameters個數為12 ($$6×2$$)。
 3. connections個數為5,880 ($$(2^2+1)×14^2×6=5,880$$)。
 
 <br/>
 
 #### C3
-同樣為卷積層，但為了減少運算量，並不是所有filter都會和輸入圖形做convolution，有做convolution的配對如下圖。不過目前運算能力和當時相比已經大幅增加，故此配對方法大多棄用。
+同樣為卷積層，但為了減少運算量，並不是所有filter都會和輸入圖形做convolution，有做convolution的配對如下圖。不過目前硬體運算能力和當時相比已經大幅增加，故此配對方法大多棄用。
 <img src="../../images/PyTorchTP/lenet5-c3.jpg" width="420"><br/>
 
-1. 用了16個大小為5x5x6的filter。
-2. feature map大小為10x10 $$(14-5+1=10)$$ 共16個。
+1. 用了16個大小為5×5×6的filter。
+2. feature map大小為10×10 $$(14-5+1=10)$$ 共16個。
 3. trainable parameters個數為1516 ($$(3×6+4×6+4×3+6×1)×(5^2)+16=1516$$)。
 4. connections個數為151,600 ($$1516×(10^2)=151,600$$)。
 
@@ -85,7 +85,7 @@ LeNet-5前六層的輸出值皆會通過Squashing Function(應該和現今所稱
 #### S4
 同S2。
 
-1. feature map大小為5x5 $$(10/2=5)$$ 共16個。
+1. feature map大小為5×5 $$(10/2=5)$$ 共16個。
 2. trainable parameters個數為32 ($$16×2$$)。
 3. connections個數為2,000 ($$(2^2+1)×5^2×16=2,000$$)。
 
@@ -94,8 +94,8 @@ LeNet-5前六層的輸出值皆會通過Squashing Function(應該和現今所稱
 #### C5
 同樣為卷積層，雖輸出的每張feature maps大小為1×1(使得實際上做的事情等同於全連接層)，但若最一開始的輸入圖形大於32×32，這裡的輸出便會大於1×1，故不稱之為全連接層(FC)。
 
-1. 用了120個大小為5x5x16的filter。
-2. feature map大小為1x1 $$(5-5+1=1)$$ 共120個。
+1. 用了120個大小為5×5×16的filter。
+2. feature map大小為1×1 $$(5-5+1=1)$$ 共120個。
 3. trainable parameters個數為48,120 ($$(5^2×16)×120+120=48,120$$)。
 4. FC層之connections個數同trainable parameters。
 
