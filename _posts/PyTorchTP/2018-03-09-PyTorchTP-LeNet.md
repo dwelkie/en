@@ -65,7 +65,7 @@ LeNet-5前六層的輸出值皆會通過Squashing Function(應該和現今所稱
 #### S2
 和現在常用的pooling layer相近，選取用法相同但計算方式不同，是將大小2×2的kernel(stride=2)所選取到的4個數加總，乘以一個訓練參數，再加上一個訓練參數。
 
-1. feature map大小為14×14 $(28/2=14)$ 共6個。
+1. feature map大小為14×14 ($28/2=14$) 共6個。
 2. trainable parameters個數為12 ($6×2$)。
 3. connections個數為5,880 ($(2^2+1)×14^2×6=5,880$)。
 
@@ -76,7 +76,7 @@ LeNet-5前六層的輸出值皆會通過Squashing Function(應該和現今所稱
 <img src="../../images/PyTorchTP/lenet5-c3.jpg" width="420"><br/>
 
 1. 用了16個大小為5×5×6的filter。
-2. feature map大小為10×10 $(14-5+1=10)$ 共16個。
+2. feature map大小為10×10 ($14-5+1=10$) 共16個。
 3. trainable parameters個數為1516 ($(3×6+4×6+4×3+6×1)×(5^2)+16=1516$)。
 4. connections個數為151,600 ($1516×(10^2)=151,600$)。
 
@@ -85,7 +85,7 @@ LeNet-5前六層的輸出值皆會通過Squashing Function(應該和現今所稱
 #### S4
 同S2。
 
-1. feature map大小為5×5 $(10/2=5)$ 共16個。
+1. feature map大小為5×5 ($10/2=5$) 共16個。
 2. trainable parameters個數為32 ($16×2$)。
 3. connections個數為2,000 ($(2^2+1)×5^2×16=2,000$)。
 
