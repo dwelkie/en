@@ -11,7 +11,9 @@ image:
   thumb: PyTorchTP/LeNet5.png
 date: 2018-03-09
 ---
-
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['$$','$$']]}});
+</script>
 
 1998年Yann LeCun於《[Gradient-Based Learning Applied to Document Recognition][1]{:target="_blank"}》
 一文中提出的手寫字辨識技術，為CNN領域中的經典架構。
