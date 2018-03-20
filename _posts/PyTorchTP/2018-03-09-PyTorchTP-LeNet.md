@@ -11,15 +11,15 @@ image:
   thumb: PyTorchTP/LeNet5.png
 date: 2018-03-09
 ---
-
 <script type="text/x-mathjax-config">
 MathJax.Hub.Config({
-                  tex2jax: {inlineMath: [['$','$'], ['$$','$$']]}
+                  tex2jax: {inlineMath: [['$','$']]}
                           });
 </script>
 <script type="text/javascript"
   src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
 </script>
+
 1998年Yann LeCun於《[Gradient-Based Learning Applied to Document Recognition][1]{:target="_blank"}》
 一文中提出的手寫字辨識技術，為CNN領域中的經典架構。
 
@@ -53,7 +53,7 @@ LeNet-5前六層的輸出值皆會通過Squashing Function(應該和現今所稱
 優點:
 
 1. 具對稱性的squashing function收斂較快 (但weight不能太小，否則收斂極慢，要小心調整初始值)
-2. $f(\pm 1)=\pm 1$ → 增益約等於1、將輸出壓縮在$\pm1$之間
+2. $$f(\pm 1)=\pm 1$$ → 增益約等於1、將輸出壓縮在$\pm1$之間
 3. 二階導數約在$\pm1$時最大 → 保持loss能依靠backprop持續下降
 
 
