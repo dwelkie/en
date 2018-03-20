@@ -55,7 +55,8 @@ LeNet-5前六層的輸出值皆會通過Squashing Function(應該和現今所稱
 1. 具對稱性的squashing function收斂較快 (但weight不能太小，否則收斂極慢，要小心調整初始值)
 2. $$f(\pm 1)=\pm 1$$ → 增益約等於1、將輸出壓縮在$\pm1$之間
 3. 二階導數約在$\pm1$時最大 → 保持loss能依靠backprop持續下降
-
+4. <script type="math/tex">f(\pm 1)=\pm 1</script>
+5. $f(\pm 1)=\pm 1$
 
 <br/>
 
