@@ -44,7 +44,7 @@ image:
 | ------------------------------------------------ |--------------------------------------- | ----------------------------------------- |
 | 3/08 [LeNet][1]{:target="_blank"} [(slide)][20]{:target="_blank"} & [AlexNet][2]{:target="_blank"} [(blog)][21]{:target="_blank"} | 4/26 [PreVGGNet][8]{:target="_blank"} | 6/07 [R-CNN][14]{:target="_blank"} |
 | 3/15 [ZFNet][3]{:target="_blank"} [(slide)][22]{:target="_blank"}                | 5/03 [SVM][9]{:target="_blank"}        | 6/14 [SPPNet][15]{:target="_blank"}       |
-| 3/22 [NIN][4]{:target="_blank"}                  | 5/10 [SMO][10]{:target="_blank"}       | 6/21 [Fast R-CNN][16]{:target="_blank"}   |
+| 3/22 [NIN][4]{:target="_blank"} [(slide)][23]{:target="_blank"}                  | 5/10 [SMO][10]{:target="_blank"}       | 6/21 [Fast R-CNN][16]{:target="_blank"}   |
 | 3/29 [GoogLeNet][5]{:target="_blank"}            | 5/17 [DPM][11]{:target="_blank"}       | 6/28 [Faster R-CNN][17]{:target="_blank"} |
 | 4/12 [VGGNet][6]{:target="_blank"}               | 5/24 [SS][12]{:target="_blank"}        | 7/05 [YOLO][18]{:target="_blank"}         |
 | 4/19 [SqueezeNet][7]{:target="_blank"}           | 5/31 [FCN][13]{:target="_blank"}       | 7/12 [SSD][19]{:target="_blank"}          |
@@ -60,7 +60,7 @@ image:
 [8]: http://people.idsia.ch/~juergen/ijcai2011.pdf
 [9]: http://w.svms.org/training/BOGV92.pdf
 [10]: https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/tr-98-14.pdf
-[11]: http://vc.cs.nthu.edu.tw/home/paper/codfiles/vclab/201402141243/Object-Detection-with-Discriminatively-Trained-Part-Based-Models.pdf
+[11]: https://cs.brown.edu/~pff/papers/lsvm-pami.pdf
 [12]: https://ivi.fnwi.uva.nl/isis/publications/2013/UijlingsIJCV2013/UijlingsIJCV2013.pdf
 [13]: https://www.cv-foundation.org/openaccess/content_cvpr_2015/app/2B_011.pdf
 [14]: https://www.cv-foundation.org/openaccess/content_cvpr_2014/papers/Girshick_Rich_Feature_Hierarchies_2014_CVPR_paper.pdf?spm=5176.100239.blogcont55892.8.pm8zm1&file=Girshick_Rich_Feature_Hierarchies_2014_CVPR_paper.pdf
@@ -72,6 +72,7 @@ image:
 [20]:https://hackmd.io/p/BkxYFCnOM#/
 [21]:https://medium.com/@WhoYoung99/alexnet-架構概述-988113c06b4b
 [22]:https://www.dropbox.com/s/rrgc205ffedims8/ZFNet_shape.pdf
+[23]:https://www.slideshare.net/gilbert6555tw/nin-20180319-91529205
 
 P.S. 4/5 清明連假 暫停一次
 
@@ -87,7 +88,7 @@ P.S. 4/5 清明連假 暫停一次
 
 | CNN                                                                    | Pre R-CNN                              | R-CNN                                     |
 | ---------------------------------------------------------------------- |--------------------------------------- | ----------------------------------------- |
-| 3/08 [LeNet(整理中)][101]{:target="_blank"} & [AlexNet(整理中)][102]{:target="_blank"} | 4/26 PreVGGNet[][108]{:target="_blank"} | 6/07 R-CNN[][114]{:target="_blank"} |
+| 3/08 [LeNet][101]{:target="_blank"} & [AlexNet(整理中)][102]{:target="_blank"} | 4/26 PreVGGNet[][108]{:target="_blank"} | 6/07 R-CNN[][114]{:target="_blank"} |
 | 3/15 [ZFNet(整理中)][103]{:target="_blank"}                            | 5/03 SVM[][109]{:target="_blank"}        | 6/14 SPPNet[][115]{:target="_blank"}       |
 | 3/22 NIN[][104]{:target="_blank"}                  | 5/10 SMO[][110]{:target="_blank"}       | 6/21 Fast R-CNN[][116]{:target="_blank"}   |
 | 3/29 GoogLeNet[][105]{:target="_blank"}            | 5/17 DPM[][111]{:target="_blank"}       | 6/28 Faster R-CNN[][117]{:target="_blank"} |
