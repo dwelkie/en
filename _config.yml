@@ -9,7 +9,8 @@ url: "https://mattwang44.github.io/en"
 #url: "http://localhost:4000"
 feed:
   path: atom.xml
-
+plugins:
+  - jekyll-seo-tag
 # Jekyll configuration
 
 sass:
