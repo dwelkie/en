@@ -5,8 +5,8 @@ description: "STILL TRYING"
 logo: logo.jpg
 teaser: bat.gif
 locale: en_US
-#url: "https://mattwang44.github.io/en"
-url: "http://localhost:4000"
+url: "https://mattwang44.github.io/en"
+#url: "http://localhost:4000"
 feed:
   path: atom.xml
 
