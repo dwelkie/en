@@ -1,6 +1,6 @@
 ---
 layout: topic
-title: "other"
+title: "Other Topics"
 date: 2018-03-14T11:39:03-04:00
 modified:
 #excerpt: ""

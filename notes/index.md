@@ -62,7 +62,7 @@ image:
 <div class="tile">
   <a href="{{ site.url }}/notes/OT">
     <img src="{{ site.url }}/images/IOT-400x250.gif">
-    <h2 class="post-title">other</h2>
+    <h2 class="post-title">Other Topics</h2>
     <p class="post-excerpt">Misc.</p>
   </a>
 </div><!-- /.tile -->

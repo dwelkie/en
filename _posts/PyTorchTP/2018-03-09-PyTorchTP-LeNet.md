@@ -73,6 +73,7 @@ LeNet-5前六層的輸出值皆會通過Squashing Function(應該和現今所稱
 
 ## 3ʳᵈ Layer: Convolution Layer C3
 同樣為卷積層，但為了減少運算量，並不是所有filter都會和輸入圖形做convolution，有做convolution的配對如下圖，這種做法也有強迫抽取不同特徵的功能。不過目前硬體運算能力和當時相比已經大幅增加，故此配對方法大多棄用。
+
 <img src="../../images/PyTorchTP/lenet5-c3.jpg" width="420"><br/>
 
 1. 用了16個大小為5×5×6的filter。
