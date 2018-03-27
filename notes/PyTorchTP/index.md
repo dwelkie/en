@@ -91,7 +91,7 @@ P.S. 4/5 清明連假 暫停一次
 
 | CNN                                                                    | Pre R-CNN                              | R-CNN                                     |
 | ---------------------------------------------------------------------- |--------------------------------------- | ----------------------------------------- |
-| 3/08 [LeNet][101]{:target="_blank"} & [AlexNet(整理中)][102]{:target="_blank"} | 4/26 PreVGGNet[][108]{:target="_blank"} | 6/07 R-CNN[][114]{:target="_blank"} |
+| 3/08 [LeNet][101]{:target="_blank"} & [AlexNet][102]{:target="_blank"} | 4/26 PreVGGNet[][108]{:target="_blank"} | 6/07 R-CNN[][114]{:target="_blank"} |
 | 3/15 [ZFNet(整理中)][103]{:target="_blank"}                            | 5/03 SVM[][109]{:target="_blank"}        | 6/14 SPPNet[][115]{:target="_blank"}       |
 | 3/22 NIN[][104]{:target="_blank"}                  | 5/10 SMO[][110]{:target="_blank"}       | 6/21 Fast R-CNN[][116]{:target="_blank"}   |
 | 3/29 GoogLeNet[][105]{:target="_blank"}            | 5/17 DPM[][111]{:target="_blank"}       | 6/28 Faster R-CNN[][117]{:target="_blank"} |
