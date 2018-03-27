@@ -46,8 +46,10 @@ AlexNet架構:
 ## 2.1 ReLU
 activation function為ReLU（Rectified Linear Unit），函式為$f(x)=\max(0,x)$，在每一層輸出後都會接ReLU，論文中說明他們實驗得到<a href="../../images/PyTorchTP/AlexNetReLU.png" target="blank">在一個四層NN當中使用ReLU的收斂速度比tanh快上四倍</a>。
 
-ReLU, tanh, softmax, softplus比較圖(plot by [desmos](https://www.desmos.com/calculator){:target="_blank"}): <br>
+ReLU, tanh, sigmoid, softplus(ReLU之隨處可微分改良版)比較圖: <br>
 <img src="../../images/PyTorchTP/AlexNet4act.png" width="800">
+
+(plot by [desmos](https://www.desmos.com/calculator){:target="_blank"})
 
 ReLU勝於sigmoid、tanh的主要原因有：
 

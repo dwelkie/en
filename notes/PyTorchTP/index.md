@@ -39,6 +39,10 @@ image:
 <br/>
 
 ### 3. 論文導讀進度表(附論文連結&講者投影片連結)
+Link for Batch Download:
+
+ - [Separate PDFs in .Rar](https://drive.google.com/open?id=1B8Jwm-WKUHqtcCMH_nZxWTh2yvkrjBXC){:target="_blank"}
+ - [All in one PDF](https://drive.google.com/open?id=1yNuhvzGn7qGqEfxolJlSBwwyEf45jWag){:target="_blank"}
 
 | CNN                                              | Pre R-CNN                              | R-CNN                                     |
 | ------------------------------------------------ |--------------------------------------- | ----------------------------------------- |
@@ -93,8 +97,8 @@ P.S. 4/5 清明連假 暫停一次
 | ---------------------------------------------------------------------- |--------------------------------------- | ----------------------------------------- |
 | 3/08 [LeNet][101]{:target="_blank"} & [AlexNet][102]{:target="_blank"} | 4/26 PreVGGNet[][108]{:target="_blank"} | 6/07 R-CNN[][114]{:target="_blank"} |
 | 3/15 [ZFNet(整理中)][103]{:target="_blank"}                            | 5/03 SVM[][109]{:target="_blank"}        | 6/14 SPPNet[][115]{:target="_blank"}       |
-| 3/22 NIN[][104]{:target="_blank"}                  | 5/10 SMO[][110]{:target="_blank"}       | 6/21 Fast R-CNN[][116]{:target="_blank"}   |
-| 3/29 GoogLeNet[][105]{:target="_blank"}            | 5/17 DPM[][111]{:target="_blank"}       | 6/28 Faster R-CNN[][117]{:target="_blank"} |
+| 3/22 NIN(整理中)[][104]{:target="_blank"}                  | 5/10 SMO[][110]{:target="_blank"}       | 6/21 Fast R-CNN[][116]{:target="_blank"}   |
+| 3/29 GoogLeNet(整理中)[][105]{:target="_blank"}            | 5/17 DPM[][111]{:target="_blank"}       | 6/28 Faster R-CNN[][117]{:target="_blank"} |
 | 4/12 VGGNet[][106]{:target="_blank"}               | 5/24 SS[][112]{:target="_blank"}        | 7/05 YOLO[][118]{:target="_blank"}         |
 | 4/19 SqueezeNet[][107]{:target="_blank"}           | 5/31 FCN[][113]{:target="_blank"}       | 7/12 SSD[][119]{:target="_blank"}          |
 
