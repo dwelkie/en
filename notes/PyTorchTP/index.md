@@ -46,7 +46,7 @@ image:
 | 3/15 [ZFNet][3]{:target="_blank"} [(slide)][22]{:target="_blank"}                | 5/03 [SVM][9]{:target="_blank"}        | 6/14 [SPPNet][15]{:target="_blank"}       |
 | 3/22 [NIN][4]{:target="_blank"} [(slide)][23]{:target="_blank"}                  | 5/10 [SMO][10]{:target="_blank"}       | 6/21 [Fast R-CNN][16]{:target="_blank"}   |
 | 3/29 [GoogLeNet][5]{:target="_blank"}            | 5/17 [DPM][11]{:target="_blank"}       | 6/28 [Faster R-CNN][17]{:target="_blank"} |
-| 4/12 [VGGNet][6]{:target="_blank"}               | 5/24 [SS][12]{:target="_blank"}        | 7/05 [YOLO][18]{:target="_blank"}         |
+| 4/12 [VGGNet][6]{:target="_blank"}               | 5/24 [SS][12]{:target="_blank"}        | 7/05 YOLO ([v1][18]{:target="_blank"}, [v2][24]{:target="_blank"} , [v3][25]{:target="_blank"})         |
 | 4/19 [SqueezeNet][7]{:target="_blank"}           | 5/31 [FCN][13]{:target="_blank"}       | 7/12 [SSD][19]{:target="_blank"}          |
 
 
@@ -73,6 +73,9 @@ image:
 [21]:https://medium.com/@WhoYoung99/alexnet-架構概述-988113c06b4b
 [22]:https://www.dropbox.com/s/rrgc205ffedims8/ZFNet_shape.pdf
 [23]:https://www.slideshare.net/gilbert6555tw/nin-20180319-91529205
+[24]: https://pjreddie.com/media/files/papers/YOLOv3.pdf
+[25]: https://arxiv.org/pdf/1612.08242
+
 
 P.S. 4/5 清明連假 暫停一次
 
