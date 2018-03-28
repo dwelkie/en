@@ -10,7 +10,7 @@ image:
   teaser: PyTorchTP/LeNet5.png
   thumb: PyTorchTP/LeNet5.png
 date: 2018-03-09
-comments: true
+fbcomments: yes
 ---
 
 LeNet-5為1998年Yann LeCun於《[Gradient-Based Learning Applied to Document Recognition][1]{:target="_blank"}》

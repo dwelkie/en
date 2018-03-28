@@ -10,7 +10,7 @@ image:
   teaser: PyTorchTP/AlexNet.png
   thumb: PyTorchTP/AlexNet.png
 date: 2018-03-10
-comments: true
+fbcomments: yes
 ---
 
 ImageNet為大型圖片資料集，約1500萬張已標記影像，類別約22,000種。ImageNet Large Scale Visual Recognition Challenge (ILSVRC)是Stanford教授李飛飛所領導[Vision Lab](http://vision.stanford.edu/people.html){:target="_blank"}在2010年開始舉辦、基於ImageNet的圖片辨識技術競賽([2017 workshop](https://www.youtube.com/watch?v=jYvBmJo7qjc){:target="_blank"}上宣布為最後一屆，之後會調整dataset內容並與Kaggle合辦)。

@@ -413,10 +413,3 @@ P.S. 4/5 清明連假 暫停一次
     </div>
   </div>
 </div>
-<meta property="fb:app_id"       content="221193225126786" />
-{% include facebook-comments.html %}
-{% if page.fbcomments %}
-  <hr/>
-  <h4>Comments</h4>
-  <div class="fb-comments" data-href="http://mattwang44.github.io{{ page.url }}" data-colorscheme="dark" data-num-posts="4" data-width="706"></div>
-{% endif %}

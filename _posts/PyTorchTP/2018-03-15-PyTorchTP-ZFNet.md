@@ -10,6 +10,7 @@ image:
   teaser:
   thumb:
 date: 2018-03-10
+fbcomments: yes
 ---
 
 
