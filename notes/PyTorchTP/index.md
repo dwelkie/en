@@ -7,6 +7,7 @@ modified:
 tags: []
 image:
   feature: pytorch-header.jpg
+  logo: pytorch.jpg
 fbcomments: yes
 ---
 

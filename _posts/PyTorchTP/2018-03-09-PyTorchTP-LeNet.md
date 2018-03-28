@@ -9,6 +9,7 @@ image:
   feature:
   teaser: PyTorchTP/LeNet5.png
   thumb: PyTorchTP/LeNet5.png
+  logo: PyTorchTP/LeNet5.png
 date: 2018-03-09
 fbcomments: yes
 ---
