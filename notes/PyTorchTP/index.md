@@ -418,5 +418,5 @@ P.S. 4/5 清明連假 暫停一次
 {% if page.fbcomments %}
   <hr/>
   <h4>Comments</h4>
-  <div class="fb-comments" data-href="http://YOUR_SITE_NAME{{ page.url }}" data-colorscheme="dark" data-num-posts="4" data-width="706"></div>
+  <div class="fb-comments" data-href="http://mattwang44.github.io{{ page.url }}" data-colorscheme="dark" data-num-posts="4" data-width="706"></div>
 {% endif %}
