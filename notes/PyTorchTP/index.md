@@ -7,11 +7,11 @@ modified:
 tags: []
 image:
   feature: pytorch-header.jpg
-  logo: pytorch.jpg
 fbcomments: yes
 ---
+{% include toc.html %}
 
-### 1. PyTorch Taipei 緣起
+## 1. PyTorch Taipei 緣起
 
 [PyTorch Taiwan](https://www.facebook.com/groups/2027602154187130/){:target="_blank"}是[Marcel Wang](https://www.linkedin.com/in/marcel-wang-3a988b7a/){:target="_blank"}先生為促進台灣深度學習發展，在網路上號召成立的深度學習讀書會，
 <br>目前有[PyTorch Taipei](http://hemingwang.blogspot.tw/2018/01/pytorchpytorch-taipei_20.html){:target="_blank"}和[PyTorch Hsinchu](http://hemingwang.blogspot.tw/2018/01/pytorchpytorch-hsinchu.html){:target="_blank"}兩個子分會。
@@ -20,7 +20,7 @@ fbcomments: yes
 
 2018.03.08 第一次讀書會(PC: Eric Yang)
 
-### 2. 讀書會資訊
+## 2. 讀書會資訊
 時間: 每週四19:00~21:00
 
 內容:
@@ -39,7 +39,7 @@ fbcomments: yes
 
 <br/>
 
-### 3. 論文導讀進度表(附論文連結&講者投影片連結)
+## 3. 論文導讀進度表(附論文連結&講者投影片連結)
 Link for Batch Download:
 
  - [Separate PDFs in .Rar](https://drive.google.com/open?id=1B8Jwm-WKUHqtcCMH_nZxWTh2yvkrjBXC){:target="_blank"}
@@ -86,13 +86,13 @@ P.S. 4/5 清明連假 暫停一次
 
 <br/>
 
-### 4. 每周整理
+## 4. 每周整理
 
 這部分為我自己的筆記整理，可以點[這裡][100]{:target="_blank"}看所有文章。
 
 [100]: ./Menu
 
-#### 4.1 論文導讀整理
+### 4.1 論文導讀整理
 
 | CNN                                                                    | Pre R-CNN                              | R-CNN                                     |
 | ---------------------------------------------------------------------- |--------------------------------------- | ----------------------------------------- |
@@ -128,7 +128,7 @@ P.S. 4/5 清明連假 暫停一次
 [122]: ../../articles/PyTorchTP-
 
 
-#### 4.2 PyTorch實作
+### 4.2 PyTorch實作
 
 這裡的整理與論文導讀和Pecu老師的教學都不同步，純粹只是自己的學習紀錄，定期在[我的GitHub](https://github.com/mattwang44/PyTorch_Taipei/tree/master/PyTorch%20Tutorial){:target="_blank"}上更新
 
