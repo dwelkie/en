@@ -10,6 +10,7 @@ image:
   teaser: YOLO.gif
   thumb: YOLO.gif
 date: 2018-03-26
+comments: true
 ---
 
 

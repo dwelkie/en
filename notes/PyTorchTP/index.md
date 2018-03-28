@@ -7,7 +7,7 @@ modified:
 tags: []
 image:
   feature: pytorch-header.jpg
-
+comments: true
 ---
 
 ### 1. PyTorch Taipei 緣起
