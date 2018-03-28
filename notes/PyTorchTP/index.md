@@ -7,7 +7,7 @@ modified:
 tags: []
 image:
   feature: pytorch-header.jpg
-comments: true
+fbcomments: yes
 ---
 
 ### 1. PyTorch Taipei 緣起
@@ -413,3 +413,10 @@ P.S. 4/5 清明連假 暫停一次
     </div>
   </div>
 </div>
+<meta property="fb:app_id"       content="978128892233940" />
+{% include facebook-like.html %}
+{% if page.fbcomments %}
+  <hr/>
+  <h4>Comments</h4>
+  <div class="fb-comments" data-href="http://YOUR_SITE_NAME{{ page.url }}" data-colorscheme="dark" data-num-posts="4" data-width="706"></div>
+{% endif %}
