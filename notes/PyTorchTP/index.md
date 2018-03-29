@@ -40,10 +40,8 @@ fbcomments: yes
 <br/>
 
 ## 3. 論文導讀進度表(附論文連結&講者投影片連結)
-Link for Batch Download:
 
- - [Separate PDFs in .Rar](https://drive.google.com/open?id=1B8Jwm-WKUHqtcCMH_nZxWTh2yvkrjBXC){:target="_blank"}
- - [All in one PDF](https://drive.google.com/open?id=1yNuhvzGn7qGqEfxolJlSBwwyEf45jWag){:target="_blank"}
+講解錄影: [Youtube連結](https://www.youtube.com/playlist?list=PLWpwqPto4D5-LdiBGM2vJm2vFif6aPT4z){:target="_blank"}
 
 | CNN                                              | Pre R-CNN                              | R-CNN                                     |
 | ------------------------------------------------ |--------------------------------------- | ----------------------------------------- |
@@ -54,6 +52,7 @@ Link for Batch Download:
 | 4/12 [VGGNet][6]{:target="_blank"}               | 5/24 [SS][12]{:target="_blank"}        | 7/05 YOLO ([v1][18]{:target="_blank"}, [v2][24]{:target="_blank"} , [v3][25]{:target="_blank"})         |
 | 4/19 [SqueezeNet][7]{:target="_blank"}           | 5/31 [FCN][13]{:target="_blank"}       | 7/12 [SSD][19]{:target="_blank"}          |
 
+全部論文下載: (1) [Separate PDFs in .rar](https://drive.google.com/open?id=1B8Jwm-WKUHqtcCMH_nZxWTh2yvkrjBXC){:target="_blank"},  (2) [All in one PDF](https://drive.google.com/open?id=1yNuhvzGn7qGqEfxolJlSBwwyEf45jWag){:target="_blank"}
 
 [1]: http://yann.lecun.com/exdb/publis/pdf/lecun-98.pdf
 [2]: http://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf
