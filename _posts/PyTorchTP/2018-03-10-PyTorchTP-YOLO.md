@@ -19,14 +19,14 @@ fbcomments: true
 
 
 ## Website
-1. [YOLO v3][1]{:target="_blank"}
+1. [YOLO v1][3]{:target="_blank"}
 2. [YOLO v2][2]{:target="_blank"}
-3. [YOLO v1][3]{:target="_blank"}
+3. [YOLO v3][1]{:target="_blank"}
 
 ## Paper
-1. [YOLO v3][4]{:target="_blank"}
+1. [YOLO v1][6]{:target="_blank"}
 2. [YOLO v2][5]{:target="_blank"}
-3. [YOLO v1][6]{:target="_blank"}
+3. [YOLO v3][4]{:target="_blank"}
 
 ## Materials
 1. [rethink.fun][7]{:target="_blank"}
