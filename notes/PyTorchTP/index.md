@@ -2,12 +2,13 @@
 layout: topic
 title: "PyTorch Taipei 2018 筆記整理"
 date: 2018-02-28T11:39:03-04:00
-modified:
+modified: 2018-03-30
 #excerpt: ""
 tags: []
 image:
   feature: pytorch-header.jpg
 fbcomments: yes
+TopicShare: true
 ---
 {% include toc.html %}
 
@@ -25,11 +26,11 @@ fbcomments: yes
 
 內容: 分兩部份進行，可隨時於[線上討論區](https://discord.gg/jMCVCbJ){:target="_blank"}發問。
 
-1. 經典論文導讀 
+1. 經典論文導讀
  - 預計進行18周(共19篇論文)
  - 參加者建議已具備ML/DL/CNN[](../basic-CNN-FP){:target="_blank"}基礎知識
 
-2. PyTorch實作 
+2. PyTorch實作
  - 由台大CS+X計畫負責人[Pecu老師](https://www.facebook.com/pecu.tsai){:target="_blank"}及其團隊負責帶領
  - [公佈欄&進度表](https://github.com/pecu/PyTorch_CSX){:target="_blank"}
 
@@ -43,17 +44,17 @@ fbcomments: yes
 
 ![][p]: 論文PDF
 <br>![][m]: 講者講解材料 ([每周講者列表](https://docs.google.com/spreadsheets/d/1_ZNL7JKUm_vbd3WrhixOaCS095S7aNBPL4UGWBDkG2A/edit?usp=sharing){:target="_blank"} )
-<br>![][v]: 講解影片連結 
+<br>![][v]: 講解影片連結
 <br>(P.S.:第一週有一部分沒錄到音)
 
-| CNN                                              | Pre R-CNN                              | R-CNN                                     |
-| ------------------------------------------------ |--------------------------------------- | ----------------------------------------- |
-| 3/08 LeNet　[![][p]][1]{:target="_blank"} [![][m]][20]{:target="_blank"} [![][v]][100]{:target="_blank"} <br>　　 AlexNet　[![][p]][2]{:target="_blank"} [![][m]][21]{:target="_blank"} [![][v]][99]{:target="_blank"} | 4/26 PreVGGNet　[![][p]][8]{:target="_blank"} | 6/07 R-CNN　[![][p]][14]{:target="_blank"} |
-| 3/15 ZFNet　[![][p]][3]{:target="_blank"} [![][m]][22]{:target="_blank"} [![][v]][98]{:target="_blank"} | 5/03 SVM　[![][p]][9]{:target="_blank"}        | 6/14 SPPNet　[![][p]][15]{:target="_blank"}       |
-| 3/22 NIN　  [![][p]][4]{:target="_blank"} [![][m]][23]{:target="_blank"}                  | 5/10 SMO　[![][p]][10]{:target="_blank"}       | 6/21 Fast R-CNN　[![][p]][16]{:target="_blank"}   |
-| 3/29 GoogLeNet　[![][p]][5]{:target="_blank"}            | 5/17 DPM　[![][p]][11]{:target="_blank"}       | 6/28 Faster R-CNN　[![][p]][17]{:target="_blank"} |
-| 4/12 VGGNet　[![][p]][6]{:target="_blank"}               | 5/24 SS　 [![][p]][12]{:target="_blank"}        | 7/05 YOLO (v1[ ![][p]][18]{:target="_blank"}, v2[ ![][p]][24]{:target="_blank"}, v3[ ![][p]][25]{:target="_blank"})         |
-| 4/19 SqueezeNet　[![][p]][7]{:target="_blank"}           | 5/31 FCN　[![][p]][13]{:target="_blank"}       | 7/12 SSD　[![][p]][19]{:target="_blank"}          |
+|      | CNN               |                                                                                              |      | Pre-R-CNN |                                                                                              |      | R-CNN        |                                   
+| ----:|:-----------------:| -------------------------------------------------------------------------------------------- | ----:|:---------:| -------------------------------------------------------------------------------------------- | ----:|:------------:| -------------------------------------------------------------------------------------------
+| 3/08 |  LeNet<br>AlexNet | [![][p]][1]{:target="_blank"} [![][m]][20]{:target="_blank"} [![][v]][100]{:target="_blank"}<br> [![][p]][2]{:target="_blank"} [![][m]][21]{:target="_blank"} [![][v]][99]{:target="_blank"} | 4/26 | PreVGG    | [![][p]][8]{:target="_blank"}  [      ][27]{:target="_blank"} [      ][93]{:target="_blank"} | 6/07 | R-CNN        | [![][p]][14]{:target="_blank"} [      ][33]{:target="_blank"} [      ][87]{:target="_blank"}
+| 3/15 | ZFNet             | [![][p]][3]{:target="_blank"} [![][m]][22]{:target="_blank"} [![][v]][98]{:target="_blank"}  | 5/03 | SVM       | [![][p]][9]{:target="_blank"}  [      ][28]{:target="_blank"} [      ][92]{:target="_blank"} | 6/14 | SPPNet       | [![][p]][15]{:target="_blank"} [      ][34]{:target="_blank"} [      ][86]{:target="_blank"}
+| 3/22 | NIN               | [![][p]][4]{:target="_blank"} [![][m]][23]{:target="_blank"} [      ][97]{:target="_blank"}  | 5/10 | SMO       | [![][p]][10]{:target="_blank"} [      ][29]{:target="_blank"} [      ][91]{:target="_blank"} | 6/21 | Fast R-CNN   | [![][p]][16]{:target="_blank"} [      ][35]{:target="_blank"} [      ][85]{:target="_blank"}
+| 3/29 | GoogLeNet         | [![][p]][5]{:target="_blank"} [      ][24]{:target="_blank"} [      ][96]{:target="_blank"}  | 5/17 | DPM       | [![][p]][11]{:target="_blank"} [      ][30]{:target="_blank"} [      ][90]{:target="_blank"} | 6/28 | Faster R-CNN | [![][p]][17]{:target="_blank"} [      ][36]{:target="_blank"} [      ][84]{:target="_blank"}
+| 4/12 | VGGNet            | [![][p]][6]{:target="_blank"} [      ][25]{:target="_blank"} [      ][95]{:target="_blank"}  | 5/24 | SS        | [![][p]][12]{:target="_blank"} [      ][31]{:target="_blank"} [      ][89]{:target="_blank"} | 7/05 | YOLO         | v1[ ![][p]][18]{:target="_blank"}, v2[ ![][p]][24]{:target="_blank"}, v3[ ![][p]][25]{:target="_blank"} [      ][37]{:target="_blank"} [      ][83]{:target="_blank"}
+| 4/19 | SqueezeNet        | [![][p]][7]{:target="_blank"} [      ][26]{:target="_blank"} [      ][94]{:target="_blank"}  | 5/31 | FCN       | [![][p]][13]{:target="_blank"} [      ][32]{:target="_blank"} [      ][88]{:target="_blank"} | 7/12 | SSD          | [![][p]][19]{:target="_blank"} [      ][38]{:target="_blank"} [      ][82]{:target="_blank"}
 
 全部論文下載: (1) [Separate PDFs in .rar](https://drive.google.com/open?id=1B8Jwm-WKUHqtcCMH_nZxWTh2yvkrjBXC){:target="_blank"},  (2) [All in one PDF](https://drive.google.com/open?id=1yNuhvzGn7qGqEfxolJlSBwwyEf45jWag){:target="_blank"}
 
@@ -86,12 +87,55 @@ fbcomments: yes
 [21]:https://medium.com/@WhoYoung99/alexnet-架構概述-988113c06b4b
 [22]:https://www.dropbox.com/s/rrgc205ffedims8/ZFNet_shape.pdf
 [23]:https://www.slideshare.net/gilbert6555tw/nin-20180319-91529205
+[26]: ....
+[27]: ....
+[28]: ....
+[29]: ....
+[30]: ....
+[31]: ....
+[32]: ....
+[33]: ....
+[34]: ....
+[35]: ....
+[36]: ....
+[37]: ....
+[38]: ....
+[39]: ....
+[40]: ....
+[41]: ....
+[42]: ....
+[43]: ....
+[44]: ....
+[45]: ....
+[46]: ....
+[47]: ....
+[48]: ....
+[49]: ....
+[50]: ....
+[51]: ....
 
 
 [100]: https://youtu.be/5F7SnpjTas8?t=5m30s
 [99]: https://youtu.be/5F7SnpjTas8?t=32m42s
 [98]: https://www.youtube.com/watch?v=e8m46iiBuzw
-
+[97]: https://youtu.be/
+[96]: https://youtu.be/
+[95]: https://youtu.be/
+[94]: https://youtu.be/
+[93]: https://youtu.be/
+[92]: https://youtu.be/
+[91]: https://youtu.be/
+[90]: https://youtu.be/
+[89]: https://youtu.be/
+[88]: https://youtu.be/
+[87]: https://youtu.be/
+[86]: https://youtu.be/
+[85]: https://youtu.be/
+[84]: https://youtu.be/
+[83]: https://youtu.be/
+[82]: https://youtu.be/
+[81]: https://youtu.be/
+[80]: https://youtu.be/
 
 P.S. 4/5 清明連假 暫停一次
 
