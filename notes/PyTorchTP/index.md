@@ -18,20 +18,20 @@ fbcomments: yes
 
 <img src="../../images/PyTorchTP/pytp1.jpg">
 
-2018.03.08 第一次讀書會(PC: Eric Yang)
+2018.03.08 第一次讀書會(PC: [Eric Yang](https://www.facebook.com/profile.php?id=1561001417){:target="_blank"})
 
 ## 2. 讀書會資訊
 時間: 每週四19:00~21:00
 
-內容:
+內容: 分兩部份進行，可隨時於[線上討論區](https://discord.gg/jMCVCbJ){:target="_blank"}發問。
 
-1. 經典論文導讀
+1. 經典論文導讀 
  - 預計進行18周(共19篇論文)
- - 參加者建議已具備ML/DL/[CNN](../basic-CNN-FP){:target="_blank"}基礎知識
+ - 參加者建議已具備ML/DL/CNN[](../basic-CNN-FP){:target="_blank"}基礎知識
 
-2. PyTorch實作
- - 由台大CS+X計畫負責人[Pecu老師](https://github.com/pecu){:target="_blank"}及其團隊負責帶領
- - [進度表](https://github.com/pecu/PyTorch_CSX){:target="_blank"}
+2. PyTorch實作 
+ - 由台大CS+X計畫負責人[Pecu老師](https://www.facebook.com/pecu.tsai){:target="_blank"}及其團隊負責帶領
+ - [公佈欄&進度表](https://github.com/pecu/PyTorch_CSX){:target="_blank"}
 
 地點: 台灣大學普通教學館305教室 <br>
 停車資訊: [台大校內停車地點](http://general.ga.ntu.edu.tw/uploads/archive_file_multiple/file/56d1ee4f48b8a10b9200024b/%E6%A0%A1%E7%B8%BD%E5%8D%80%E6%B1%BD%E6%A9%9F%E8%BB%8A%E5%81%9C%E8%BB%8A%E5%A0%B4%E5%8D%80%E4%BD%8D%E5%9C%96-103-09.pdf){:target="_blank"}及[收費規則](http://general.ga.ntu.edu.tw/zh_tw/qa/校園臨時停車收費費率-22859878){:target="_blank"}，校友若持[校友證]( http://www.alumni.ntu.edu.tw/card_benefits.html ){:target="_blank"}則能以優惠價格停車
@@ -39,21 +39,27 @@ fbcomments: yes
 
 <br/>
 
-## 3. 論文導讀進度表(附論文連結&講者投影片連結)
+## 3. 論文導讀進度表
 
-講解錄影: [Youtube連結](https://www.youtube.com/playlist?list=PLWpwqPto4D5-LdiBGM2vJm2vFif6aPT4z){:target="_blank"}
+![][p]: 論文PDF
+<br>![][m]: 講者講解材料 ([每周講者列表](https://docs.google.com/spreadsheets/d/1_ZNL7JKUm_vbd3WrhixOaCS095S7aNBPL4UGWBDkG2A/edit?usp=sharing){:target="_blank"} )
+<br>![][v]: 講解影片連結 
+<br>(P.S.:第一週有一部分沒錄到音)
 
 | CNN                                              | Pre R-CNN                              | R-CNN                                     |
 | ------------------------------------------------ |--------------------------------------- | ----------------------------------------- |
-| 3/08 [LeNet][1]{:target="_blank"} [(slide)][20]{:target="_blank"} & [AlexNet][2]{:target="_blank"} [(blog)][21]{:target="_blank"} | 4/26 [PreVGGNet][8]{:target="_blank"} | 6/07 [R-CNN][14]{:target="_blank"} |
-| 3/15 [ZFNet][3]{:target="_blank"} [(slide)][22]{:target="_blank"}                | 5/03 [SVM][9]{:target="_blank"}        | 6/14 [SPPNet][15]{:target="_blank"}       |
-| 3/22 [NIN][4]{:target="_blank"} [(slide)][23]{:target="_blank"}                  | 5/10 [SMO][10]{:target="_blank"}       | 6/21 [Fast R-CNN][16]{:target="_blank"}   |
-| 3/29 [GoogLeNet][5]{:target="_blank"}            | 5/17 [DPM][11]{:target="_blank"}       | 6/28 [Faster R-CNN][17]{:target="_blank"} |
-| 4/12 [VGGNet][6]{:target="_blank"}               | 5/24 [SS][12]{:target="_blank"}        | 7/05 YOLO ([v1][18]{:target="_blank"}, [v2][24]{:target="_blank"} , [v3][25]{:target="_blank"})         |
-| 4/19 [SqueezeNet][7]{:target="_blank"}           | 5/31 [FCN][13]{:target="_blank"}       | 7/12 [SSD][19]{:target="_blank"}          |
+| 3/08 LeNet　[![][p]][1]{:target="_blank"} [![][m]][20]{:target="_blank"} [![][v]][100]{:target="_blank"} <br>　　 AlexNet　[![][p]][2]{:target="_blank"} [![][m]][21]{:target="_blank"} [![][v]][99]{:target="_blank"} | 4/26 PreVGGNet　[![][p]][8]{:target="_blank"} | 6/07 R-CNN　[![][p]][14]{:target="_blank"} |
+| 3/15 ZFNet　[![][p]][3]{:target="_blank"} [![][m]][22]{:target="_blank"} [![][v]][98]{:target="_blank"} | 5/03 SVM　[![][p]][9]{:target="_blank"}        | 6/14 SPPNet　[![][p]][15]{:target="_blank"}       |
+| 3/22 NIN　  [![][p]][4]{:target="_blank"} [![][m]][23]{:target="_blank"}                  | 5/10 SMO　[![][p]][10]{:target="_blank"}       | 6/21 Fast R-CNN　[![][p]][16]{:target="_blank"}   |
+| 3/29 GoogLeNet　[![][p]][5]{:target="_blank"}            | 5/17 DPM　[![][p]][11]{:target="_blank"}       | 6/28 Faster R-CNN　[![][p]][17]{:target="_blank"} |
+| 4/12 VGGNet　[![][p]][6]{:target="_blank"}               | 5/24 SS　 [![][p]][12]{:target="_blank"}        | 7/05 YOLO (v1[ ![][p]][18]{:target="_blank"}, v2[ ![][p]][24]{:target="_blank"}, v3[ ![][p]][25]{:target="_blank"})         |
+| 4/19 SqueezeNet　[![][p]][7]{:target="_blank"}           | 5/31 FCN　[![][p]][13]{:target="_blank"}       | 7/12 SSD　[![][p]][19]{:target="_blank"}          |
 
 全部論文下載: (1) [Separate PDFs in .rar](https://drive.google.com/open?id=1B8Jwm-WKUHqtcCMH_nZxWTh2yvkrjBXC){:target="_blank"},  (2) [All in one PDF](https://drive.google.com/open?id=1yNuhvzGn7qGqEfxolJlSBwwyEf45jWag){:target="_blank"}
 
+[p]: ../../images/icons/paper.png
+[v]: ../../images/icons/video.png
+[m]: ../../images/icons/mt.png
 [1]: http://yann.lecun.com/exdb/publis/pdf/lecun-98.pdf
 [2]: http://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf
 [3]: https://arxiv.org/pdf/1311.2901.pdf
@@ -73,12 +79,18 @@ fbcomments: yes
 [17]: http://papers.nips.cc/paper/5638-faster-r-cnn-towards-real-time-object-detection-with-region-proposal-networks.pdf
 [18]: https://www.cv-foundation.org/openaccess/content_cvpr_2016/papers/Redmon_You_Only_Look_CVPR_2016_paper.pdf
 [19]: https://arxiv.org/pdf/1512.02325.pdf
+[24]: https://pjreddie.com/media/files/papers/YOLOv3.pdf
+[25]: https://arxiv.org/pdf/1612.08242
+
 [20]:https://hackmd.io/p/BkxYFCnOM#/
 [21]:https://medium.com/@WhoYoung99/alexnet-架構概述-988113c06b4b
 [22]:https://www.dropbox.com/s/rrgc205ffedims8/ZFNet_shape.pdf
 [23]:https://www.slideshare.net/gilbert6555tw/nin-20180319-91529205
-[24]: https://pjreddie.com/media/files/papers/YOLOv3.pdf
-[25]: https://arxiv.org/pdf/1612.08242
+
+
+[100]: https://youtu.be/5F7SnpjTas8?t=5m30s
+[99]: https://youtu.be/5F7SnpjTas8?t=32m42s
+[98]: https://www.youtube.com/watch?v=e8m46iiBuzw
 
 
 P.S. 4/5 清明連假 暫停一次
@@ -87,11 +99,11 @@ P.S. 4/5 清明連假 暫停一次
 
 ## 4. 每周整理
 
-這部分為我自己的筆記整理，可以點[這裡][100]{:target="_blank"}看所有文章。
-
-[100]: ./Menu
+我自己的筆記整理&學習紀錄，可以點[這裡](./Menu){:target="_blank"}看所有文章。
 
 ### 4.1 論文導讀整理
+
+希望每周讀完論文、聽完講解後，能夠消化吸收再寫出一篇整理，目前穩定遲交中...
 
 | CNN                                                                    | Pre R-CNN                              | R-CNN                                     |
 | ---------------------------------------------------------------------- |--------------------------------------- | ----------------------------------------- |
@@ -129,7 +141,7 @@ P.S. 4/5 清明連假 暫停一次
 
 ### 4.2 PyTorch實作
 
-這裡的整理與論文導讀和Pecu老師的教學都不同步，純粹只是自己的學習紀錄，定期在[我的GitHub](https://github.com/mattwang44/PyTorch_Taipei/tree/master/PyTorch%20Tutorial){:target="_blank"}上更新
+這裡的整理只是自己PyTorch的學習紀錄，與論文導讀和Pecu老師的教學不同步，定期在[我的GitHub](https://github.com/mattwang44/PyTorch_Taipei/tree/master/PyTorch%20Tutorial){:target="_blank"}上更新
 
 
 <div class="container">

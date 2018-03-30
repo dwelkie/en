@@ -63,3 +63,8 @@ fbcomments: true
 [18]: https://medium.com/@syshen/物體偵測-object-detection-740096ec4540
 [19]: https://medium.com/@chenchoulo/yolo-介紹-4307e79524fe
 [20]: http://bangqu.com/PN49W9.html
+
+https://zhuanlan.zhihu.com/p/34945787
+https://blog.csdn.net/lilai619/article/details/79695109
+https://www.jiqizhixin.com/articles/2018-03-27-5
+https://zhuanlan.zhihu.com/p/25052190
