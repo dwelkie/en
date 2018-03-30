@@ -43,7 +43,7 @@ TopicShare: true
 ## 3. 論文導讀進度表
 
 ![][p]: 論文PDF
-<br>![][m]: 講者講解材料 ([每周講者列表](https://docs.google.com/spreadsheets/d/1_ZNL7JKUm_vbd3WrhixOaCS095S7aNBPL4UGWBDkG2A/edit?usp=sharing){:target="_blank"} )
+<br>![][m]: 講者提供之講解材料 ([每周講者列表](https://docs.google.com/spreadsheets/d/1_ZNL7JKUm_vbd3WrhixOaCS095S7aNBPL4UGWBDkG2A/edit?usp=sharing){:target="_blank"} )
 <br>![][v]: 講解影片連結
 <br>(P.S.:第一週有一部分沒錄到音)
 
@@ -56,7 +56,7 @@ TopicShare: true
 | 4/12 | VGGNet            | [![][p]][6]{:target="_blank"} [      ][25]{:target="_blank"} [      ][95]{:target="_blank"}  | 5/24 | SS        | [![][p]][12]{:target="_blank"} [      ][31]{:target="_blank"} [      ][89]{:target="_blank"} | 7/05 | YOLO         | v1[ ![][p]][18]{:target="_blank"}, v2[ ![][p]][24]{:target="_blank"}, v3[ ![][p]][25]{:target="_blank"} [      ][37]{:target="_blank"} [      ][83]{:target="_blank"}
 | 4/19 | SqueezeNet        | [![][p]][7]{:target="_blank"} [      ][26]{:target="_blank"} [      ][94]{:target="_blank"}  | 5/31 | FCN       | [![][p]][13]{:target="_blank"} [      ][32]{:target="_blank"} [      ][88]{:target="_blank"} | 7/12 | SSD          | [![][p]][19]{:target="_blank"} [      ][38]{:target="_blank"} [      ][82]{:target="_blank"}
 
-全部論文下載: (1) [Separate PDFs in .rar](https://drive.google.com/open?id=1B8Jwm-WKUHqtcCMH_nZxWTh2yvkrjBXC){:target="_blank"},  (2) [All in one PDF](https://drive.google.com/open?id=1yNuhvzGn7qGqEfxolJlSBwwyEf45jWag){:target="_blank"}
+全部論文下載: [Link](https://drive.google.com/open?id=1TEvJKCYWf80W8OmeGgNzq0KnPL1LCVtO){:target="_blank"}
 
 [p]: ../../images/icons/paper.png
 [v]: ../../images/icons/video.png
@@ -80,8 +80,8 @@ TopicShare: true
 [17]: http://papers.nips.cc/paper/5638-faster-r-cnn-towards-real-time-object-detection-with-region-proposal-networks.pdf
 [18]: https://www.cv-foundation.org/openaccess/content_cvpr_2016/papers/Redmon_You_Only_Look_CVPR_2016_paper.pdf
 [19]: https://arxiv.org/pdf/1512.02325.pdf
-[24]: https://pjreddie.com/media/files/papers/YOLOv3.pdf
-[25]: https://arxiv.org/pdf/1612.08242
+[24]: https://arxiv.org/pdf/1612.08242
+[25]: https://pjreddie.com/media/files/papers/YOLOv3.pdf
 
 [20]:https://hackmd.io/p/BkxYFCnOM#/
 [21]:https://medium.com/@WhoYoung99/alexnet-架構概述-988113c06b4b
@@ -154,7 +154,7 @@ P.S. 4/5 清明連假 暫停一次
 | 3/08 [LeNet][101]{:target="_blank"} & [AlexNet][102]{:target="_blank"} | 4/26 PreVGGNet[][108]{:target="_blank"} | 6/07 R-CNN[][114]{:target="_blank"} |
 | 3/15 [ZFNet(整理中)][103]{:target="_blank"}                            | 5/03 SVM[][109]{:target="_blank"}        | 6/14 SPPNet[][115]{:target="_blank"}       |
 | 3/22 NIN(整理中)[][104]{:target="_blank"}                  | 5/10 SMO[][110]{:target="_blank"}       | 6/21 Fast R-CNN[][116]{:target="_blank"}   |
-| 3/29 GoogLeNet(整理中)[][105]{:target="_blank"}            | 5/17 DPM[][111]{:target="_blank"}       | 6/28 Faster R-CNN[][117]{:target="_blank"} |
+| 3/29 [GoogLeNet(整理中)][105]{:target="_blank"}            | 5/17 DPM[][111]{:target="_blank"}       | 6/28 Faster R-CNN[][117]{:target="_blank"} |
 | 4/12 VGGNet[][106]{:target="_blank"}               | 5/24 SS[][112]{:target="_blank"}        | 7/05 YOLO[][118]{:target="_blank"}         |
 | 4/19 SqueezeNet[][107]{:target="_blank"}           | 5/31 FCN[][113]{:target="_blank"}       | 7/12 SSD[][119]{:target="_blank"}          |
 

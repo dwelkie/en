@@ -2,7 +2,7 @@
 layout: article
 title: "Curriculum Vitae"
 date: 2018-02-01T13:57:25-04:00
-#modified:
+modified: 2018-03-30
 excerpt:
 tags: []
 image:
