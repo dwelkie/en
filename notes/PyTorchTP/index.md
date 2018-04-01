@@ -49,12 +49,12 @@ TopicShare: true
 
 |      | CNN               |                                                                                              |      | Pre-R-CNN |                                                                                              |      | R-CNN        |                                   
 | ----:|:-----------------:| -------------------------------------------------------------------------------------------- | ----:|:---------:| -------------------------------------------------------------------------------------------- | ----:|:------------:| -------------------------------------------------------------------------------------------
-| 3/08 |  LeNet<br>AlexNet | [![][p]][1]{:target="_blank"} [![][m]][20]{:target="_blank"} [![][v]][100]{:target="_blank"}<br> [![][p]][2]{:target="_blank"} [![][m]][21]{:target="_blank"} [![][v]][99]{:target="_blank"} | 4/26 | PreVGG    | [![][p]][8]{:target="_blank"}  [      ][27]{:target="_blank"} [      ][93]{:target="_blank"} | 6/07 | R-CNN        | [![][p]][14]{:target="_blank"} [      ][33]{:target="_blank"} [      ][87]{:target="_blank"}
-| 3/15 | ZFNet             | [![][p]][3]{:target="_blank"} [![][m]][22]{:target="_blank"} [![][v]][98]{:target="_blank"}  | 5/03 | SVM       | [![][p]][9]{:target="_blank"}  [      ][28]{:target="_blank"} [      ][92]{:target="_blank"} | 6/14 | SPPNet       | [![][p]][15]{:target="_blank"} [      ][34]{:target="_blank"} [      ][86]{:target="_blank"}
-| 3/22 | NIN               | [![][p]][4]{:target="_blank"} [![][m]][23]{:target="_blank"} [      ][97]{:target="_blank"}  | 5/10 | SMO       | [![][p]][10]{:target="_blank"} [      ][29]{:target="_blank"} [      ][91]{:target="_blank"} | 6/21 | Fast R-CNN   | [![][p]][16]{:target="_blank"} [      ][35]{:target="_blank"} [      ][85]{:target="_blank"}
-| 3/29 | GoogLeNet         | [![][p]][5]{:target="_blank"} [      ][24]{:target="_blank"} [      ][96]{:target="_blank"}  | 5/17 | DPM       | [![][p]][11]{:target="_blank"} [      ][30]{:target="_blank"} [      ][90]{:target="_blank"} | 6/28 | Faster R-CNN | [![][p]][17]{:target="_blank"} [      ][36]{:target="_blank"} [      ][84]{:target="_blank"}
-| 4/12 | VGGNet            | [![][p]][6]{:target="_blank"} [      ][25]{:target="_blank"} [      ][95]{:target="_blank"}  | 5/24 | SS        | [![][p]][12]{:target="_blank"} [      ][31]{:target="_blank"} [      ][89]{:target="_blank"} | 7/05 | YOLO         | v1[ ![][p]][18]{:target="_blank"}, v2[ ![][p]][24]{:target="_blank"}, v3[ ![][p]][25]{:target="_blank"} [      ][37]{:target="_blank"} [      ][83]{:target="_blank"}
-| 4/19 | SqueezeNet        | [![][p]][7]{:target="_blank"} [      ][26]{:target="_blank"} [      ][94]{:target="_blank"}  | 5/31 | FCN       | [![][p]][13]{:target="_blank"} [      ][32]{:target="_blank"} [      ][88]{:target="_blank"} | 7/12 | SSD          | [![][p]][19]{:target="_blank"} [      ][38]{:target="_blank"} [      ][82]{:target="_blank"}
+| 3/08 |  LeNet<br>AlexNet | [![][p]][1]{:target="_blank"} [![][m]][20]{:target="_blank"} [![][v]][100]{:target="_blank"}<br> [![][p]][2]{:target="_blank"} [![][m]][21]{:target="_blank"} [![][v]][99]{:target="_blank"} | 4/26 | PreVGG    | [![][p]][8]{:target="_blank"}  [      ][29]{:target="_blank"} [      ][93]{:target="_blank"} | 6/07 | R-CNN        | [![][p]][14]{:target="_blank"} [      ][35]{:target="_blank"} [      ][87]{:target="_blank"}
+| 3/15 | ZFNet             | [![][p]][3]{:target="_blank"} [![][m]][22]{:target="_blank"} [![][v]][98]{:target="_blank"}  | 5/03 | SVM       | [![][p]][9]{:target="_blank"}  [      ][30]{:target="_blank"} [      ][92]{:target="_blank"} | 6/14 | SPPNet       | [![][p]][15]{:target="_blank"} [      ][36]{:target="_blank"} [      ][86]{:target="_blank"}
+| 3/22 | NIN               | [![][p]][4]{:target="_blank"} [![][m]][23]{:target="_blank"} [![][v]][97]{:target="_blank"}  | 5/10 | SMO       | [![][p]][10]{:target="_blank"} [      ][31]{:target="_blank"} [      ][91]{:target="_blank"} | 6/21 | Fast R-CNN   | [![][p]][16]{:target="_blank"} [      ][37]{:target="_blank"} [      ][85]{:target="_blank"}
+| 3/29 | GoogLeNet         | [![][p]][5]{:target="_blank"} [![][m]][26]{:target="_blank"} [![][v]][96]{:target="_blank"}  | 5/17 | DPM       | [![][p]][11]{:target="_blank"} [      ][32]{:target="_blank"} [      ][90]{:target="_blank"} | 6/28 | Faster R-CNN | [![][p]][17]{:target="_blank"} [      ][38]{:target="_blank"} [      ][84]{:target="_blank"}
+| 4/12 | VGGNet            | [![][p]][6]{:target="_blank"} [      ][27]{:target="_blank"} [      ][95]{:target="_blank"}  | 5/24 | SS        | [![][p]][12]{:target="_blank"} [      ][33]{:target="_blank"} [      ][89]{:target="_blank"} | 7/05 | YOLO         | v1[ ![][p]][18]{:target="_blank"}, v2[ ![][p]][24]{:target="_blank"}, v3[ ![][p]][25]{:target="_blank"} [      ][39]{:target="_blank"} [      ][83]{:target="_blank"}
+| 4/19 | SqueezeNet        | [![][p]][7]{:target="_blank"} [      ][28]{:target="_blank"} [      ][94]{:target="_blank"}  | 5/31 | FCN       | [![][p]][13]{:target="_blank"} [      ][34]{:target="_blank"} [      ][88]{:target="_blank"} | 7/12 | SSD          | [![][p]][19]{:target="_blank"} [      ][40]{:target="_blank"} [      ][82]{:target="_blank"}
 
 全部論文下載: [Link](https://drive.google.com/open?id=1TEvJKCYWf80W8OmeGgNzq0KnPL1LCVtO){:target="_blank"}
 
@@ -87,7 +87,7 @@ TopicShare: true
 [21]:https://medium.com/@WhoYoung99/alexnet-架構概述-988113c06b4b
 [22]:https://www.dropbox.com/s/rrgc205ffedims8/ZFNet_shape.pdf
 [23]:https://www.slideshare.net/gilbert6555tw/nin-20180319-91529205
-[26]: ....
+[26]: https://drive.google.com/file/d/1QPOgFV5WXUaNaq5SG9UPzp_qMpTt8-8g/view?usp=sharing
 [27]: ....
 [28]: ....
 [29]: ....
@@ -118,8 +118,8 @@ TopicShare: true
 [100]: https://youtu.be/5F7SnpjTas8?t=5m30s
 [99]: https://youtu.be/5F7SnpjTas8?t=32m42s
 [98]: https://www.youtube.com/watch?v=e8m46iiBuzw
-[97]: https://youtu.be/
-[96]: https://youtu.be/
+[97]: https://www.youtube.com/watch?v=BkvywRsPPuA
+[96]: https://www.youtube.com/watch?v=XHTwKN7BYhc
 [95]: https://youtu.be/
 [94]: https://youtu.be/
 [93]: https://youtu.be/
