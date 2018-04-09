@@ -64,6 +64,7 @@ fbcomments: true
 [19]: https://medium.com/@chenchoulo/yolo-介紹-4307e79524fe
 [20]: http://bangqu.com/PN49W9.html
 
+https://chenzomi12.github.io/2016/12/14/YOLO-nms/
 https://zhuanlan.zhihu.com/p/34945787
 https://blog.csdn.net/lilai619/article/details/79695109
 https://www.jiqizhixin.com/articles/2018-03-27-5

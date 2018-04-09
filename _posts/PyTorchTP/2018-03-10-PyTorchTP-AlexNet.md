@@ -7,8 +7,8 @@ excerpt: ""
 tags: [PyTorchTP, DL]
 image:
   feature:
-  teaser: PyTorchTP/AlexNet.png
-  thumb: PyTorchTP/AlexNet.png
+  teaser: PyTorchTP/AlexNet/AlexNet.png
+  thumb: PyTorchTP/AlexNet/AlexNet.png
 date: 2018-03-10
 fbcomments: yes
 ---
@@ -27,7 +27,7 @@ AlexNet的重要貢獻有：
 
 <br>
 AlexNet架構:
-<img src="../../images/PyTorchTP/AlexNetStruc.png" width="800">
+<img src="../../images/PyTorchTP/AlexNet/AlexNetStruc.png" width="800">
 
 
 {% include toc.html %}
@@ -45,10 +45,10 @@ AlexNet架構:
 論文中的ch.3, 依照重要程度順序列出他認為這個架構能在比賽中勝出的關鍵。
 
 ## 2.1 ReLU
-activation function為ReLU（Rectified Linear Unit），函式為$f(x)=\max(0,x)$，在每一層輸出後都會接ReLU，論文中說明他們實驗得到<a href="../../images/PyTorchTP/AlexNetReLU.png" target="blank">在一個四層NN當中使用ReLU的收斂速度比tanh快上四倍</a>。
+activation function為ReLU（Rectified Linear Unit），函式為$f(x)=\max(0,x)$，在每一層輸出後都會接ReLU，論文中說明他們實驗得到<a href="../../images/PyTorchTP/AlexNet/AlexNetReLU.png" target="blank">在一個四層NN當中使用ReLU的收斂速度比tanh快上四倍</a>。
 
 ReLU, tanh, sigmoid, softplus(ReLU之隨處可微分改良版)比較圖: <br>
-<img src="../../images/PyTorchTP/AlexNet4act.png" width="800">
+<img src="../../images/PyTorchTP/AlexNet/AlexNet4act.png" width="800">
 
 (plot by [desmos](https://www.desmos.com/calculator){:target="_blank"})
 
