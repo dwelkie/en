@@ -13,6 +13,10 @@ date: 2018-03-10
 fbcomments: yes
 ---
 
+> 2012年在佛羅倫斯的那屆ECCV上，ImageNet的Workshop很有意思。那年Geoffrey Hinton的團隊在ImageNet比賽中遙遙領先，Workshop上所有人都在等他的學生Alex Krizhevsky演講。
+
+翻譯自Yann LeCun在吳恩達深度學習課程中的一段[訪談](https://www.youtube.com/watch?v=Svb1c6AkRzE&t=0s&list=PLfsVAYSMwsksjfpy8P2t_I52mugGeA5gR&index=8){:target="_blank"}。
+
 ImageNet為大型圖片資料集，約1500萬張已標記影像，類別約22,000種。ImageNet Large Scale Visual Recognition Challenge (ILSVRC)是Stanford教授李飛飛所領導[Vision Lab](http://vision.stanford.edu/people.html){:target="_blank"}在2010年開始舉辦、基於ImageNet的圖片辨識技術競賽([2017 workshop](https://www.youtube.com/watch?v=jYvBmJo7qjc){:target="_blank"}上宣布為最後一屆，之後會調整dataset內容並與Kaggle合辦)。
 
 本文介紹的AlexNet是[ILSVRC-2012](http://www.image-net.org/challenges/LSVRC/2012/results.html){:target="_blank"}的冠軍，作者為多倫多大學知名教授[Geoffrey Hinton](http://www.cs.toronto.edu/~hinton/){:target="_blank"}(backprop主要貢獻者)和他當時的兩位博士生[Alex Krizhevsky](https://www.cs.toronto.edu/~kriz/){:target="_blank"}和[Ilya Sutskever](http://www.cs.toronto.edu/~ilya/){:target="_yblank"}，不僅在比賽中大勝其他對手，表現上也超越當時技術。此後ILSVRC的冠軍皆由CNN相關演算法奪得，後來的ZFnet, SPPnet, VGG等技術都是在其基礎之上做修正，似乎也是從那時候開始DL相關技術越來越被各界所重視。
@@ -66,7 +70,7 @@ ReLU缺點:
 
 1. **Dead ReLU Problem**: 某些神經元在forward prop中x<0則此後不再被激發的情況。可透過[Xavier Initialization][9]{:target="_blank"}(使輸入輸出方差一致)或Adagrad減緩這種情況發生。
 或者改用Leaky ReLU(負值部分斜率為0.01), [PReLU][10]{:target="_blank"}(斜率透過backprop而得)或者其他ReLU變形。
-2. **非Zero-centered**: 即輸出均值非0的問題，輸入至下一層的值並非zero-centered，使得backprop中梯度全為正或全為負。可改用ELU來改善(但計算量又會增加)。
+2. **非Zero-centered**: 即輸出均值非0的問題，輸入至下一層的值並非zero-centered，使得backprop中梯度全為正或全為負。可改用 [ELU][20]{:target="_blank"} 來改善(但計算量又會增加)。
 <br><br>ReLU, Leaky ReLU, Randomized Leaky ReLU, ELU之圖形:<br><img src="../../images/PyTorchTP/ReLUfamily.png" width="800"><br>(picture modified from: [Isaac Changhau's blog][19]{:target="_blank"})
 
 ## 2.2 Training on GPUs
@@ -142,7 +146,7 @@ $$v_{i+1}:=0.9v_{i}-0.0005\epsilon w_i-\epsilon\langle \frac{\partial L}{\partia
 
 $$w_{i+1}=w_i+v_{i+1}$$
 
-where $v$ is momentum variable, $\epsilon$ is learning rate, ${\langle \frac{\partial L}{\partial w} \vert {w_i}\rangle}_{D_i} $ is average over $$i^{th}$$ batch $D_i$ of derivative of the object with respect to $w$.<br><br>
+其中 $v$ 是 momentum variable, $\epsilon$ 是 learning rate, ${\langle \frac{\partial L}{\partial w} \vert {w_i}\rangle}_{D_i} $ 為loss對 $$i^{th}$$ batch 之偏微分的平均。<br><br>
 
 ## 4.2 Initialization
 1. Weight insitialization: Gaussian Distribution(mean=0, std=0.01)
@@ -189,3 +193,4 @@ where $v$ is momentum variable, $\epsilon$ is learning rate, ${\langle \frac{\pa
 [17]: https://arxiv.org/abs/1207.0580
 [18]: http://cs231n.github.io/neural-networks-2/
 [19]: https://isaacchanghau.github.io/2017/05/22/Activation-Functions-in-Artificial-Neural-Networks/
+[20]: https://arxiv.org/abs/1511.07289

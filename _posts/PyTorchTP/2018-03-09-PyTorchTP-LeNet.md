@@ -17,8 +17,8 @@ LeNet-5為1998年Yann LeCun於《[Gradient-Based Learning Applied to Document Re
 一文中提出的手寫字辨識技術，為CNN領域中的經典架構。原作其實除了LeNet-5，還包含非常多東西(e.g. 和其他model的比較、LeNet的變形以及其適用時機的討論等等)，不過本篇文章只單純講述LeNet-5。
 
 CNN基礎架構早在1980年代就被[Kunihiko Fukishima(福島邦彥)][2]{:target="_blank"}
-提出，但並未使用backpropagation(逆向傳播法)來更新權重。Yann LeCun重要貢獻為結合BP於CNN架構中並
-大幅提高了辨識成功率，該技術被當時許多知名公司所運用，也是現今許多CNN研究的重要基礎。
+提出，但並未使用backpropagation(逆向傳播法)來更新權重。Yann LeCun(時任AT&T貝爾實驗室研究員)重要貢獻為結合BP於CNN架構中並
+大幅提高了辨識成功率，AT&T當時將該技術運用於讀取支票數字，也是現今許多CNN研究的重要基礎。
 
 LeNet-5由數層卷積層(C1、C3、C5)、sub-sampling層(S2、S4)和最後幾層全連接層組成，和單純只有全連接層的神經網路相比，LeNet-5需要訓練的權重是被共用的，
 故雖連接(connections)數量多但trainable parameters(訓練參數)數量較少，能有效減少overfitting的發生。
@@ -78,7 +78,7 @@ LeNet-5前六層的輸出值皆會通過Squashing Function(應該和現今所稱
 
 <img src="../../images/PyTorchTP/lenet5-c3.jpg" width="420"><br/>
 
-1. 用了16個大小為5×5×6的filter。
+1. 用了16個大小為5×5的filter(channel數不一，如上圖所標示)。
 2. feature map大小為10×10 ($14-5+1=10$) 共16個。
 3. trainable parameters個數為1516 ($(3×6+4×6+4×3+6×1)×(5^2)+16=1516$)。
 4. connections個數為151,600 ($1516×(10^2)=151,600$)。
@@ -107,7 +107,7 @@ LeNet-5前六層的輸出值皆會通過Squashing Function(應該和現今所稱
 ## 6ᵗʰ Layer: Fully-connected Layer F6
 全連接層，如早期的Multi-Layer Perceptron (MLP) 一樣是計算 $y_i=\sigma(w_{ij}\bullet x_j+b)$，84個neurons。
 
-1. trainable parameters個數為10,164 ($120×84+84=10,16$)。
+1. trainable parameters個數為10,164 ($120×84+84=10,164$)。
 2. FC層之connections個數同trainable parameters。
 3. 選擇使用84個neurons之原因在下一層解釋。
 
@@ -155,6 +155,7 @@ $$E(W)=\frac{1}{P}\sum_{p=1}^{P} y_{D^p}(Z^p,W) $$
 3. [LeNet-5--Yann LeCun](http://yann.lecun.com/exdb/lenet/index.html){:target="_blank"}
 4. [zouxy09's blog](http://blog.csdn.net/zouxy09/article/details/45288129){:target="_blank"}
 5. [Tony Tan's blog](https://tony4ai.com/2017/09/13/Deep-Learning-LeNet/){:target="_blank"}
+7. [吴恩达对话LeCun：神经网络跌宕四十年](https://zhuanlan.zhihu.com/p/35352905){:target="_blank"}
 
 [1]: http://yann.lecun.com/exdb/publis/pdf/lecun-98.pdf
 [2]: http://personalpage.flsi.or.jp/fukushima/index-e.html
