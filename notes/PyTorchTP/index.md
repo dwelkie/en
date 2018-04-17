@@ -10,6 +10,9 @@ image:
 fbcomments: yes
 TopicShare: true
 ---
+
+<meta property="og:image" content="https://mattwang44.github.io/en/images/cv.gif" />
+
 {% include toc.html %}
 
 ## 1. PyTorch Taipei 緣起
