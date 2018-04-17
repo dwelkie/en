@@ -2,7 +2,7 @@
 layout: topic
 title: "PyTorch Taipei 2018 筆記整理"
 date: 2018-02-28T11:39:03-04:00
-modified: 2018-03-30
+modified: 2018-04-17
 #excerpt: ""
 tags: []
 image:
