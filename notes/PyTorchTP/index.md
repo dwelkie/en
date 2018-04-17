@@ -107,19 +107,10 @@ TopicShare: true
 [29]: ....
 [93]: https://youtu.be/
 
-
-
-
 <!-- YOLO -->
 [Yv1]: https://pjreddie.com/darknet/yolov1/
 [Yv2]: https://pjreddie.com/darknet/yolov2/
 [Yv3]: https://pjreddie.com/darknet/yolo/
-
-
-
-
-
-
 
 [9]: http://w.svms.org/training/BOGV92.pdf
 [10]: https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/tr-98-14.pdf
@@ -134,8 +125,6 @@ TopicShare: true
 [19]: https://arxiv.org/pdf/1512.02325.pdf
 [24]: https://arxiv.org/pdf/1612.08242
 [25]: https://pjreddie.com/media/files/papers/YOLOv3.pdf
-
-
 
 [30]: ....
 [31]: ....
@@ -161,10 +150,6 @@ TopicShare: true
 [51]: ....
 [cssd]: https://github.com/weiliu89/caffe/tree/ssd
 
-
-
-
-
 [92]: https://youtu.be/
 [91]: https://youtu.be/
 [90]: https://youtu.be/
@@ -178,8 +163,6 @@ TopicShare: true
 [82]: https://youtu.be/
 [81]: https://youtu.be/
 [80]: https://youtu.be/
-
-
 
 <br/>
 
@@ -268,7 +251,7 @@ TopicShare: true
         <div class="panel-body">
           <a target="_blank" href="https://github.com/mattwang44/LeNet5-pure-Python">
             <strong> LeNet-5 Implementation with Pure Python </strong>
-            <br>不用任何自動back-prop工具實現LeNet-5。
+            <br>不用任何自動back-prop工具實現LeNet-5，目前結果還很差XDD，運行時間長、分類正確率極低
           </a>
         </div>
       </div>
