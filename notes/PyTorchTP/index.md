@@ -8,10 +8,8 @@ tags: []
 image:
   feature: pytorch-header.jpg
 fbcomments: yes
-TopicShare: true 
+TopicShare: true
 ---
-
-<meta property="og:image" content="https://mattwang44.github.io/en/images/cv.gif" />
 
 {% include toc.html %}
 
