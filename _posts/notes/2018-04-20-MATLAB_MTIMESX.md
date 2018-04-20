@@ -1,11 +1,11 @@
 ---
 layout: article
-title: "MTIMESX: MATLAB高維矩陣乘積工具包"
+title: "MTIMESX: MATLAB快速多維矩陣乘積"
 modified: 2018-04-20
 categories: articles
 excerpt: ""
 tags: [MATLAB]
-description: "test12333"
+description: "大幅減少在MATLAB中多維度矩陣乘積之執行時間"
 image:
   feature:
   teaser: MATLAB/MTIMESX/MTIMESX.png
@@ -16,7 +16,7 @@ fbcomments: yes
 
 {% include toc.html %}
 
-在矩陣運算當中，雖然用多個for-loops處理較為直觀易懂，但其實非常耗時。在我修習台大醫工所的[人體動做分析電腦計算方法][hma]{:target="_blank"}時，發現了MATLAB有[MTIMESX][mtimesx]{:target="_blank"}這個高維矩陣乘積工具包，底層為C語言，大幅減低了運算時間。
+在多維矩陣運算當中，雖然用多個for-loops處理較為直觀易懂，但其實非常耗時。在我修習台大醫工所的[人體動做分析電腦計算方法][hma]{:target="_blank"}時，發現了MATLAB有[MTIMESX][mtimesx]{:target="_blank"}這個多維矩陣乘積函式，底層為C語言，大幅減低了運算時間。
 
 ## **安裝步驟**
 
