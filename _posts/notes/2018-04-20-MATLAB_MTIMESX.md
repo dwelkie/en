@@ -57,6 +57,7 @@ C = mtimesx(A,'T',B) | C = A.' * B
 C = mtimesx(A,B,'g') |  C = A * conj(B)
 C = mtimesx(A,'c',B,'C') | C = A' * B'
 
+<br><br>
 
 ## **實際測試**
 
