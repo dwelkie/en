@@ -22,8 +22,9 @@ CNN基礎架構早在1980年代就被[Kunihiko Fukishima(福島邦彥)][2]{:targ
 提出，但並未使用backpropagation(逆向傳播法)來更新權重。Yann LeCun(時任AT&T貝爾實驗室研究員)重要貢獻為結合BP於CNN架構中並
 大幅提高了辨識成功率，AT&T當時將該技術運用於讀取支票數字，也是現今許多CNN研究的重要基礎。
 
-LeNet-5由數層卷積層(C1、C3、C5)、sub-sampling層(S2、S4)和最後幾層全連接層組成，和單純只有全連接層的神經網路相比，LeNet-5需要訓練的權重是被共用的，
-故雖連接(connections)數量多但trainable parameters(訓練參數)數量較少，能有效減少overfitting的發生。
+LeNet-5由數層捲積層(C1、C3、C5)、sub-sampling層(S2、S4)、一層全連接層和最後一層RBF輸出層組成，和單純只有全連接層的神經網路相比，LeNet-5需要訓練的權重是被共用的，故雖連接(connections)數量多但trainable parameters(訓練參數)數量較少，能有效減少overfitting的發生。
+
+P.S.: 雖然LeNet-5在論文中被描述為一個七層架構，但現在常用的描述方法中，一層隱藏層就會包含捲積、取樣(池化)和活化函數(activation)，所以LeNet-5放到現在應該是會被描述成一個五層架構(三層捲積層、一層全連接層、一層輸出)。
 
 LeNet-5 的架構如下圖所示:
 <img src="../../images/PyTorchTP/LeNet5-structure.png" width="4200">

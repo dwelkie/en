@@ -62,7 +62,7 @@ C = mtimesx(A,'c',B,'C') | C = A' * B'
 
 ## **實際測試**
 
-當輸入矩陣的維度越多且維度值越大，`mtimesx()`能夠節省下來的時間就越多，如果是做2~3維的運算，使用`mtimesx()`反而會比較慢。<br>以下是測試五維矩陣運算的執行時間比較:<br><img src="../../images/MATLAB/MTIMESX/try.png" width="500">
+當輸入矩陣的維度越多且維度值越大，`mtimesx()`能夠節省下來的時間就越多，如果是做2~3維的運算，使用`mtimesx()`反而會比較慢。<br><br>以下是測試五維矩陣運算的執行時間比較:<br><img src="../../images/MATLAB/MTIMESX/try.png" width="500">
 
 [hma]: ../../projects/Human-Motion-Analysis/
 [mtimesx]: https://www.mathworks.com/matlabcentral/fileexchange/25977-mtimesx-fast-matrix-multiply-with-multi-dimensional-support
