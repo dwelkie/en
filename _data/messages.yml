@@ -14,6 +14,8 @@ locales:
     <<: *DEFAULT_EN     # use English translation for en_US
   en_UK:
     <<: *DEFAULT_EN     # use English translation for en_UK
+  zh_TW:
+    <<: *DEFAULT_EN
 
   # German translation
   # -------------------
@@ -26,8 +28,3 @@ locales:
     share: ""
   de_DE:
     <<: *DEFAULT_DE     # use German translation for de_DE
-
-  # French translation (TODO)
-  # -------------------
-  fr_FR:
-    <<: *DEFAULT_EN      # load English values as default
