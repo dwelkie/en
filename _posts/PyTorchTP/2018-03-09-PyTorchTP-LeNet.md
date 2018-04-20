@@ -5,7 +5,7 @@ modified: 2018-03-20
 categories: articles
 excerpt: ""
 tags: [PyTorchTP, DL]
-description: "LeNet-5為1998年Yann LeCun提出的手寫字辨識技術，為CNN領域中的經典架構。 | Wei-Hsiang Wang's Website"
+description: "LeNet-5為1998年Yann LeCun提出的手寫字辨識技術，為CNN領域中的經典架構。 <br> Wei-Hsiang Wang's Website"
 
 image:
   feature:
