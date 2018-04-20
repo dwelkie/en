@@ -1,13 +1,13 @@
 ---
 layout: topic
 title: "PyTorch Taipei 2018 筆記整理"
-date: 2018-02-28T11:39:03-04:00
+date: 2018-02-28
 modified: 2018-04-17
-description: "PyTorch Taiwan是Marcel Wang先生為促進台灣深度學習發展，在網路上號召成立的深度學習讀書會，目前有台北和新竹兩分會 @ Wei-Hsiang Wang's Website"
-tags: []
+tags: #[PyTorchTP, DL]
 image:
   feature: pytorch-header.jpg
 fbcomments: yes
+description: "PyTorch Taiwan是Marcel Wang先生為促進台灣深度學習發展，在網路上號召成立的深度學習讀書會，目前有台北和新竹兩分會 @ Wei-Hsiang Wang's Website"
 TopicShare: true
 ---
 
