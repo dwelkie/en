@@ -6,7 +6,6 @@ categories: articles
 excerpt: ""
 tags: [PyTorchTP, DL]
 description: "LeNet-5為1998年Yann LeCun提出的手寫字辨識技術，為CNN領域中的經典架構。 <br> Wei-Hsiang Wang's Website"
-
 image:
   feature:
   teaser: PyTorchTP/LeNet5.png
@@ -16,10 +15,12 @@ fbcomments: yes
 ---
 
 LeNet-5為1998年Yann LeCun於《[Gradient-Based Learning Applied to Document Recognition][1]{:target="_blank"}》
-一文中提出的手寫字辨識技術，為CNN領域中的經典架構。原作其實除了LeNet-5，還包含非常多東西(e.g. 和其他model的比較、LeNet的變形以及其適用時機的討論等等)，不過本篇文章只單純講述LeNet-5。
+一文中提出的手寫字辨識技術，為CNN領域中的經典架構。
+
+原作其實除了LeNet-5，還包含非常多東西(e.g. 和其他model的比較、LeNet的變形以及其適用時機的討論等等)，不過本篇文章只單純講述LeNet-5。
 
 CNN基礎架構早在1980年代就被[Kunihiko Fukishima(福島邦彥)][2]{:target="_blank"}
-提出，但並未使用backpropagation(逆向傳播法)來更新權重。Yann LeCun(時任AT&T貝爾實驗室研究員)重要貢獻為結合BP於CNN架構中並
+提出，但並未使用back-propagation(逆向傳播法)來更新權重。Yann LeCun(時任AT&T貝爾實驗室研究員)重要貢獻為結合BP於CNN架構中並
 大幅提高了辨識成功率，AT&T當時將該技術運用於讀取支票數字，也是現今許多CNN研究的重要基礎。
 
 LeNet-5由數層捲積層(C1、C3、C5)、sub-sampling層(S2、S4)、一層全連接層和最後一層RBF輸出層組成，和單純只有全連接層的神經網路相比，LeNet-5需要訓練的權重是被共用的，故雖連接(connections)數量多但trainable parameters(訓練參數)數量較少，能有效減少overfitting的發生。

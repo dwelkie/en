@@ -5,7 +5,7 @@ modified: 2018-04-20
 categories: articles
 excerpt: ""
 tags: [MATLAB]
-description: "MTIMESX可大幅減少在MATLAB中多維度矩陣乘積之執行時間 <br> Wei-Hsiang Wang's Website"
+description: "MTIMESX可大幅減少在MATLAB中多維度矩陣乘積之執行時間 @ Wei-Hsiang Wang's Website"
 image:
   feature:
   teaser: MATLAB/MTIMESX/MTIMESX.png
@@ -22,7 +22,7 @@ fbcomments: yes
 
 工具包作者已經寫好安裝執行檔，只需要做幾個設定便能開始自動安裝。以下是在MATLAB2017b版本上的範例安裝過程。
 
-1. 首先，先從[MTIMESX之Mathworks頁面][mtimesx]{:target="_blank"}上將其下載並解壓縮並將資料夾改名為`mtimesx`:
+1. 首先，先從[MTIMESX之Mathworks頁面][mtimesx]{:target="_blank"}上將其下載、解壓縮，並將資料夾改名為`mtimesx`:
 <br><img src="../../images/MATLAB/MTIMESX/0.png" width="500">
 
 2. 將`mtimesx_build.m`檔案中第166行改成 `mexopts = [prefdir '\mex_C_win64.xml'];`:

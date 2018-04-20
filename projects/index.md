@@ -68,7 +68,7 @@ MATLAB programs for human motion analysis, including motion tracking, evaluation
 <img src="../../images/icons/matlab.png">
 -->
 
-<img src="../../images/project/humanmotion.gif" width="250">
+<img src="../images/project/humanmotion.gif" width="250">
 
 ## Web Crawler of USPTO PatFT Database
 

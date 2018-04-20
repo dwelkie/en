@@ -1,14 +1,14 @@
 ---
 layout: article
 title: "Curriculum Vitae"
-date: 2018-02-01T13:57:25-04:00
-modified: 2018-03-30
+date: 2018-03-28
+modified: 2018-04-08
 excerpt:
 tags: []
 image:
-  feature:cv.gif
-  teaser:cv.gif
-  thumb:cv.gif
+  feature:
+  teaser:
+  thumb:
 share: true
 ---
 
