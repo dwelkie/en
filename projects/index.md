@@ -8,7 +8,7 @@ tags: []
 image:
   feature:
 fbcomments: yes
-TopicShare: true
+#TopicShare: true
 
 #<div class="tiles">
 # {% for post in site.categories.projects %}

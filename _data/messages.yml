@@ -14,8 +14,15 @@ locales:
     <<: *DEFAULT_EN     # use English translation for en_US
   en_UK:
     <<: *DEFAULT_EN     # use English translation for en_UK
+
+  zh: &DEFAULT_TW
+    overview: "Overview"
+    toc: "Contents"
+    written_by: ""
+    updated: "Updated:"
+    share: "Share@"
   zh_TW:
-    <<: *DEFAULT_EN
+    <<: *DEFAULT_TW
 
   # German translation
   # -------------------
