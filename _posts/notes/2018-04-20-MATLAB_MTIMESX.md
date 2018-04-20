@@ -5,7 +5,7 @@ modified: 2018-04-20
 categories: articles
 excerpt: ""
 tags: [MATLAB]
-description: "大幅減少在MATLAB中多維度矩陣乘積之執行時間"
+description: "MTIMESX可大幅減少在MATLAB中多維度矩陣乘積之執行時間 | Wei-Hsiang Wang's Website"
 image:
   feature:
   teaser: MATLAB/MTIMESX/MTIMESX.png
