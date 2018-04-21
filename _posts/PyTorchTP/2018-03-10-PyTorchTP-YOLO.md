@@ -7,8 +7,8 @@ excerpt: ""
 tags: [PyTorchTP, DL]
 image:
   feature:
-  teaser: YOLO.gif
-  thumb: YOLO.gif
+  teaser: yologo.png
+  thumb: yologo.png
 date: 2018-03-26
 fbcomments: true
 ---

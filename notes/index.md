@@ -22,7 +22,7 @@ image:
 
 <div class="tile">
   <a href="{{ site.url }}/notes/DL">
-    <img src="{{ site.url }}/images/YOLO.gif">
+    <img src="{{ site.url }}/images/DLogo.png">
     <h2 class="post-title">Deep Learning</h2>
     <p class="post-excerpt">CNN implementation, DL paper notes(zh), ...</p>
   </a>
