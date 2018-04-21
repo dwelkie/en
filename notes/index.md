@@ -37,12 +37,13 @@ image:
 </div><!-- /.tile -->
 
 <div class="tile">
-  <a href="{{ site.url }}/notes/ML">
-    <img src="{{ site.url }}/images/ML.jpg">
-    <h2 class="post-title">Machine Learning</h2>
-    <p class="post-excerpt">Machine Learning course notes </p>
+  <a href="{{ site.url }}/notes/MATLAB">
+    <img src="{{ site.url }}/images/MATLAB.jpg">
+    <h2 class="post-title">MATLAB</h2>
+    <p class="post-excerpt"></p>
   </a>
 </div><!-- /.tile -->
+
 </div><!-- /.tiles -->
 
 
@@ -51,13 +52,7 @@ image:
 <div class="tiles">
 
 
-<div class="tile">
-  <a href="{{ site.url }}/notes/MATLAB">
-    <img src="{{ site.url }}/images/MATLAB.jpg">
-    <h2 class="post-title">MATLAB</h2>
-    <p class="post-excerpt"></p>
-  </a>
-</div><!-- /.tile -->
+
 
 <div class="tile">
   <a href="{{ site.url }}/notes/OT">

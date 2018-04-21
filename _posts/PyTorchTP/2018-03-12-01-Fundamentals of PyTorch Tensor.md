@@ -1,6 +1,6 @@
 ---
 layout: ipynb
-title: "PyTorch Pratice 01: Fundamentals of PyTorch Tensor"
+title: "PyTorch Practice 01: Fundamentals of PyTorch Tensor"
 modified:
 categories: articles
 excerpt: ""
@@ -75,18 +75,18 @@ date: 2018-03-12
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>array: 
- [[1, 2], [3, 4]] 
+<pre>array:
+ [[1, 2], [3, 4]]
 
-Numpy array: 
+Numpy array:
  [[1 2]
- [3 4]] 
+ [3 4]]
 
 Torch Tensor:  
  1  2
  3  4
 [torch.FloatTensor of size 2x2]
- 
+
 
 </pre>
 </div>
@@ -130,15 +130,15 @@ Torch Tensor:
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Numpy array: 
+<pre>Numpy array:
  [[1. 1.]
- [1. 1.]] 
+ [1. 1.]]
 
 Torch Tensor:  
  1  1
  1  1
 [torch.FloatTensor of size 2x2]
- 
+
 
 </pre>
 </div>
@@ -174,15 +174,15 @@ Torch Tensor:
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Numpy array: 
+<pre>Numpy array:
  [[0. 0.]
- [0. 0.]] 
+ [0. 0.]]
 
 Torch Tensor:  
  0  0
  0  0
 [torch.FloatTensor of size 2x2]
- 
+
 
 </pre>
 </div>
@@ -223,7 +223,7 @@ Torch Tensor:
  0  1  0
  0  0  1
 [torch.FloatTensor of size 3x3]
- 
+
 
 Torch Tensor:  
  1  0  0  0  0  0
@@ -231,7 +231,7 @@ Torch Tensor:
  0  0  1  0  0  0
  0  0  0  1  0  0
 [torch.FloatTensor of size 4x6]
- 
+
 
 </pre>
 </div>
@@ -322,15 +322,15 @@ Torch Tensor:
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Numpy array: 
+<pre>Numpy array:
  [[0.5488135  0.71518937]
- [0.60276338 0.54488318]] 
+ [0.60276338 0.54488318]]
 
 Torch Tensor:  
  0.4963  0.7682
  0.0885  0.1320
 [torch.FloatTensor of size 2x2]
- 
+
 
 </pre>
 </div>
@@ -496,16 +496,16 @@ Torch Tensor:
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Numpy array: 
+<pre>Numpy array:
  [[3. 3.]
- [3. 3.]] 
-Type:  &lt;class &#39;numpy.ndarray&#39;&gt; 
+ [3. 3.]]
+Type:  &lt;class &#39;numpy.ndarray&#39;&gt;
 
 Torch Tensor:  
  3  3
  3  3
 [torch.DoubleTensor of size 2x2]
- Type:  &lt;class &#39;torch.DoubleTensor&#39;&gt; 
+ Type:  &lt;class &#39;torch.DoubleTensor&#39;&gt;
 
 </pre>
 </div>
@@ -601,42 +601,42 @@ Torch Tensor:
 <div class="output_html rendered_html output_subarea output_execute_result">
 <style  type="text/css" >
 </style>  
-<table id="T_340a8182_221b_11e8_a253_080027094c12" > 
-<thead>    <tr> 
-        <th class="blank level0" ></th> 
-        <th class="col_heading level0 col0" >dtypes</th> 
-        <th class="col_heading level0 col1" >Tensor types</th> 
-    </tr></thead> 
-<tbody>    <tr> 
-        <th id="T_340a8182_221b_11e8_a253_080027094c12level0_row0" class="row_heading level0 row0" >0</th> 
-        <td id="T_340a8182_221b_11e8_a253_080027094c12row0_col0" class="data row0 col0" >uint8</td> 
-        <td id="T_340a8182_221b_11e8_a253_080027094c12row0_col1" class="data row0 col1" >ByteTensor</td> 
-    </tr>    <tr> 
-        <th id="T_340a8182_221b_11e8_a253_080027094c12level0_row1" class="row_heading level0 row1" >1</th> 
-        <td id="T_340a8182_221b_11e8_a253_080027094c12row1_col0" class="data row1 col0" >int32</td> 
-        <td id="T_340a8182_221b_11e8_a253_080027094c12row1_col1" class="data row1 col1" >IntTensor</td> 
-    </tr>    <tr> 
-        <th id="T_340a8182_221b_11e8_a253_080027094c12level0_row2" class="row_heading level0 row2" >2</th> 
-        <td id="T_340a8182_221b_11e8_a253_080027094c12row2_col0" class="data row2 col0" >int64</td> 
-        <td id="T_340a8182_221b_11e8_a253_080027094c12row2_col1" class="data row2 col1" >LongTensor</td> 
-    </tr>    <tr> 
-        <th id="T_340a8182_221b_11e8_a253_080027094c12level0_row3" class="row_heading level0 row3" >3</th> 
-        <td id="T_340a8182_221b_11e8_a253_080027094c12row3_col0" class="data row3 col0" >float32</td> 
-        <td id="T_340a8182_221b_11e8_a253_080027094c12row3_col1" class="data row3 col1" >FloatTensor</td> 
-    </tr>    <tr> 
-        <th id="T_340a8182_221b_11e8_a253_080027094c12level0_row4" class="row_heading level0 row4" >4</th> 
-        <td id="T_340a8182_221b_11e8_a253_080027094c12row4_col0" class="data row4 col0" >float</td> 
-        <td id="T_340a8182_221b_11e8_a253_080027094c12row4_col1" class="data row4 col1" >DoubleTensor</td> 
-    </tr>    <tr> 
-        <th id="T_340a8182_221b_11e8_a253_080027094c12level0_row5" class="row_heading level0 row5" >5</th> 
-        <td id="T_340a8182_221b_11e8_a253_080027094c12row5_col0" class="data row5 col0" >float64</td> 
-        <td id="T_340a8182_221b_11e8_a253_080027094c12row5_col1" class="data row5 col1" >DoubleTensor</td> 
-    </tr>    <tr> 
-        <th id="T_340a8182_221b_11e8_a253_080027094c12level0_row6" class="row_heading level0 row6" >6</th> 
-        <td id="T_340a8182_221b_11e8_a253_080027094c12row6_col0" class="data row6 col0" >float64</td> 
-        <td id="T_340a8182_221b_11e8_a253_080027094c12row6_col1" class="data row6 col1" >DoubleTensor</td> 
-    </tr></tbody> 
-</table> 
+<table id="T_340a8182_221b_11e8_a253_080027094c12" >
+<thead>    <tr>
+        <th class="blank level0" ></th>
+        <th class="col_heading level0 col0" >dtypes</th>
+        <th class="col_heading level0 col1" >Tensor types</th>
+    </tr></thead>
+<tbody>    <tr>
+        <th id="T_340a8182_221b_11e8_a253_080027094c12level0_row0" class="row_heading level0 row0" >0</th>
+        <td id="T_340a8182_221b_11e8_a253_080027094c12row0_col0" class="data row0 col0" >uint8</td>
+        <td id="T_340a8182_221b_11e8_a253_080027094c12row0_col1" class="data row0 col1" >ByteTensor</td>
+    </tr>    <tr>
+        <th id="T_340a8182_221b_11e8_a253_080027094c12level0_row1" class="row_heading level0 row1" >1</th>
+        <td id="T_340a8182_221b_11e8_a253_080027094c12row1_col0" class="data row1 col0" >int32</td>
+        <td id="T_340a8182_221b_11e8_a253_080027094c12row1_col1" class="data row1 col1" >IntTensor</td>
+    </tr>    <tr>
+        <th id="T_340a8182_221b_11e8_a253_080027094c12level0_row2" class="row_heading level0 row2" >2</th>
+        <td id="T_340a8182_221b_11e8_a253_080027094c12row2_col0" class="data row2 col0" >int64</td>
+        <td id="T_340a8182_221b_11e8_a253_080027094c12row2_col1" class="data row2 col1" >LongTensor</td>
+    </tr>    <tr>
+        <th id="T_340a8182_221b_11e8_a253_080027094c12level0_row3" class="row_heading level0 row3" >3</th>
+        <td id="T_340a8182_221b_11e8_a253_080027094c12row3_col0" class="data row3 col0" >float32</td>
+        <td id="T_340a8182_221b_11e8_a253_080027094c12row3_col1" class="data row3 col1" >FloatTensor</td>
+    </tr>    <tr>
+        <th id="T_340a8182_221b_11e8_a253_080027094c12level0_row4" class="row_heading level0 row4" >4</th>
+        <td id="T_340a8182_221b_11e8_a253_080027094c12row4_col0" class="data row4 col0" >float</td>
+        <td id="T_340a8182_221b_11e8_a253_080027094c12row4_col1" class="data row4 col1" >DoubleTensor</td>
+    </tr>    <tr>
+        <th id="T_340a8182_221b_11e8_a253_080027094c12level0_row5" class="row_heading level0 row5" >5</th>
+        <td id="T_340a8182_221b_11e8_a253_080027094c12row5_col0" class="data row5 col0" >float64</td>
+        <td id="T_340a8182_221b_11e8_a253_080027094c12row5_col1" class="data row5 col1" >DoubleTensor</td>
+    </tr>    <tr>
+        <th id="T_340a8182_221b_11e8_a253_080027094c12level0_row6" class="row_heading level0 row6" >6</th>
+        <td id="T_340a8182_221b_11e8_a253_080027094c12row6_col0" class="data row6 col0" >float64</td>
+        <td id="T_340a8182_221b_11e8_a253_080027094c12row6_col1" class="data row6 col1" >DoubleTensor</td>
+    </tr></tbody>
+</table>
 </div>
 
 </div>
@@ -703,8 +703,8 @@ Torch Tensor:
 
 <span class="c1"># move to GPU</span>
 <span class="k">if</span> <span class="n">torch</span><span class="o">.</span><span class="n">cuda</span><span class="o">.</span><span class="n">is_available</span><span class="p">():</span>
-    <span class="n">tensor</span><span class="o">.</span><span class="n">cuda</span><span class="p">()</span> 
-    
+    <span class="n">tensor</span><span class="o">.</span><span class="n">cuda</span><span class="p">()</span>
+
 <span class="c1"># move back to CPU</span>
 <span class="n">tensor</span><span class="o">.</span><span class="n">cpu</span><span class="p">()</span>
 </pre></div>
@@ -777,7 +777,7 @@ Torch Tensor:
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Size of original array:
- torch.Size([16]) 
+ torch.Size([16])
 
 </pre>
 </div>
@@ -811,12 +811,12 @@ Torch Tensor:
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>arr.view(-1,2,4)) = 
-(0 ,.,.) = 
+<pre>arr.view(-1,2,4)) =
+(0 ,.,.) =
    0   1   2   3
    4   5   6   7
 
-(1 ,.,.) = 
+(1 ,.,.) =
    8   9  10  11
   12  13  14  15
 [torch.FloatTensor of size 2x2x4]
@@ -929,12 +929,12 @@ torch.Size([2, 4, 2])
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>a = 
+<pre>a =
  1  1
  1  1
 [torch.FloatTensor of size 2x2]
- 
-b = 
+
+b =
  2  2
  2  2
 [torch.FloatTensor of size 2x2]
@@ -970,7 +970,7 @@ b =
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>torch.add(a,b) = 
+<pre>torch.add(a,b) =
  3  3
  3  3
 [torch.FloatTensor of size 2x2]

@@ -1,6 +1,6 @@
 ---
 layout: ipynb
-title: "PyTorch Pratice 02-Variables & Gradients"
+title: "PyTorch Practice 02-Variables & Gradients"
 modified:
 categories: articles
 excerpt: ""
@@ -218,11 +218,11 @@ date: 2018-03-12
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong><code>requires_grad</code></strong> allows calculations of gradients w.r.t. the variables. <br>
-For the following equations as example &amp; a tuple with 4 components equal to 1 as input, 
+For the following equations as example &amp; a tuple with 4 components equal to 1 as input,
 $$ x = [1, 2, 3, 4] $$
 $$ y_i=5(x_i+1)^2$$
 $$z=\frac{1}{4}\sum_i(y_i)$$
-Then, substitue $y$ iinto $z$: 
+Then, substitue $y$ iinto $z$:
 $$z=\frac{1}{4}\sum_i5(x_i+1)^2$$
 For the partial deriviation:
 $$\frac{\partial z}{\partial x_i}=\frac{5}{2}(x_i+1)$$
