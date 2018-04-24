@@ -255,7 +255,7 @@ TopicShare: true
 
 ### 4.2 實作練習
 
-這裡的整理只是自己的學習紀錄，與論文導讀和Pecu老師的教學不同步，工具也不限PyTorch，不定期在[我的GitHub](https://github.com/mattwang44/PyTorch_Taipei/tree/master/PyTorch%20Tutorial){:target="_blank"}上更新
+這裡的整理只是自己的學習紀錄，與論文導讀和Pecu老師的教學不同步，工具也不限PyTorch，不定期在[我的GitHub](https://github.com/mattwang44/){:target="_blank"}上更新
 
 
 <div class="container">
@@ -294,9 +294,10 @@ TopicShare: true
           </a>
         </div>
         <div class="panel-body">
-          <a target="_blank" href="https://github.com/mattwang44/LeNet5-pure-Python">
+          <a target="_blank" href="https://github.com/mattwang44/LeNet5_from_Scratch">
             <strong> LeNet-5 Implementation with Pure Python </strong>
-            <br>不用任何自動back-prop工具實現LeNet-5，目前結果還很差XDD，運行時間長、分類正確率極低
+            <br>   不用任何自動back-prop工具實現LeNet-5，20 epoches 訓練 (3.5小時 with CPU)，準確率98.6%。
+            <br>   <img src="../../images/DL/implementLeNet5.jpg" width="750" />
           </a>
         </div>
       </div>
