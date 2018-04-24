@@ -47,16 +47,16 @@ TopicShare: true
 <!-- <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css"> -->
 <div class="w3-row">
-  <div class="w3-third w3-container">
+  <div class="w3-quarter w3-container">
     <p><img src="../../images/icons/gd.png" alt="" /> <a href="https://drive.google.com/open?id=1TEvJKCYWf80W8OmeGgNzq0KnPL1LCVtO" target="_blank">全部論文下載</a><br>
     <img src="../../images/icons/gds.png" alt="" /> <a href="https://docs.google.com/spreadsheets/d/1_ZNL7JKUm_vbd3WrhixOaCS095S7aNBPL4UGWBDkG2A/edit?usp=sharing" target="_blank">每周講者列表</a></p>
   </div>
-  <div class="w3-third w3-container">
+  <div class="w3-quarter w3-container">
     <p><img src="../../images/icons/paper.png" alt="" />: 論文PDF<br>
     <img src="../../images/icons/mt.png" alt="" />: 講者之講解材料<br>
     <img src="../../images/icons/video.png" alt="" />: 論文講解影片連結</p>
   </div>
-  <div class="w3-third w3-container">
+  <div class="w3-quarter w3-container">
     <p><img src="../../images/icons/coding.png" alt="" />: 論文官方程式或Demo資料<br>
     <img src="../../images/icons/pytorch.png" alt="" />: PyTorch範例程式<br>
     <img src="../../images/icons/video_t.png" alt="" />: PyTorch講解影片連結</p>
@@ -67,13 +67,13 @@ TopicShare: true
 
 |      | CNN               |                                                                                                                                                                                                    |      | Pre-R-CNN |                                                                                              |      | R-CNN        |                                   
 | ----:|:-----------------:| -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----:|:---------:| -------------------------------------------------------------------------------------------- | ----:|:------------:| -------------------------------------------------------------------------------------------
-| 3/08 |  LeNet            | [![][p]][1]{:target="_blank"} [![][m]][20]{:target="_blank"} [![][v]][100]{:target="_blank"}<br> [![][c]][c1]{:target="_blank"}                                                                    | 4/26 | PreVGG    | [![][p]][8]{:target="_blank"}  [      ][29]{:target="_blank"} [      ][93]{:target="_blank"} | 6/07 | R-CNN        | [![][p]][14]{:target="_blank"} [      ][35]{:target="_blank"} [      ][87]{:target="_blank"}
-| 3/08 | AlexNet           | [![][p]][2]{:target="_blank"} [![][m]][21]{:target="_blank"} [![][v]][99]{:target="_blank"} <br> [![][t]][t1]{:target="_blank"} [![][vt]][vt1]{:target="_blank"}                                   | 5/03 | SVM       | [![][p]][9]{:target="_blank"}  [      ][30]{:target="_blank"} [      ][92]{:target="_blank"} | 6/14 | SPPNet       | [![][p]][15]{:target="_blank"} [      ][36]{:target="_blank"} [      ][86]{:target="_blank"}
-| 3/15 | ZFNet             | [![][p]][3]{:target="_blank"} [![][m]][22]{:target="_blank"} [![][v]][98]{:target="_blank"}                                                                                                        | 5/10 | SMO       | [![][p]][10]{:target="_blank"} [      ][31]{:target="_blank"} [      ][91]{:target="_blank"} | 6/21 | Fast R-CNN   | [![][p]][16]{:target="_blank"} [      ][37]{:target="_blank"} [      ][85]{:target="_blank"}
-| 3/22 | NIN               | [![][p]][4]{:target="_blank"} [![][m]][23]{:target="_blank"} [![][v]][97]{:target="_blank"}                                                                                                        | 5/17 | DPM       | [![][p]][11]{:target="_blank"} [      ][32]{:target="_blank"} [      ][90]{:target="_blank"} | 6/28 | Faster R-CNN | [![][p]][17]{:target="_blank"} [      ][38]{:target="_blank"} [      ][84]{:target="_blank"}
-| 3/29 | GoogLeNet         | [![][p]][5]{:target="_blank"} [![][m]][26]{:target="_blank"} [![][v]][96]{:target="_blank"}                                                                                                        | 5/24 | SS        | [![][p]][12]{:target="_blank"} [      ][33]{:target="_blank"} [      ][89]{:target="_blank"} | 7/05 | YOLO v1      | [![][p]][18]{:target="_blank"} [      ][39]{:target="_blank"} [      ][83]{:target="_blank"} [![][c]][Yv1]{:target="_blank"}
-| 4/12 | VGGNet<br>ResNet  | [![][p]][6]{:target="_blank"} [![][m]][27]{:target="_blank"} [![][v]][95]{:target="_blank"}<br> [![][p]][6.5]{:target="_blank"} [![][t]][tres]{:target="_blank"} [![][vt]][vres]{:target="_blank"} | 5/31 | FCN       | [![][p]][13]{:target="_blank"} [      ][34]{:target="_blank"} [      ][88]{:target="_blank"} | 7/12 | SSD          | [![][p]][19]{:target="_blank"} [      ][40]{:target="_blank"} [      ][82]{:target="_blank"} [![][c]][cssd]{:target="_blank"}
-| 4/19 | SqueezeNet        | [![][p]][7]{:target="_blank"} [      ][28]{:target="_blank"} [![][v]][94]{:target="_blank"}      [![][c]][sqc]{:target="_blank"}                                                                   |      |           |                                                                                              | 另訂 | YOLO v2&v3   | v2[ ![][p]][24]{:target="_blank"} [![][c]][Yv2]{:target="_blank"}<br> v3[ ![][p]][25]{:target="_blank"}  [![][c]][Yv3]{:target="_blank"}
+| 3/08 | LeNet             | [![][p]][1]{:target="_blank"} [![][m]][20]{:target="_blank"} [![][v]][100]{:target="_blank"}<br> [![][c]][c1]{:target="_blank"}                                                                    | 4/26 | PreVGG    | [![][p]][8]{:target="_blank"}  [      ][29]{:target="_blank"} [      ][93]{:target="_blank"} | 6/14 | R-CNN        | [![][p]][14]{:target="_blank"} [      ][35]{:target="_blank"} [      ][87]{:target="_blank"}
+| 3/08 | AlexNet           | [![][p]][2]{:target="_blank"} [![][m]][21]{:target="_blank"} [![][v]][99]{:target="_blank"} <br> [![][t]][t1]{:target="_blank"} [![][vt]][vt1]{:target="_blank"}                                   | 5/03 | SVM       | [![][p]][9]{:target="_blank"}  [      ][30]{:target="_blank"} [      ][92]{:target="_blank"} | 6/21 | SPPNet       | [![][p]][15]{:target="_blank"} [      ][36]{:target="_blank"} [      ][86]{:target="_blank"}
+| 3/15 | ZFNet             | [![][p]][3]{:target="_blank"} [![][m]][22]{:target="_blank"} [![][v]][98]{:target="_blank"}                                                                                                        | 5/10 | 暫停一次  |                                                                                              | 6/28 | Fast R-CNN   | [![][p]][16]{:target="_blank"} [      ][37]{:target="_blank"} [      ][85]{:target="_blank"}
+| 3/22 | NIN               | [![][p]][4]{:target="_blank"} [![][m]][23]{:target="_blank"} [![][v]][97]{:target="_blank"}                                                                                                        | 5/17 | SMO       | [![][p]][10]{:target="_blank"} [      ][31]{:target="_blank"} [      ][91]{:target="_blank"} | 7/05 | Faster R-CNN | [![][p]][17]{:target="_blank"} [      ][38]{:target="_blank"} [      ][84]{:target="_blank"}
+| 3/29 | GoogLeNet         | [![][p]][5]{:target="_blank"} [![][m]][26]{:target="_blank"} [![][v]][96]{:target="_blank"}                                                                                                        | 5/24 | DPM       | [![][p]][11]{:target="_blank"} [      ][32]{:target="_blank"} [      ][90]{:target="_blank"} | 7/12 | YOLO v1      | [![][p]][18]{:target="_blank"} [      ][39]{:target="_blank"} [      ][83]{:target="_blank"} [![][c]][Yv1]{:target="_blank"}
+| 4/12 | VGGNet<br>ResNet  | [![][p]][6]{:target="_blank"} [![][m]][27]{:target="_blank"} [![][v]][95]{:target="_blank"}<br> [![][p]][6.5]{:target="_blank"} [![][t]][tres]{:target="_blank"} [![][vt]][vres]{:target="_blank"} | 5/31 | SS        | [![][p]][12]{:target="_blank"} [      ][33]{:target="_blank"} [      ][89]{:target="_blank"} | 7/19 | SSD          | [![][p]][19]{:target="_blank"} [      ][40]{:target="_blank"} [      ][82]{:target="_blank"} [![][c]][cssd]{:target="_blank"}
+| 4/19 | SqueezeNet        | [![][p]][7]{:target="_blank"} [![][m]][28]{:target="_blank"} [![][v]][94]{:target="_blank"}<br> [![][c]][sqc]{:target="_blank"}                                                                    | 6/07 | FCN       | [![][p]][13]{:target="_blank"} [      ][34]{:target="_blank"} [      ][88]{:target="_blank"} | 另訂 | YOLO v2&v3   | v2[ ![][p]][24]{:target="_blank"} [![][c]][Yv2]{:target="_blank"}<br> v3[ ![][p]][25]{:target="_blank"}  [![][c]][Yv3]{:target="_blank"}
 
 [p]: ../../images/icons/paper.png
 [c]: ../../images/icons/coding.png
@@ -122,7 +122,7 @@ TopicShare: true
 
 <!-- SqueezeNet -->
 [7]: https://arxiv.org/pdf/1602.07360.pdf
-[28]: ...
+[28]: https://docs.google.com/presentation/d/168-z3psekR4FnJWVV6IMaEyBR9RMvWjHtD9BPHvzKtI/edit#slide=id.g384c0c5446_0_334
 [94]: https://www.youtube.com/watch?v=LI2WDTAslbY
 [sqc]: https://github.com/DeepScale/SqueezeNet
 
