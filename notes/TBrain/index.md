@@ -11,6 +11,10 @@ description: "IT IS A SECRET"
 TopicShare: true
 ---
 
+{% include toc.html %}
+
+## TBrain
+
 [T-Brain比賽資訊](https://tbrain.trendmicro.com.tw/Competitions/Details/2){:target="_blank"}<br>
 [T-Brain比賽討論](https://tbrain.trendmicro.com.tw/Discussion/Forum_3){:target="_blank"}
 
@@ -66,16 +70,17 @@ TopicShare: true
 3. 日韓經濟指數
 4. 匯率
 5. 各大權值股
-6. 把 "世界各市場指數"   加上"對各市場(國)的匯率"
+6. 把 "世界各市場指數" 加上 "對各市場(國)的匯率"
 7. 國外ADR
 8. 參考反指標
+9. RSI乖離率跟MA均線可以用，官方給的成交量可以用，還有法人的買賣超/成交量or 買賣超占成交量的比重
 
-### 4/25開會標的
+## 4/25開會標的
 
 1. 研究未來co-work(coding) 平台？
 2. 針對幾個目標(模型) or 興趣分組去測試
 
-## regression
+### regression
 (Try by Max Cian)
 <br>calculate MSE with Y_train and Yp_train:  7.224495810008536e-05
 <br>calculate MSE with Y_test and Yp_test:  9.341841968634554e-05
@@ -90,15 +95,12 @@ TopicShare: true
 我的想法是，訓練5個模型，分別預測週一~週五的漲幅，漲幅基準線是前一週五為止的資料，回顧可能7個"交易日"或14日或30日，
 就是我[上面圖中](../../images/T/OLHC.png)的1~n天
 
-## LSTM
+### LSTM
 
-[try by 林家豪)]: 把前七天、每天的五樣raw data擺進特徵向量中，總共35個特徵，(假設沒考慮其他標的的話)，如果考慮其他標的對它的影響就是35*N個標的，但結果沒收斂
+[try by 林家豪]: 把前七天、每天的五樣raw data擺進特徵向量中，總共35個特徵，(假設沒考慮其他標的的話)，如果考慮其他標的對它的影響就是35*N個標的，但結果沒收斂
 <br>[try by Sophia Lien]: LSTM 預測下一天(data好像事先放股票類股指數的數據)，Test Score: 0.00021671 MSE
 
-## LSTM regression
-
-
-## 特徵
+### 特徵
 
 OLHC → raw data變成改變量 (Try by Max Cian, Sophia Lien)
 
@@ -107,10 +109,12 @@ OLHC → raw data變成改變量 (Try by Max Cian, Sophia Lien)
 我的切入點是  過去許多天的各項數值的變化  會影響今天的變化 試圖捕捉的特徵  應該跟MA均線或是RSI類似?
 但因為目標也是變化量(±1之間的連續值)  所以只能用regression來做?
 
-
-
 [可朝兩方向]
 
 1. 大量時間著重在特徵工程:
    * 著重在特徵是否具有足夠的描述性或解釋性
 2. 單純用LSTM暴力去姐 想不同架構
+
+### 合作方式
+
+暫定分兩小組: LSTM黑暗魔法暴力解組、Regression特徵工程系新解組
