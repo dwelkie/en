@@ -1,16 +1,31 @@
+---
+layout: topic
+title: "TBrain StudyGroup Discussion Record"
+date: 2018-02-28
+modified: 2018-04-17
+tags:
+image:
+  feature: brainbanner.png
+fbcomments: yes
+description: "IT IS A SECRET"
+TopicShare: true
+---
 
 [T-Brain比賽資訊](https://tbrain.trendmicro.com.tw/Competitions/Details/2)
+[T-Brain比賽討論](https://tbrain.trendmicro.com.tw/Discussion/Forum_3)
 
-## 基礎 RNN 學習資源(線上課程)
+### 基礎 RNN 學習資源()
+
+#### 線上課程
 
 1. [台大電機李宏毅教授](https://www.youtube.com/watch?v=xCGidAeyS4M&list=PLJV_el3uVTsPy9oCRY30oBPNLCo89yu49&index=30){:target="_blank"}
 2. [吳恩達線上課程](https://www.youtube.com/playlist?list=PLBAGcD3siRDittPwQDGIIAWkjz-RucAc7){:target="_blank"}
 3. [Standford CS231n](https://www.youtube.com/watch?v=iX5V1WpxxkY){:target="_blank"}
 
-## 推薦書籍
+#### 推薦書籍
 
 1. [Deep Learning｜用Python進行深度學習的基礎理論實作 ](https://www.tenlong.com.tw/products/9789864764846){:target="_blank"}
-2.
+
 
 
 ## 名詞解釋
@@ -31,6 +46,7 @@
 
 1. [PTT Stock](https://www.ptt.cc/man/Stock/index.html)
 2. [PTT Foreign_Inv](https://www.ptt.cc/man/Foreign_Inv/index.html)
+
 
 
 定義特徵的部分  我初步的想法是蒐集全球一些較知名的指數、覺得會影響台股狀況的標的，例如  VT(全球股市基金ETF)  VTI(美國股市基金ETF)

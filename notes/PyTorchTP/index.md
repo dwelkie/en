@@ -261,7 +261,22 @@ TopicShare: true
 <div class="container">
 
   <div class="panel-group">
-    <div class="panel panel-default">
+    <div class="panel panel-default">      
+
+      <div class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" href="#collapse0"> ML/DL Fundamentals</a>
+            </h4>
+          </div>
+          <div id="collapse0" class="panel-collapse collapse">
+            <div class="panel-body">
+            <a target="_blank" href="https://github.com/mattwang44/ML-DL-practice/tree/master/MLP_backprop_MATLAB">
+              <strong>MLP on Iris Dataset Using MATLAB </strong>
+              <br>用MATLAB手刻兩層隱藏層的MLP(多層感知器)，以Iris資料集中的三個特徵(原資料集有四個)訓練，準確率98%
+            </a>
+            </div>
+          </div>
+
       <div class="panel-heading">
         <h4 class="panel-title">
           <a data-toggle="collapse" href="#collapse1">PyTorch Fundamentals</a>
@@ -295,7 +310,7 @@ TopicShare: true
         </div>
         <div class="panel-body">
           <a target="_blank" href="https://github.com/mattwang44/LeNet5_from_Scratch">
-            <strong> LeNet-5 Implementation with Pure Python </strong>
+            <strong> LeNet-5 Implementation SCRATCH </strong>
             <br>   不用任何自動back-prop工具實現LeNet-5，20 epoches 訓練 (3.5小時 with CPU)，準確率98.6%。
             <br>   <img src="../../images/DL/implementLeNet5.jpg" width="750" />
           </a>

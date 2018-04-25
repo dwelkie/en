@@ -18,10 +18,7 @@ fbcomments: yes
 
 ---
 
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
-
+<link rel="stylesheet" href="./custom.css">
 {% include toc.html %}
 <!--
 <div class="w3-row-padding w3-center w3-margin-top">
@@ -87,7 +84,7 @@ A SLAM robot that can receive commands by gestures or voices. I mainly responsib
 
 A robot arm that can achieve the location of the body segments using Kinect SDK and OpenCV. A user interface is made by C#.
 
-<img src="../images/project/Kinect2.gif" width="420px" />
+<img src="../images/project/kinect2.gif" width="420px" />
 
 ## Automatic Tuner of Guitar using Renesas RX210
 
