@@ -92,8 +92,8 @@ TopicShare: true
 
 ## LSTM
 
-(try by 林家豪): 把前七天、每天的五樣raw data擺進特徵向量中，總共35個特徵，(假設沒考慮其他標的的話)，如果考慮其他標的對它的影響就是35*N個標的，但結果沒收斂
-<br>(try by Sophia Lien): LSTM 預測下一天(data好像事先放股票類股指數的數據)，Test Score: 0.00021671 MSE
+[try by 林家豪)]: 把前七天、每天的五樣raw data擺進特徵向量中，總共35個特徵，(假設沒考慮其他標的的話)，如果考慮其他標的對它的影響就是35*N個標的，但結果沒收斂
+<br>[try by Sophia Lien]: LSTM 預測下一天(data好像事先放股票類股指數的數據)，Test Score: 0.00021671 MSE
 
 ## LSTM regression
 
