@@ -10,7 +10,8 @@ image:
   teaser: DL/SFST9.gif
   thumb: DL/SFST9.gif
 date: 2018-03-11
-comments: true
+fbcomments: yes
+description: "簡介基本CNN架構中包含哪些程序 @ Wei-Hsiang Wang's Website"
 ---
 <script type="text/x-mathjax-config">
   MathJax.Hub.Config({
@@ -51,7 +52,7 @@ comments: true
 </ul>
 </li>
 </ul>
-<p><img src="/images/DL/input .jpg"></p>
+<p align="center"><img src="../../images/DL/input .jpg"></p>
 
 </div>
 </div>
@@ -158,14 +159,14 @@ Shape of doge_gray = (1, 540, 959, 1)
 <li>大小為$f×f×n_C$的矩陣，$f$為filter邊長(通常為奇數)，$n_C$為輸入圖形的channel數量。</li>
 <li>$f$和該卷積層之filter個數$n_f$為該層之超參數(hyperparameters)</li>
 <li>filter矩陣中的每個component都是可被訓練的參數。
-<img src="/images/DL/filter1.jpg"></li>
+<p align="center"><img src="/images/DL/filter1.jpg"></p></li>
 </ul>
 <h3 id="2.2-Convlution">2.2 Convlution<a class="anchor-link" href="#2.2-Convlution">&#182;</a></h3><ul>
 <li>卷積運算: 在輸入圖形上擷取和filter相同大小一張圖形片段，和filter作內積會得到新圖形的一個pixel值，直到將掃過輸入圖形每個地方</li>
 <li>這裡展示一個有明顯分界線的$5×5×1$輸入圖形對大小為$3×3$的<strong>水平線濾波器</strong>做卷積 (可以在卷積結果圖中發現水平線被抽取出來了)</li>
-<li>CNN架構便是透過多層卷積層的訓練，逐漸抽取出重要的特徵 (e.g.: 在人臉辨識應用當中可能會抽取出五官或是整個臉部)。</li>
+<li>CNN架構便是透過多層卷積層的訓練，逐漸調整各個濾波器，直到抽取出正確的特徵 (e.g.: 在人臉辨識應用當中可能會抽取出五官或是整個臉部)。</li>
 <li>關於特徵抽取的細節可參考<a href="https://en.wikipedia.org/wiki/Sobel_operator">Sobel Operator@Wikipedia</a>
-<img src="/images/DL/edge_detect.gif">
+<p align="center"><img src="/images/DL/edge_detect.gif"></p>
 P.S.: 如同機器學習中的$y = wx+b$公式，通常做完卷積後還會加上一個可訓練偏差值$b$。</li>
 </ul>
 <p>以下是用程式示範將5x5的垂直和水平濾波器運用在灰階doge圖片上:</p>
@@ -276,7 +277,7 @@ P.S.: 如同機器學習中的$y = wx+b$公式，通常做完卷積後還會加�
  [ 1  1  1  1  1]
  [ 0  0  0  0  0]
  [-1 -1 -1 -1 -1]
- [-2 -2 -2 -2 -2]] 
+ [-2 -2 -2 -2 -2]]
 
 垂直線Filter為:
  [[ 2  1  0 -1 -2]
@@ -329,8 +330,8 @@ P.S.: 如同機器學習中的$y = wx+b$公式，通常做完卷積後還會加�
 <li>目的: 減少該層卷積層輸出圖形的高和寬，即減少下一層之可訓練參數 ($stride$越大，輸出圖形越小)</li>
 <li>e.g.: 當輸入圖形大小為$5×5$，filter大小為$3×3$，若是作一般卷積($stride=1$)則輸出圖形為$3×3$，但若$stride=2$則輸出圖形為$2×2$</li>
 </ul>
-<p><img src="http://deeplearning.net/software/theano/_images/no_padding_strides.gif"></p>
-<p>(圖片來源: <a href="http://deeplearning.net/software/theano/tutorial/conv_arithmetic.html">Theano官方說明</a>)</p>
+<p align="center"><img src="http://deeplearning.net/software/theano/_images/no_padding_strides.gif"></p>
+<p align="center">(圖片來源: <a href="http://deeplearning.net/software/theano/tutorial/conv_arithmetic.html">Theano官方說明</a>)</p>
 
 </div>
 </div>
@@ -457,7 +458,7 @@ P.S.: 如同機器學習中的$y = wx+b$公式，通常做完卷積後還會加�
 </li>
 <li><p>過去研究亦有提出過方陣範圍重疊的Overlapping Pooling，但效果並不佳，目前大多使用pooling範圍不重疊的方式(如下圖)<p>
 
-<p><img src="/images/DL/pooling.jpg"><p></li>
+<p><img src="../../images/DL/pooling.jpg"><p></li>
 </ul>
 
 </div>
@@ -504,5 +505,3 @@ $$ n_C' = n_f $$</li>
 </div>
 </div>
 </div>
- 
-
