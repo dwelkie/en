@@ -49,7 +49,7 @@ TopicShare: true
 <div class="w3-row">
   <div class="w3-quarter w3-container">
     <p><img src="../../images/icons/gd.png" alt="" /> <a href="https://drive.google.com/open?id=1TEvJKCYWf80W8OmeGgNzq0KnPL1LCVtO" target="_blank">全部論文下載</a><br>
-    <img src="../../images/icons/gds.png" alt="" /> <a href="https://docs.google.com/spreadsheets/d/1_ZNL7JKUm_vbd3WrhixOaCS095S7aNBPL4UGWBDkG2A/edit?usp=sharing" target="_blank">每周講者列表</a></p>
+    <img src="../../images/icons/gds.png" alt="" /> <a href="https://docs.google.com/spreadsheets/d/1_ZNL7JKUm_vbd3WrhixOaCS095S7aNBPL4UGWBDkG2A/edit?usp=sharing" target="_blank">每周講者列表</a><br><img src="../../images/icons/youtube.png" alt="" /> <a href="https://www.youtube.com/channel/UCk_f2g9Dkc4WaqrqpzxywJw" target="_blank">PyTorchTP</a></p>
   </div>
   <div class="w3-quarter w3-container">
     <p><img src="../../images/icons/paper.png" alt="" />: 論文PDF<br>
@@ -57,9 +57,9 @@ TopicShare: true
     <img src="../../images/icons/video.png" alt="" />: 論文講解影片連結</p>
   </div>
   <div class="w3-quarter w3-container">
-    <p><img src="../../images/icons/coding.png" alt="" />: 論文官方程式或Demo資料<br>
+    <p><img src="../../images/icons/coding.png" alt="" />: 官方程式/Demo<br>
     <img src="../../images/icons/pytorch.png" alt="" />: PyTorch範例程式<br>
-    <img src="../../images/icons/video_t.png" alt="" />: PyTorch講解影片連結</p>
+    <img src="../../images/icons/video_t.png" alt="" />: PyTorch講解影片</p>
   </div>
 </div>
 

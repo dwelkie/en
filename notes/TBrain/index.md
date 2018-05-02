@@ -118,3 +118,20 @@ OLHC → raw data變成改變量 (Try by Max Cian, Sophia Lien)
 ### 合作方式
 
 暫定分兩小組: LSTM黑暗魔法暴力解組、Regression特徵工程系新解組
+
+
+### 4/29
+
+漲幅變化率做input: 每項feature在同一標準下正規化之後可以比較
+
+regression高頻交易: 特徵選擇花較多時間、工作重視速度所以無法用LSTM
+
+找影響短期投資客心理的指標
+
+ARIMA tutorial:
+
+1. [ARIMA model](https://people.duke.edu/~rnau/411arim2.htm)
+1. [The Autocorrelation Function](https://www.alanzucconi.com/2016/06/06/autocorrelation-function/)
+2. [銷售量預測 -- LSTM 的另一個應用](https://ithelp.ithome.com.tw/articles/10195400?sc=iThelpR)
+
+[LSTM 實作股價預測](https://www.finlab.tw/用深度學習幫你解析K線圖！/)
