@@ -13,6 +13,25 @@ TopicShare: true
 
 {% include toc.html %}
 
+1. TBrain 比賽資訊
+2. 學習資源
+  * Sequnce Model
+  * 金融交易學習資源
+3. 模型資訊:
+  * LSTM
+  * Regression
+4.
+
+
+
+
+
+
+
+
+
+
+
 ## TBrain
 
 [T-Brain比賽資訊](https://tbrain.trendmicro.com.tw/Competitions/Details/2){:target="_blank"}<br>
@@ -135,3 +154,10 @@ ARIMA tutorial:
 2. [銷售量預測 -- LSTM 的另一個應用](https://ithelp.ithome.com.tw/articles/10195400?sc=iThelpR)
 
 [LSTM 實作股價預測](https://www.finlab.tw/用深度學習幫你解析K線圖！/)
+
+
+
+
+
+
+5/3 @NTU普通
