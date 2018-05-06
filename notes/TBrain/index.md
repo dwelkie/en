@@ -27,8 +27,7 @@ TopicShare: true
 7. Dataset
   * [載點 (至少五年)](https://drive.google.com/open?id=1uEcnzjMrehnYUqVAjavUhmRUcOw8SDyv){:target="_blank"}
   * [ETF分類&重要指標 (thx to Jesse & Winny!)](./rec.jpg){:target="_blank"}
-
-### 檔案名稱與指標對照表
+  * 檔案名稱與指標對照如下表
 
 | 檔案名稱  | 指標名稱 | 來源|
 |----------|---------|-----|
