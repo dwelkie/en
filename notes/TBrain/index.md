@@ -7,7 +7,7 @@ tags:
 image:
   feature: brainbanner.png
 fbcomments: yes
-description: "IT IS A SECRET"
+description: "IT IS A SECRET PAGE!"
 TopicShare: true
 ---
 
