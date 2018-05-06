@@ -16,7 +16,7 @@ TopicShare: true
 3. 模型資訊:
   * [LSTM](./LSTM){:target="_blank"}
   * [Regression](./Reg){:target="_blank"}
-  * [參考論文$讀書會資料](https://drive.google.com/drive/folders/1FV9oZKuYcQo2NWabh0yNgXgkFKMttkhI?usp=sharing){:target="_blank"}
+  * [參考論文&讀書會資料](https://drive.google.com/drive/folders/1FV9oZKuYcQo2NWabh0yNgXgkFKMttkhI?usp=sharing){:target="_blank"}
 4. [GitLab](https://gitlab.com/tbrain-study/){:target="_blank"}
   * [評分函式](https://gitlab.com/tbrain-study/RatingFunctions_WHWang){:target="_blank"}
 5. [FB社團](https://www.facebook.com/groups/2088733444739908/){:target="_blank"}
