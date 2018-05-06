@@ -30,5 +30,5 @@ TopicShare: true
   * [scholarpedia.org](http://www.scholarpedia.org/article/Echo_state_network){:target="_blank"}
 2. [相關論文](https://drive.google.com/drive/folders/1CJ-Xlvt_SSVQ2rAApv6U_5Ogfqaj-PtN?usp=sharing){:target="_blank"}
 
-3. 程式
+3. 其他工具
   * [pyESN](https://github.com/cknd/pyESN){:target="_blank"}
