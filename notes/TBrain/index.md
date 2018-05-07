@@ -24,6 +24,7 @@ TopicShare: true
   * [TA-lib](https://github.com/mrjbq7/ta-lib){:target="_blank"}, [Tulipy](https://github.com/cirla/tulipy){:target="_blank"}, [(看起來很難用的)元大SmartAPI](http://www.yuantafutures.com.tw/pages/static-pages/service_future/product1_7.aspx?Node=65af4d99-3e51-4d4d-8802-ad5d9178187e&Show=LIST){:target="_blank"}
 7. Dataset
   * [歷史資料(至少五年)下載 ](https://drive.google.com/open?id=1uEcnzjMrehnYUqVAjavUhmRUcOw8SDyv){:target="_blank"}
+  * 或直接用載點裡的`all_features.csv`，集結幾乎所有資料並以每日日期排列
   * [ETF分類&重要指標](./rec.jpg){:target="_blank"} (thx to Jesse & Winny!)
   * 檔案名稱與指標對照如下表
 
@@ -38,4 +39,4 @@ TopicShare: true
 | ZTFA.csv | 金融期 | Jesse |
 | ZTXA.csv | 台指期 | Jesse |
 | JurP.csv | 台股大盤三項指標(買賣超) | Jesse |
-| TBrain資料夾 | TBrain提供之訓練集 | Tbrain |
+| TBrain資料夾 | TBrain提供之訓練集 | TBrain |
