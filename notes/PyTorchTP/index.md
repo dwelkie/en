@@ -211,7 +211,7 @@ TopicShare: true
 
 |   |  PyTorch Basic  |         |   |  Sequence Model   |         |   |  其他  |         |
 |--:|:------:|---|--:|:------:|---|--:|:------:|---|
-| 3/8 | PyTorch Basic | [![][t]][PTBt]{:target="_blank"}   | 3/29 | RNN     | [![][t]][RNNt]{:target="_blank"}[![][vt]][RNNv]{:target="_blank"}  | 4/26 | Automated_Reasoning |[![][t]][AtRt]{:target="_blank"} [![][vt]][AtRv]{:target="_blank"}
+| 3/8 | PyTorch Basic | [![][t]][PTBt]{:target="_blank"}   | 3/29 | RNN     | [![][t]][RNNt]{:target="_blank"}[![][vt]][RNNv]{:target="_blank"}  | 4/26 | Automated<br>Reasoning |[![][t]][AtRt]{:target="_blank"} [![][vt]][AtRv]{:target="_blank"}
 | 3/15 | PyTorch Example | [![][t]][Pext]{:target="_blank"} [![][vt]][Pexv]{:target="_blank"}   | 4/19 | NLP     | [![][t]][NLPt]{:target="_blank"} [![][vt]][NLPv]{:target="_blank"}   | 5/3  | RL (DQN)            |[![][t]][DQNt]{:target="_blank"}
 |  |  |  | 4/26  | Seq2seq | [![][t]][s2st]{:target="_blank"} [![][vt]][s2sv]{:target="_blank"}
 
