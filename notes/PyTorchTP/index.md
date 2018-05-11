@@ -139,42 +139,52 @@ TopicShare: true
 <!-- SMO -->
 [10]: https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/tr-98-14.pdf
 [91]: https://youtu.be/
+[31]: ....
 
 <!-- DPM -->
 [11]: https://cs.brown.edu/~pff/papers/lsvm-pami.pdf
 [90]: https://youtu.be/
+[32]: ....
 
 <!-- SS -->
 [12]: https://ivi.fnwi.uva.nl/isis/publications/2013/UijlingsIJCV2013/UijlingsIJCV2013.pdf
 [89]: https://youtu.be/
+[33]: ....
 
 <!-- FCN -->
 [13]: https://www.cv-foundation.org/openaccess/content_cvpr_2015/app/2B_011.pdf
 [88]: https://youtu.be/
+[34]: ....
 
 <!-- R-CNN -->
 [14]: https://www.cv-foundation.org/openaccess/content_cvpr_2014/papers/Girshick_Rich_Feature_Hierarchies_2014_CVPR_paper.pdf?spm=5176.100239.blogcont55892.8.pm8zm1&file=Girshick_Rich_Feature_Hierarchies_2014_CVPR_paper.pdf
 [87]: https://youtu.be/
+[35]: ....
 
 <!-- SPPNet -->
 [15]: https://arxiv.org/pdf/1406.4729.pdf
 [86]: https://youtu.be/
+[36]: ....
 
 <!-- Fast -->
 [16]: http://openaccess.thecvf.com/content_iccv_2015/papers/Girshick_Fast_R-CNN_ICCV_2015_paper.pdf
 [85]: https://youtu.be/
+[37]: ....
 
 <!-- Faster -->
 [17]: http://papers.nips.cc/paper/5638-faster-r-cnn-towards-real-time-object-detection-with-region-proposal-networks.pdf
 [84]: https://youtu.be/
+[38]: ....
 
 <!-- SSD -->
 [19]: https://arxiv.org/pdf/1512.02325.pdf
 [cssd]: https://github.com/weiliu89/caffe/tree/ssd
 [82]: https://youtu.be/
+[40]: ....
 
 <!-- YOLO -->
 <!-- v1 -->
+[39]: ....
 [Yv1]: https://pjreddie.com/darknet/yolov1/
 [83]: https://youtu.be/
 [18]: https://www.cv-foundation.org/openaccess/content_cvpr_2016/papers/Redmon_You_Only_Look_CVPR_2016_paper.pdf
