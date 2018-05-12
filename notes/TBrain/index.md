@@ -38,5 +38,5 @@ TopicShare: true
 | ZTEA.csv | 電子期 | Jesse & [期貨交易所](http://www.taifex.com.tw/chinese/3/3_1_1.asp){:target="_blank"} |
 | ZTFA.csv | 金融期 | Jesse & [期貨交易所](http://www.taifex.com.tw/chinese/3/3_1_1.asp){:target="_blank"} |
 | ZTXA.csv | 台指期 | Jesse & [期貨交易所](http://www.taifex.com.tw/chinese/3/3_1_1.asp){:target="_blank"} |
-| JurP.csv | 台股大盤三項指標(買賣超) | Jesse |
+| JurP.csv | 台股大盤三大法人買賣超金額 | Jesse & [證券交易所](http://www.twse.com.tw/zh/page/trading/fund/BFI82U.html){:target="_blank"}  |
 | TBrain資料夾 | TBrain提供之訓練集 | TBrain |
