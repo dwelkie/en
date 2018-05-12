@@ -32,11 +32,11 @@ TopicShare: true
 |----------|---------|-----|
 | GOLD.csv | 黃金價格 | [investing.com](https://www.investing.com/commodities/gold-historical-data){:target="_blank"}|
 | USD_TWD.csv |美元對台幣匯率 | [investing.com](https://www.investing.com/currencies/usd-twd-historical-data){:target="_blank"}|
-| S&P500.csv | S&P500 | [Yahoo](https://finance.yahoo.com/quote/%5EGSPC/history?p=^GSPC){:target="_blank"}|
-| NASDAQ.csv | NASDAQ | [Yahoo](https://finance.yahoo.com/quote/NDAQ?p=NDAQ){:target="_blank"}|
-| PHLX.csv | 費城半導體 | [Yahoo](https://finance.yahoo.com/quote/NDAQ?p=NDAQ){:target="_blank"}|
-| ZTEA.csv | 電子期 | Jesse |
-| ZTFA.csv | 金融期 | Jesse |
-| ZTXA.csv | 台指期 | Jesse |
+| SP500.csv | S&P500 | [Yahoo](https://finance.yahoo.com/quote/%5EGSPC/history?p=^GSPC){:target="_blank"}|
+| NASDAQ.csv | NASDAQ | [Yahoo](https://finance.yahoo.com/quote/%5EIXIC/history?p=%5EIXIC){:target="_blank"}|
+| PHLX.csv | 費城半導體 | [Yahoo](https://finance.yahoo.com/quote/%5ESOX/history?p=%5ESOX){:target="_blank"}|
+| ZTEA.csv | 電子期 | Jesse & [期貨交易所](http://www.taifex.com.tw/chinese/3/3_1_1.asp){:target="_blank"} |
+| ZTFA.csv | 金融期 | Jesse & [期貨交易所](http://www.taifex.com.tw/chinese/3/3_1_1.asp){:target="_blank"} |
+| ZTXA.csv | 台指期 | Jesse & [期貨交易所](http://www.taifex.com.tw/chinese/3/3_1_1.asp){:target="_blank"} |
 | JurP.csv | 台股大盤三項指標(買賣超) | Jesse |
 | TBrain資料夾 | TBrain提供之訓練集 | TBrain |
