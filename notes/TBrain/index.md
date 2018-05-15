@@ -40,8 +40,8 @@ TopicShare: true
 | ZTXA.csv | 台指期 | Jesse & [期貨交易所](http://www.taifex.com.tw/chinese/3/3_1_1.asp){:target="_blank"} |
 | JurP.csv | 台股大盤三大法人買賣超金額 | Jesse & [證券交易所](http://www.twse.com.tw/zh/page/trading/fund/BFI82U.html){:target="_blank"}  |
 | TBrain資料夾 | TBrain提供之訓練集 | TBrain |
-| Nikkei.csv | 日經平均指數 | [Yahoo](https://finance.yahoo.com/quote/7DTX.SW/history?p=7DTX.SW){:target="_blank"}|
+| Nikkei.csv | 日經平均指數 | [Yahoo](https://finance.yahoo.com/quote/%5EN225/history?p=%5EN225){:target="_blank"}|
 | HSI.csv | 香港恆生指數 | [Yahoo](https://finance.yahoo.com/quote/%5EHSI/history?p=%5EHSI){:target="_blank"}|
-| SHSZ300.csv | 上海滬深300指數 | [Yahoo](https://finance.yahoo.com/quote/%5ESHSZ300/history?p=%5ESHSZ300){:target="_blank"}|
-| KOSPI.csv | 韓國綜合股價指數 | [Yahoo](https://finance.yahoo.com/quote/%5EKOSPI/history?p=^KOSPI){:target="_blank"}|
+| SHSZ300.csv | 上海滬深300指數 | [investing.com](https://www.investing.com/indices/csi300-historical-data){:target="_blank"}|
+| KOSPI.csv | 韓國綜合股價指數 | [investing.com](https://www.investing.com/indices/kospi-historical-data){:target="_blank"}|
 | WTI.csv | 西德州原油價格 | [investing.com](https://www.investing.com/commodities/crude-oil-historical-data){:target="_blank"}|
