@@ -42,6 +42,6 @@ TopicShare: true
 | TBrain資料夾 | TBrain提供之訓練集 | TBrain |
 | Nikkei.csv | 日經平均指數 | [Yahoo](https://finance.yahoo.com/quote/%5EN225/history?p=%5EN225){:target="_blank"}|
 | HSI.csv | 香港恆生指數 | [Yahoo](https://finance.yahoo.com/quote/%5EHSI/history?p=%5EHSI){:target="_blank"}|
-| SHSZ300.csv | 上海滬深300指數 | [investing.com](https://www.investing.com/indices/csi300-historical-data){:target="_blank"}|
+| SHSZ.csv | 上海滬深300指數 | [investing.com](https://www.investing.com/indices/csi300-historical-data){:target="_blank"}|
 | KOSPI.csv | 韓國綜合股價指數 | [investing.com](https://www.investing.com/indices/kospi-historical-data){:target="_blank"}|
 | WTI.csv | 西德州原油價格 | [investing.com](https://www.investing.com/commodities/crude-oil-historical-data){:target="_blank"}|
