@@ -151,7 +151,7 @@ FROM sponsor AS sp
 LEFT JOIN team ON sp.team_id=team.team_id;
 
 ################################ BONUS 2 #####################################
-# show the sponsor and teams with outer full join
+# show the sponsor and teams with full outer join
 SELECT spname, team_name
 FROM sponsor AS sp
 LEFT JOIN team ON sp.team_id=team.team_id
