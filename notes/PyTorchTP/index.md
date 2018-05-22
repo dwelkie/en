@@ -46,7 +46,7 @@ TopicShare: true
 
 ## 3. 進度表與連結整理
 
-**6/7以後場次CS+X團隊無法支援錄影器材，不會有講解片段**
+**6/7以後場次CS+X團隊無法支援錄影器材，不會有講解影片**
 
 <link rel="stylesheet" href="./custom.css">
 <!-- <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
