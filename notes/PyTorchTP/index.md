@@ -203,12 +203,11 @@ TopicShare: true
 [80]: https://youtu.be/
 
 
-
-|   |  PyTorch Basic  |         |   |  Sequence Model   |         |   |  其他  |         |
-|--:|:------:|---|--:|:------:|---|--:|:------:|---|
-| 3/8 | PyTorch Basic | [![][t]][PTBt]{:target="_blank"}   | 3/29 | RNN     | [![][t]][RNNt]{:target="_blank"}[![][vt]][RNNv]{:target="_blank"}  | 4/26 | Automated<br>Reasoning |[![][t]][AtRt]{:target="_blank"} [![][vt]][AtRv]{:target="_blank"}
-| 3/15 | PyTorch Example | [![][t]][Pext]{:target="_blank"} [![][vt]][Pexv]{:target="_blank"}   | 4/19 | NLP     | [![][t]][NLPt]{:target="_blank"} [![][vt]][NLPv]{:target="_blank"}   | 5/3  | RL (DQN)            |[![][t]][DQNt]{:target="_blank"}
-|  |  |  | 4/26  | Seq2seq | [![][t]][s2st]{:target="_blank"} [![][vt]][s2sv]{:target="_blank"}
+|      |  PyTorch Basic  |                                                                      |      | Sequence Model |                                                                    |      |  其他                  |                                                                    |
+|-----:|:---------------:|----------------------------------------------------------------------|-----:|:--------------:|--------------------------------------------------------------------|-----:|:----------------------:|--------------------------------------------------------------------|
+| 3/8  | PyTorch Basic   | [![][t]][PTBt]{:target="_blank"}                                     | 3/29 | RNN            | [![][t]][RNNt]{:target="_blank"}[![][vt]][RNNv]{:target="_blank"}  | 4/26 | Automated<br>Reasoning | [![][t]][AtRt]{:target="_blank"} [![][vt]][AtRv]{:target="_blank"}
+| 3/15 | PyTorch Example | [![][t]][Pext]{:target="_blank"} [![][vt]][Pexv]{:target="_blank"}   | 4/19 | NLP            | [![][t]][NLPt]{:target="_blank"} [![][vt]][NLPv]{:target="_blank"} | 5/3  | RL (DQN)               | [![][t]][DQNt]{:target="_blank"}
+|      |                 |                                                                      | 4/26 | Seq2seq        | [![][t]][s2st]{:target="_blank"} [![][vt]][s2sv]{:target="_blank"} | 5/24 | Style Transfer         | [![][p]][STp]{:target="_blank"} [     ][STt]{:target="_blank"}
 
 [PTBt]:https://github.com/pecu/PyTorch_CSX/tree/master/01_PyTorch_Basic
 [Pext]:https://github.com/pecu/PyTorch_CSX/tree/master/03_Learning_PyTorch_with_Examples
@@ -224,6 +223,9 @@ TopicShare: true
 [AtRt]:https://github.com/pecu/PyTorch_CSX/tree/master/07_Automated_Reasoning
 [AtRv]:https://www.youtube.com/watch?v=69kt1h_6SsM
 [DQNt]:https://github.com/pecu/PyTorch_CSX/tree/master/08_DQN
+
+[STp]: https://arxiv.org/abs/1508.06576
+[STt]: ...
 
 <br><br>
 
