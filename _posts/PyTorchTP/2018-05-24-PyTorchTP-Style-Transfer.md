@@ -23,7 +23,7 @@ fbcomments: true
 <img src="../../images/PyTorchTP/StyleTransfer/prisma.png" class="center">
 <p align="center"><i>Fig. 1. Prisma範例圖片(Source: <a href="https://www.facebook.com/getprisma"> Prisma FB fanpage</a> )</i> </p>
 
-Neural Transfer就是這種將畫作上的藝術風格移植到其他圖片上的技巧，而這周要介紹的論文實作便是這項技術的開山之作《[A Neural Algorithm of Artistic Style](https://arxiv.org/abs/1508.06576){:target="_blank"}》(2016年發表於[CVPR](https://www.cv-foundation.org/openaccess/content_cvpr_2016/html/Gatys_Image_Style_Transfer_CVPR_2016_paper.html){:target="_blank"}上)，作者為來自德國University of Tübingen的計算神經科學學者[Leon A. Gatys](https://github.com/leongatys?tab=repositories){:target="_blank"}, Alexander S. Ecker, [Matthias Bethge](http://bethgelab.org/people/){:target="_blank"}，他們嘗試用CNN來實現這一項過去被認為是專屬於人類的技能並獲得廣大迴響，三人也憑此技術創立一家[公司](https://deepart.io){:target="_blank"}。
+Neural Transfer就是這種將畫作上的藝術風格移植到其他圖片上的技巧，而這周要介紹的論文實作便是這項技術的開山之作《[A Neural Algorithm of Artistic Style](https://arxiv.org/abs/1508.06576){:target="_blank"}》(2015年發布於arXiv，2016年發表於[CVPR](https://www.cv-foundation.org/openaccess/content_cvpr_2016/html/Gatys_Image_Style_Transfer_CVPR_2016_paper.html){:target="_blank"}上)，作者為來自德國University of Tübingen的計算神經科學學者[Leon A. Gatys](https://github.com/leongatys?tab=repositories){:target="_blank"}, Alexander S. Ecker, [Matthias Bethge](http://bethgelab.org/people/){:target="_blank"}，他們嘗試用CNN來實現這一項過去被認為是專屬於人類的技能並獲得廣大迴響，三人也憑此技術創立一家[公司](https://deepart.io){:target="_blank"}。
 
 <img src="../../images/PyTorchTP/StyleTransfer/process.png" class="center">
 <p align="center"><i>Fig. 2. Style Transfer領域試圖將不同畫作風格融合進任意圖片中</i> </p>
@@ -38,7 +38,7 @@ Neural Transfer就是這種將畫作上的藝術風格移植到其他圖片上�
 
 ### 2.0 Rewind: What does CNN captured?
 
-首先，我們要回憶一下CNN架構實際上做了哪些事情，2013年ImageNet冠軍[ZFNet論文](https://arxiv.org/pdf/1311.2901.pdf){:target="_blank"}(也是PyTorch Taipei第二周主題，可以參考士永社長提供之講解[資料](https://www.dropbox.com/s/rrgc205ffedims8/ZFNet_shape.pdf){:target="_blank"}與[影片](https://www.youtube.com/watch?v=e8m46iiBuzw){:target="_blank"})中提到，他們嘗試將每層中activation值最大的部分，還原出是在原圖上的哪個部分，並發現較為淺層的捲積層捕捉到的只是單純的線條與顏色，然而越深層的捲積層捕捉到的會越趨一個完整的物件。而本篇論文就是**利用CNN架構能捕捉不同規模之特徵的特性，嘗試將不同的紋理與顏色融合到輸入圖中**。
+首先，我們要回憶一下CNN架構實際上做了哪些事情，2013年ImageNet冠軍[ZFNet論文](https://arxiv.org/pdf/1311.2901.pdf){:target="_blank"}(也是PyTorch Taipei第二周主題，可以參考士永社長提供之講解[資料](https://www.dropbox.com/s/rrgc205ffedims8/ZFNet_shape.pdf){:target="_blank"}與[影片](https://www.youtube.com/watch?v=e8m46iiBuzw){:target="_blank"})中提到，他們嘗試將每層中activation值最大的部分，還原出是在原圖上的哪個區塊，並發現較為淺層的捲積層捕捉到的只是單純的線條與顏色，然而越深層的捲積層捕捉到的會越趨一個完整的物件。而本篇論文就是**利用CNN架構能捕捉不同規模之特徵的特性，嘗試將不同的紋理與顏色融合到輸入圖中**。
 
 <p align="center"><img src="../../images/PyTorchTP/StyleTransfer/ZF.gif" width="400"></p>
 <p align="center"><i>Fig. 3. ZFNet中各層捕捉到的特徵</i> </p>
@@ -97,7 +97,9 @@ $$ J_{style}^{[l]}(S,G) = \frac{1}{\left( 2 n_H^{[l]} n_W^{[l]} n_C^{[l]} \right
 
 $$ J_{style} = \sum_l \lambda^{[l]} J_{style}^{[l]} $$
 
-### 2.4 Overall
+### 2.4 Overall Process
+
+總而言之，$J_{content}$ 只運用CNN架構中的某一層的activation值，降低$J_{content}$會使輸出圖(G)在內容圖(C)相同位置上出現一樣的特徵，而$J_{style}$ 的計算涵蓋多層的activation值，降低$J_{style}$會使輸出圖(G)和風格圖(S)在CNN某層上不同channel所抓取到的特徵關係相近(不考慮特徵出現位置)。
 
 CVPR論文內的一張圖(點擊放大)可以概括說明整個流程:
 
@@ -106,7 +108,7 @@ CVPR論文內的一張圖(點擊放大)可以概括說明整個流程:
 
 ## 3. Sample Code
 
-請移駕至GitHub/GitLab，有[Tensorflow版本](https://gitlab.com/mattwang44/CNN-Style-Transfer-Tensorflow){:target="_blank"}(吳恩達課程內的作業)，和PyTorch版本(修改自PyTorch官方教學文件)。
+請移駕至[我的GitHub](https://github.com/mattwang44/PyTorchTP_Style_Transfer/tree/c518daf50a277cd7b8c05fb89299a88a2a5cc73f){:target="_blank"}，有Tensorflow版本(吳恩達課程內的作業)，和PyTorch版本(論文第一作者的repo及官方教學文件)。
 
 ## 4. Result
 
@@ -133,17 +135,18 @@ CVPR論文內的一張圖(點擊放大)可以概括說明整個流程:
 1. 本篇文章介紹之style transfer論文
   * 在arXiv上發布的論文: [Gatys, L.A., Ecker, A.S., Bethge, M.: A neural algorithm of artistic style. arXiv preprint arXiv:1508.06576 (2015)](https://arxiv.org/abs/1508.06576){:target="_blank"}
   * 在CVPR上發表的論文: [L. A. Gatys, A. S. Ecker and M. Bethge, "Image Style Transfer Using Convolutional Neural Networks," 2016 IEEE Conference on Computer Vision and Pattern Recognition (CVPR), Las Vegas, NV, 2016, pp. 2414-2423. doi: 10.1109/CVPR.2016.265](http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=7780634&isnumber=7780329){:target="_blank"}
-1. ZFNet
+  * [PyTorch Code @ GitHub](https://github.com/leongatys/PytorchNeuralStyleTransfer){:target="_blank"}
+2. ZFNet
   * [Zeiler, Matthew D; Fergus, Rob: Visualizing and Understanding Convolutional Networks. arXiv preprint arXiv:1311.2901 (2014)](https://arxiv.org/abs/1311.2901){:target="_blank"}
-2. VGG
+3. VGG
   * [Simonyan, Karen; Zisserman, Andrew: Very Deep Convolutional Networks for Large-Scale Image Recognition. arXiv preprint arXiv:1409.1556 (2013)](https://arxiv.org/abs/1409.1556){:target="_blank"}
-1. 吳恩達在Coursera上開設之深度學習線上課程
+4. 吳恩達在Coursera上開設之深度學習線上課程
   * [Deeplearning.ai@Coursera](https://www.deeplearning.ai){:target="_blank"}
   * [Style Transfer講解影片](https://www.youtube.com/watch?v=R39tWYYKNcI&list=PLkDaE6sCZn6Gl29AoE31iwdVwSG-KnDzF&index=37){:target="_blank"}
   * 我寫的[課程介紹](../coursera-dlai-spec){:target="_blank"}
-2. [PyTorch official tutorial](https://pytorch.org/tutorials/advanced/neural_style_tutorial.html){:target="_blank"}
-3. Mark Chang's [slides](https://www.slideshare.net/ckmarkohchang/a-neural-algorithm-of-artistic-style){:target="_blank"} & [video](https://www.youtube.com/watch?v=qzGuYuCpy1M){:target="_blank"} (偏重實驗的講解，很值得一看)
-3. Neural Style Transfer: A Review
+5. [PyTorch official tutorial](https://pytorch.org/tutorials/advanced/neural_style_tutorial.html){:target="_blank"}
+6. Mark Chang's [slides](https://www.slideshare.net/ckmarkohchang/a-neural-algorithm-of-artistic-style){:target="_blank"} & [video](https://www.youtube.com/watch?v=qzGuYuCpy1M){:target="_blank"} (偏重實驗的講解，很值得一看)
+7. Neural Style Transfer: A Review
   * [論文](https://arxiv.org/pdf/1705.04058.pdf){:target="_blank"}
   * [GitHub](https://github.com/ycjing/Neural-Style-Transfer-Papers){:target="_blank"}
   * 內有該領域相關論文整理:
