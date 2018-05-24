@@ -124,7 +124,7 @@ CVPR論文內的一張圖(點擊放大)可以概括說明整個流程:
 </figure>
 <p align="center"><i>Fig. 9. 不同參數之表現比較。</i> </p>
 
-**圖9左圖**: 相同$\alpha / \beta$值與style cost function，但content cost function選取不同層的結果，哪個表現比較好我覺得是見仁見智。
+**圖9左圖**: 相同$\alpha / \beta$值與style cost function，但content cost function選取不同層的結果，哪個表現比較好我覺得是見仁見智(?)。
 
 **圖9右圖**:橫軸為不同的 $\alpha / \beta$值，縱軸為style cost function涵蓋不同層數，row A為只計算conv1_1一層、row B為計算conv1_1和conv2_1兩層、row C涵蓋三層...依此類推。可見$\alpha / \beta$越小則輸出圖(G)和內容圖(C)相去越遠而只含有風格特徵。而當style cost function只計算conv1_1一層則表現出較細微的風格特徵，計算涵蓋越深層則有較大的風格特徵。
 
