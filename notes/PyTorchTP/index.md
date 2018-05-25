@@ -205,12 +205,11 @@ TopicShare: true
 [80]: https://youtu.be/
 
 
-|      |  PyTorch Basic  |                                                                      |      | Sequence Model |                                                                    |      |  其他                  |                                                                    |
-|-----:|:---------------:|----------------------------------------------------------------------|-----:|:--------------:|--------------------------------------------------------------------|-----:|:----------------------:|--------------------------------------------------------------------|
-| 3/8  | PyTorch Basic   | [![][t]][PTBt]{:target="_blank"}                                     | 3/29 | RNN            | [![][t]][RNNt]{:target="_blank"}[![][vt]][RNNv]{:target="_blank"}  | 4/26 | Automated<br>Reasoning | [![][t]][AtRt]{:target="_blank"} [![][vt]][AtRv]{:target="_blank"}
-| 3/15 | PyTorch Example | [![][t]][Pext]{:target="_blank"} [![][vt]][Pexv]{:target="_blank"}   | 4/19 | NLP            | [![][t]][NLPt]{:target="_blank"} [![][vt]][NLPv]{:target="_blank"} | 5/3  | RL (DQN)               | [![][t]][DQNt]{:target="_blank"} [![][vt]][DQNv]{:target="_blank"}
-|      |                 |                                                                      | 4/26 | Seq2Seq        | [![][t]][s2st]{:target="_blank"} [![][vt]][s2sv]{:target="_blank"} | 5/24 | Style Transfer         | [![][p]][STp]{:target="_blank"}  [![][m]][STt]{:target="_blank"} [![][v]][STv]{:target="_blank"} <br/>[![][c]][STd]{:target="_blank"}
-|      |                 |                                                                      | 5/17 | Seq2Seq with <br/> attention | [![][t]][s2sat]{:target="_blank"} [![][vt]][s2sav]{:target="_blank"} |
+|      |  PyTorch Basic  |                                                                      |      | NLP                          |                                                                      |      |  其他                  |                                                                    |
+|-----:|:---------------:|----------------------------------------------------------------------|-----:|:----------------------------:|----------------------------------------------------------------------|-----:|:----------------------:|--------------------------------------------------------------------|
+| 3/8  | PyTorch Basic   | [![][t]][PTBt]{:target="_blank"}                                     | 4/19 | Basic NLP                    | [![][t]][NLPt]{:target="_blank"} [![][vt]][NLPv]{:target="_blank"}   | 4/26 | Automated<br>Reasoning | [![][t]][AtRt]{:target="_blank"} [![][vt]][AtRv]{:target="_blank"}
+| 3/15 | PyTorch Example | [![][t]][Pext]{:target="_blank"} [![][vt]][Pexv]{:target="_blank"}   | 4/26 | Seq2Seq                      | [![][t]][s2st]{:target="_blank"} [![][vt]][s2sv]{:target="_blank"}   | 5/3  | RL (DQN)               | [![][t]][DQNt]{:target="_blank"} [![][vt]][DQNv]{:target="_blank"}
+| 3/29 | RNN             | [![][t]][RNNt]{:target="_blank"}[![][vt]][RNNv]{:target="_blank"}    | 5/17 | Seq2Seq with <br/> attention | [![][t]][s2sat]{:target="_blank"} [![][vt]][s2sav]{:target="_blank"} | 5/24 | Style Transfer         | [![][p]][STp]{:target="_blank"}  [![][m]][STt]{:target="_blank"} [![][v]][STv]{:target="_blank"} <br/>[![][c]][STd]{:target="_blank"}
 
 [PTBt]:https://github.com/pecu/PyTorch_CSX/tree/master/01_PyTorch_Basic
 [Pext]:https://github.com/pecu/PyTorch_CSX/tree/master/03_Learning_PyTorch_with_Examples
