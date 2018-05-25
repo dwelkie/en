@@ -77,8 +77,8 @@ TopicShare: true
 | 3/08 | LeNet             | [![][p]][1]{:target="_blank"} [![][m]][20]{:target="_blank"} [![][v]][100]{:target="_blank"}<br> [![][c]][c1]{:target="_blank"}                                                                    | 4/26 | PreVGG    | [![][p]][8]{:target="_blank"}  [![][m]][29]{:target="_blank"} [      ][93]{:target="_blank"} | 6/14 | R-CNN        | [![][p]][14]{:target="_blank"} [      ][35]{:target="_blank"} [      ][87]{:target="_blank"}
 | 3/08 | AlexNet           | [![][p]][2]{:target="_blank"} [![][m]][21]{:target="_blank"} [![][v]][99]{:target="_blank"} <br> [![][t]][t1]{:target="_blank"} [![][vt]][vt1]{:target="_blank"}                                   | 5/03 | SVM       | [![][p]][9]{:target="_blank"}  [![][m]][30]{:target="_blank"} [![][v]][92]{:target="_blank"} | 6/21 | SPPNet       | [![][p]][15]{:target="_blank"} [      ][36]{:target="_blank"} [      ][86]{:target="_blank"}
 | 3/15 | ZFNet             | [![][p]][3]{:target="_blank"} [![][m]][22]{:target="_blank"} [![][v]][98]{:target="_blank"}                                                                                                        | 5/10 | 暫停一次  |                                                                                              | 6/28 | Fast R-CNN   | [![][p]][16]{:target="_blank"} [      ][37]{:target="_blank"} [      ][85]{:target="_blank"}
-| 3/22 | NIN               | [![][p]][4]{:target="_blank"} [![][m]][23]{:target="_blank"} [![][v]][97]{:target="_blank"}                                                                                                        | 5/17 | SMO       | [![][p]][10]{:target="_blank"} [      ][31]{:target="_blank"} [      ][91]{:target="_blank"} | 7/05 | Faster R-CNN | [![][p]][17]{:target="_blank"} [      ][38]{:target="_blank"} [      ][84]{:target="_blank"}
-| 3/29 | GoogLeNet         | [![][p]][5]{:target="_blank"} [![][m]][26]{:target="_blank"} [![][v]][96]{:target="_blank"}                                                                                                        | 5/24 | DPM       | [![][p]][11]{:target="_blank"} [      ][32]{:target="_blank"} [      ][90]{:target="_blank"} [![][c]][DPMd]{:target="_blank"} | 7/12 | YOLO v1      | [![][p]][18]{:target="_blank"} [      ][39]{:target="_blank"} [      ][83]{:target="_blank"} [![][c]][Yv1]{:target="_blank"}
+| 3/22 | NIN               | [![][p]][4]{:target="_blank"} [![][m]][23]{:target="_blank"} [![][v]][97]{:target="_blank"}                                                                                                        | 5/17 | SMO       | [![][p]][10]{:target="_blank"} [      ][31]{:target="_blank"} [![][v]][91]{:target="_blank"} | 7/05 | Faster R-CNN | [![][p]][17]{:target="_blank"} [      ][38]{:target="_blank"} [      ][84]{:target="_blank"}
+| 3/29 | GoogLeNet         | [![][p]][5]{:target="_blank"} [![][m]][26]{:target="_blank"} [![][v]][96]{:target="_blank"}                                                                                                        | 5/24 | DPM       | [![][p]][11]{:target="_blank"} [      ][32]{:target="_blank"} [![][v]][90]{:target="_blank"} [![][c]][DPMd]{:target="_blank"} | 7/12 | YOLO v1      | [![][p]][18]{:target="_blank"} [      ][39]{:target="_blank"} [      ][83]{:target="_blank"} [![][c]][Yv1]{:target="_blank"}
 | 4/12 | VGGNet<br>ResNet  | [![][p]][6]{:target="_blank"} [![][m]][27]{:target="_blank"} [![][v]][95]{:target="_blank"}<br> [![][p]][6.5]{:target="_blank"} [![][t]][tres]{:target="_blank"} [![][vt]][vres]{:target="_blank"} | 5/31 | SS        | [![][p]][12]{:target="_blank"} [      ][33]{:target="_blank"} [      ][89]{:target="_blank"} | 7/19 | SSD          | [![][p]][19]{:target="_blank"} [      ][40]{:target="_blank"} [      ][82]{:target="_blank"} [![][c]][cssd]{:target="_blank"}
 | 4/19 | SqueezeNet        | [![][p]][7]{:target="_blank"} [![][m]][28]{:target="_blank"} [![][v]][94]{:target="_blank"}<br> [![][c]][sqc]{:target="_blank"}                                                                    | 6/07 | FCN       | [![][p]][13]{:target="_blank"} [      ][34]{:target="_blank"} [      ][88]{:target="_blank"} | 另訂 | YOLO v2&v3   | v2[ ![][p]][24]{:target="_blank"} [![][c]][Yv2]{:target="_blank"}<br> v3[ ![][p]][25]{:target="_blank"}  [![][c]][Yv3]{:target="_blank"}
 
@@ -145,14 +145,14 @@ TopicShare: true
 
 <!-- SMO -->
 [10]: https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/tr-98-14.pdf
-[91]: https://youtu.be/
+[91]: https://www.youtube.com/watch?v=UG0AEcfBe1A
 [31]: ....
 
 <!-- DPM -->
 [11]: https://cs.brown.edu/~pff/papers/lsvm-pami.pdf
-[90]: https://youtu.be/
+[90]: https://www.youtube.com/watch?v=uzTHFNpQ_9E
 [DPMd]: http://www.rossgirshick.info/latent/
-[32]: ....
+[32]: ...
 
 <!-- SS -->
 [12]: https://ivi.fnwi.uva.nl/isis/publications/2013/UijlingsIJCV2013/UijlingsIJCV2013.pdf
@@ -209,7 +209,8 @@ TopicShare: true
 |-----:|:---------------:|----------------------------------------------------------------------|-----:|:--------------:|--------------------------------------------------------------------|-----:|:----------------------:|--------------------------------------------------------------------|
 | 3/8  | PyTorch Basic   | [![][t]][PTBt]{:target="_blank"}                                     | 3/29 | RNN            | [![][t]][RNNt]{:target="_blank"}[![][vt]][RNNv]{:target="_blank"}  | 4/26 | Automated<br>Reasoning | [![][t]][AtRt]{:target="_blank"} [![][vt]][AtRv]{:target="_blank"}
 | 3/15 | PyTorch Example | [![][t]][Pext]{:target="_blank"} [![][vt]][Pexv]{:target="_blank"}   | 4/19 | NLP            | [![][t]][NLPt]{:target="_blank"} [![][vt]][NLPv]{:target="_blank"} | 5/3  | RL (DQN)               | [![][t]][DQNt]{:target="_blank"} [![][vt]][DQNv]{:target="_blank"}
-|      |                 |                                                                      | 4/26 | Seq2seq        | [![][t]][s2st]{:target="_blank"} [![][vt]][s2sv]{:target="_blank"} | 5/24 | Style Transfer         | [![][p]][STp]{:target="_blank"}  [![][c]][STd]{:target="_blank"} [![][m]][STt]{:target="_blank"}
+|      |                 |                                                                      | 4/26 | Seq2Seq        | [![][t]][s2st]{:target="_blank"} [![][vt]][s2sv]{:target="_blank"} | 5/24 | Style Transfer         | [![][p]][STp]{:target="_blank"}  [![][m]][STt]{:target="_blank"} [![][v]][STv]{:target="_blank"} <br/>[![][c]][STd]{:target="_blank"}
+|      |                 |                                                                      | 5/17 | Seq2Seq with <br/> attention | [![][t]][s2sat]{:target="_blank"} [![][vt]][s2sav]{:target="_blank"} |
 
 [PTBt]:https://github.com/pecu/PyTorch_CSX/tree/master/01_PyTorch_Basic
 [Pext]:https://github.com/pecu/PyTorch_CSX/tree/master/03_Learning_PyTorch_with_Examples
@@ -222,14 +223,18 @@ TopicShare: true
 [s2st]:https://github.com/d06521005/NLP_Competition/blob/master/basic_seq2seq.ipynb
 [s2sv]:https://www.youtube.com/watch?v=5ieic6mvRpw
 
+[s2sav]: https://www.youtube.com/watch?v=2f1jcq7H2u0
+[s2sat]: https://github.com/pecu/PyTorch_CSX/tree/master/09_Attention_seq2seq
+
 [AtRt]:https://github.com/pecu/PyTorch_CSX/tree/master/07_Automated_Reasoning
 [AtRv]:https://www.youtube.com/watch?v=69kt1h_6SsM
 [DQNt]:https://github.com/pecu/PyTorch_CSX/tree/master/08_DQN
 [DQNv]:https://www.youtube.com/watch?v=8YGuGBLLKq0
 
 [STp]: https://arxiv.org/abs/1508.06576
-[STd]: https://deepart.io
 [STt]: ../../articles/PyTorchTP-Style-Transfer/
+[STv]: https://www.youtube.com/watch?v=G3gd5jo5nJA
+[STd]: https://deepart.io
 
 <br><br>
 
