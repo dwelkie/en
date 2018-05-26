@@ -7,8 +7,8 @@ description: "Neural Style Transfer: 以CNN技術將藝術畫風移植到另一�
 tags: [PyTorchTP, DL]
 image:
   feature:
-  teaser:
-  thumb:
+  teaser: PyTorchTP/StyleTransfer/tn.png
+  thumb: PyTorchTP/StyleTransfer/tn.png
 date: 2018-05-22
 fbcomments: true
 ---
