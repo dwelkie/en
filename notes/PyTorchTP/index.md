@@ -33,7 +33,7 @@ TopicShare: true
 
 2. PyTorch實作
  - 由台大CS+X計畫負責人[Pecu老師](https://www.facebook.com/pecu.tsai){:target="_blank"}及其團隊負責帶領
- - [公佈欄&進度表](https://github.com/pecu/PyTorch_CSX){:target="_blank"} (講者徵求中)
+ - [公佈欄&進度表](https://github.com/pecu/PyTorch_CSX){:target="_blank"}
 
 地點: 台灣大學普通教學館305教室
 
