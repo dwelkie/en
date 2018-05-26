@@ -1,6 +1,6 @@
 ---
 layout: article
-title: "PyTorch Taipei 2018 week10  : Neural Style Transfer"
+title: "PyTorch Taipei 2018 week10: Neural Style Transfer"
 modified: 2018-05-24
 categories: articles
 description: "Neural Style Transfer: 以CNN技術將藝術畫風移植到另一張圖中，含PyTorch & Tensorflow 範例程式碼 | Wei-Hsiang Wang's Website"
@@ -15,6 +15,8 @@ fbcomments: true
 <img src="" width="800">
 
 {% include toc.html %}
+
+本周實作主題由我主講，有興趣可以看[講解影片](https://www.youtube.com/watch?v=G3gd5jo5nJA){:target="_blank"}。這篇內容比較簡單，所以我講解重點擺在讓大家理解論文內容，若理解論文應該可以很快看懂code。
 
 ## 1. What's Neural Style Transfer?
 
@@ -45,20 +47,20 @@ Neural Transfer就是這種將畫作上的藝術風格移植到其他圖片上�
 
 ### 2.1 Methods
 
-原作作法為輸入以下三張圖進一個已經train好的CNN model(原作使用VGG19，VGG[論文](https://arxiv.org/pdf/1409.1556/){:target="_blank"}可參考陳峻廷在PyTorch Taipei第五周所提供之講解[資料](https://medium.com/@danjtchen/vgg-%E6%B7%B1%E5%BA%A6%E5%AD%B8%E7%BF%92-%E5%8E%9F%E7%90%86-d31d0aa13d88){:target="_blank"}和[影片](https://www.youtube.com/watch?v=XmLeY953zaY){:target="_blank"})中:
+原作作法為輸入以下三張圖進一個已經train好的CNN model(原作使用VGG19，VGG[論文](https://arxiv.org/pdf/1409.1556/){:target="_blank"}可參考PyTorch Taipei第五周由陳峻廷所提供之講解[資料](https://medium.com/@danjtchen/vgg-%E6%B7%B1%E5%BA%A6%E5%AD%B8%E7%BF%92-%E5%8E%9F%E7%90%86-d31d0aa13d88){:target="_blank"}和[影片](https://www.youtube.com/watch?v=XmLeY953zaY){:target="_blank"})中:
 
 1. 內容圖(C): 想要將風格套用於其上的圖片
 2. 風格圖(S): 含有特殊風格的圖片
 3. 輸出圖(G): 初始化為和C一樣大的white noise圖片，或是也可以輸入有雜訊的內容圖
 
-再訂定C, G之間的cost function $J_{content}$ 和S, G之間的cost function $J_{style}$，以不同比例相加得到$J(G)$
+再選擇特定捲積層之activation值，分別計算C, G之間的cost function $J_{content}$ 和S, G之間的cost function $J_{style}$，以不同比例相加得到最後的cost function $J(G)$
 
 $$ J(G) = \alpha J_{content} + \beta J_{style} $$
 
 透過backprop迭代更新輸出圖(G)上的pixel值以降低$J(G)$，其中$\alpha$和$\beta$的比值可以經調整得到不一樣的輸出效果。
 
 <p align="center"><img src="../../images/PyTorchTP/StyleTransfer/CGS.gif" width="800"></p>
-<p align="center"><i>Fig. 4. 以backprop更新輸出圖之範例</i> </p>
+<p align="center"><i>Fig. 4. 以backprop更新輸出圖之範例(輸出圖G初始化為noisy的內容圖C)</i> </p>
 
 ### 2.2 Content Cost Function
 
@@ -106,11 +108,7 @@ CVPR論文內的一張圖(點擊放大)可以概括說明整個流程:
 <p align="center"><a href="../../images/PyTorchTP/StyleTransfer/overall.png"><img src="../../images/PyTorchTP/StyleTransfer/overall.png" width="500"></a></p>
 <p align="center"><i>Fig. 7. Style Transfer 演算法</i> </p>
 
-## 3. Sample Code
-
-請移駕至[我的GitHub](https://github.com/mattwang44/PyTorchTP_Style_Transfer/tree/c518daf50a277cd7b8c05fb89299a88a2a5cc73f){:target="_blank"}，有Tensorflow版本(吳恩達課程內的作業)，和PyTorch版本(論文第一作者的repo及官方教學文件)。
-
-## 4. Result
+## 3. Result
 
 論文有展示一些調整參數的效果，我只是撿過來放而已。
 
@@ -129,6 +127,19 @@ CVPR論文內的一張圖(點擊放大)可以概括說明整個流程:
 **圖9左圖**: 相同$\alpha / \beta$值與style cost function，但content cost function選取不同層的結果，哪個表現比較好我覺得是見仁見智(?)。
 
 **圖9右圖**:橫軸為不同的 $\alpha / \beta$值，縱軸為style cost function涵蓋不同層數，row A為只計算conv1_1一層、row B為計算conv1_1和conv2_1兩層、row C涵蓋三層...依此類推。可見$\alpha / \beta$越小則輸出圖(G)和內容圖(C)相去越遠而只含有風格特徵。而當style cost function只計算conv1_1一層則表現出較細微的風格特徵，計算涵蓋越深層則有較大的風格特徵。
+
+## 4. Sample Code
+
+請移駕至[我的GitHub](https://github.com/mattwang44/PyTorchTP_Style_Transfer){:target="_blank"}，有Tensorflow版本(吳恩達課程內的作業，使用VGG16)，和PyTorch版本(論文第一作者的repo及官方教學文件)。
+
+## 5. Discussion
+
+本篇論文演算法較為簡單，然而實際運行結果也有一些比較明顯的缺失:
+
+1. 未考慮空間、亮度等因素: 例如可能會把地面的特徵套用在天空之類的情況。不過第一作者後續有出了數篇針對改善這個缺點的論文，像是[這篇](https://arxiv.org/pdf/1606.05897.pdf){:target="_blank"}和[這篇](https://arxiv.org/abs/1611.07865){:target="_blank"}。
+2. 又肥又慢: VGG在CNN發展歷史中曾獲得一時的勝利是因為增加了很多層的捲積層，造成model很佔空間、執行時間也比較久。不過在本文開頭就告訴大家已經有real-time的產品，代表已經有多篇關於能夠快速執行style transfer的論文被發表了。
+
+目前已經有style transfer領域的[review paper](https://github.com/ycjing/Neural-Style-Transfer-Papers){:target="_blank"}了，有興趣可以去看看學界後來又延伸發展了那些主題或改善方法。
 
 ## Reference
 
