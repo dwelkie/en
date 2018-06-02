@@ -106,7 +106,7 @@ $$ J_{style} = \sum_l \lambda^{[l]} J_{style}^{[l]} $$
 CVPR論文內的一張圖(點擊放大)可以概括說明整個流程:
 
 <p align="center"><a href="../../images/PyTorchTP/StyleTransfer/overall.png"><img src="../../images/PyTorchTP/StyleTransfer/overall.png" width="500"></a></p>
-<p align="center"><i>Fig. 7. Style Transfer 演算法</i> </p>
+<p align="center"><i>Fig. 7. Style Transfer 演算法流程</i> </p>
 
 ## 3. Result
 
@@ -134,7 +134,7 @@ CVPR論文內的一張圖(點擊放大)可以概括說明整個流程:
 
 ## 5. Discussion
 
-本篇論文演算法較為簡單，然而實際運行結果也有一些比較明顯的缺失:
+本篇論文演算法較為簡單，然而實際運行結果有一些比較明顯的缺失:
 
 1. 未考慮空間、亮度等因素: 例如可能會把地面的特徵套用在天空之類的情況。不過第一作者後續有出了數篇針對改善這個缺點的論文，像是[這篇](https://arxiv.org/pdf/1606.05897.pdf){:target="_blank"}和[這篇](https://arxiv.org/abs/1611.07865){:target="_blank"}。
 2. 又肥又慢: VGG在CNN發展歷史中曾獲得一時的勝利是因為增加了很多層的捲積層，造成model很佔空間、執行時間也比較久。不過在本文開頭就告訴大家已經有real-time的產品，代表已經有多篇關於能夠快速執行style transfer的論文被發表了。

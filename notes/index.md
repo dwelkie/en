@@ -32,7 +32,7 @@ image:
   <a href="{{ site.url }}/notes/Python">
     <img src="{{ site.url }}/images/Python.jpg">
     <h2 class="post-title">Python</h2>
-    <p class="post-excerpt">It seems that everything can be connected with Python now</p>
+    <p class="post-excerpt">Mostly ML/DL</p>
   </a>
 </div><!-- /.tile -->
 

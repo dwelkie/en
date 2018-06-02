@@ -23,7 +23,3 @@ fire module → 1:8
 deep compression
 
 稀疏矩陣再訓練
-
-
-word-embedding & N-gram
-Jack Liao
