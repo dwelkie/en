@@ -4,7 +4,7 @@ title: "PyTorch Taipei 2018 week10: Neural Style Transfer"
 modified: 2018-05-24
 categories: articles
 description: "Neural Style Transfer: 以CNN技術將藝術畫風移植到另一張圖中，含PyTorch & Tensorflow 範例程式碼 | Wei-Hsiang Wang's Website"
-tags: [PyTorchTP, DL]
+tags: [PyTorchTP, DL, DLpaper]
 image:
   feature:
   teaser: PyTorchTP/StyleTransfer/tn.png

@@ -4,7 +4,7 @@ title: "PyTorch Taipei 2018 week1: AlexNet"
 modified: 2018-03-28
 categories: articles
 excerpt: ""
-tags: [PyTorchTP, DL]
+tags: [PyTorchTP, DL, DLpaper]
 image:
   feature:
   teaser: PyTorchTP/AlexNet/AlexNet.png

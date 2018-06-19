@@ -4,7 +4,7 @@ title: "PyTorch Taipei 2018 week17: YOLO (DRAFT)"
 modified: 2018-03-26
 categories: articles
 excerpt: ""
-tags: [PyTorchTP, DL]
+tags: [PyTorchTP, DL, DLpaper]
 image:
   feature:
   teaser: yologo.png

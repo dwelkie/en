@@ -4,7 +4,7 @@ title: "PyTorch Taipei 2018 week18: SSD (DRAFT)"
 modified: 2018-05-28
 categories: articles
 excerpt: ""
-tags: [PyTorchTP, DL]
+tags: []
 image:
   feature:
   teaser:

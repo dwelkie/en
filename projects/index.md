@@ -70,7 +70,7 @@ MATLAB programs for human motion analysis, including motion tracking, evaluation
 
 ## Web Crawler of USPTO PatFT Database
 
-Web crawler with PyQt5 UI for automatically gathering information of issued US patents and batch download in the format of PDF. [[GitHub]](https://github.com/mattwang44/USPTO-PatFT-Web-Crawler)
+Web crawler with PyQt5 UI for automatically gathering information of issued US patents and batch download in the format of PDF. [[GitHub]](https://github.com/mattwang44/USPTO-PatFT-Web-Crawler){:target="_blank"}
 
 <img src="../images/project/USpatentCrawler.png" height="300">
 
@@ -78,11 +78,11 @@ Web crawler with PyQt5 UI for automatically gathering information of issued US p
 
 A SLAM robot that can receive commands by gestures or voices. I mainly responsible for the hand gesture recognition using Kinect sensor with OpenCV image (skin detection + convex hull) and the human body joint detection.
 
-<!-- <img src="../images/project/Kinect1.png" height="300"> -->
+<img src="../images/project/Kinect1.png" height="300">
 
 ## Manipulator Controlled by Kinect-Captured Arm Gestures
 
-A robot arm that can achieve the location of the body segments using Kinect SDK and OpenCV. A user interface is made by C#.
+A robot arm that can achieve the location of the body segments using Kinect SDK and OpenCV with UI written in C#.
 
 <img src="../images/project/kinect2.gif" width="420px" />
 
@@ -94,7 +94,7 @@ We utilizes FFT sound analysis in a motor-actuated tuner, which can be easily ad
 
 ## RC Hovercraft
 
-This is the project of the capstone course given by dept. of M.E., NTU. Ranked 2nd both in self-made RC hovercraft racing competition and affiliated best report contest (18 teams participated).
+This is the project of the capstone course of dept. of M.E., NTU. <br/>Ranked 2nd both in RC hovercraft racing competition and affiliated best report contest (18 teams participated).
 
 <img src="../images/project/RC.png" height="250">
 
@@ -102,4 +102,4 @@ This is the project of the capstone course given by dept. of M.E., NTU. Ranked 2
 
 A MATLAB GUI that can visualize the design parameters of the double-wishbone mechanism.
 
-<img src="../images/project/tuner.png" height="300">
+<img src="../images/project/MGUI.gif" width="450px"  />
