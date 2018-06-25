@@ -1,6 +1,6 @@
 ---
 layout: article
-title: "MLP: Back Propagation"
+title: "MLP"
 modified: 2018-04-26
 categories: articles
 excerpt: ""
