@@ -78,7 +78,7 @@ Web crawler with PyQt5 UI for automatically gathering information of issued US p
 
 A SLAM robot that can receive commands by gestures or voices. I mainly responsible for the hand gesture recognition using Kinect sensor with OpenCV image (skin detection + convex hull) and the human body joint detection.
 
-<img src="../images/project/Kinect1.png" height="300">
+<img src="../images/project/kinect1.png" height="300">
 
 ## Manipulator Controlled by Kinect-Captured Arm Gestures
 
