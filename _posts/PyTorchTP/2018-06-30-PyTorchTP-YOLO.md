@@ -95,7 +95,7 @@ $\color{black}{(1)(2)(3)}$三項分別計算bounding box的位置、大小、cla
 
 第$\color{black}{(1)(2)(3)}$項中的$ \color{green}{\mathbb{1}_{ij}^{obj}}$ 代表第 $\color{black}{i}$ 個cell上的第$\color{black}{j}$個bounding box被指定為predictor(即該bounding box在第$\color{black}{i}$個cell上總共B個bounding box中具有最大的 $$ \color{black}{IoU_{pred}^{truth}} $$)，即**loss function中$\color{black}{(1)(2)(3)}$三項只需計算被指定為predictor之bounding box所預測的位置、尺寸、class出現機率誤差**。
 
-相對的，第$\color{black}{(4)}$項中的$\color{pi}{\mathbb{1}_{ij}^{noobj}}$代表非predictor之cell，該項即**所有被指定為predictor的bounding box，若是做出了大於零的class機率預測便皆視為誤差**。
+相對的，第$\color{black}{(4)}$項中的$\color{pi}{\mathbb{1}_{ij}^{noobj}}$代表非predictor之cell，該項即**所有沒有被指定為predictor的bounding box，若是做出了大於零的class機率預測便皆視為誤差**。
 
 第$\color{black}{(5)}$項中的$\color{lg}{\mathbb{1}_{i}^{obj}}$代表第$\color{black}{i}$個cell中有物件則為1否則為0，即loss function須計入出現物件所代表之cell所預測各個class出現機率(即物件出現機率confidence乘以向量$\color{black}{C}$)與真實值間的誤差。以下圖為例，若編號A~H的cell皆預測出有狗，但真實值為狗狗中心所在的cell D，故loss function第$\color{black}{(5)}$項在狗狗物件上只需要計算cell D。
 
@@ -142,7 +142,7 @@ $\color{black}{(1)(2)(3)}$三項分別計算bounding box的位置、大小、cla
 
 ## 3.1 Limitation of YOLO v1
 
-1. 演算法上明顯的缺點是，每個cell上雖輸出B個bounding box，但卻只有一組class存在機率，限制了每個cell只能預測出一種物件，如果幾個較大物件的中心剛好出現在同一個cell，可能就會做出錯誤判斷。
+1. 演算法上明顯的缺點是，每個cell上雖輸出B個bounding box，但卻只有一組class存在機率，限制了每個cell只能預測出一種物件，如果幾個較大物件的中心剛好出現在同一個cell，可能就會做出錯誤判斷。(這個限制在YOLO v2中就被改掉了)
 2. 如前面在NMS部分所述，如果多個物件位置重疊率高，可能因此被NMS判斷為同一物件。
 2. 如果要做預測的圖中所出現的物件的長寬比或排列方式較為異常(即訓練資料中不常見)，則YOLO並無這樣的泛化學習能力，而容易做出錯誤預測。
 3. CNN分類器架構中有多層max-pooling layer，使某些特徵消失。若是用更為細緻的CNN架構作為backbone分類器，則可能降低運行效率，使YOLO無法做到real-time檢測。(e.g. YOLO+VGG16只有21FPS)
