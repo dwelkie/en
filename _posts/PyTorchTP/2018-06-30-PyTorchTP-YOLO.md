@@ -3,7 +3,7 @@ layout: article
 title: "PyTorch Taipei 2018 week17: YOLO v1"
 modified: 2018-06-27
 categories: articles
-excerpt: ""
+description: "YOLO v1 跳脫過去物件偵測演算法region proposal技巧，大幅提升運算效率。 | Wei-Hsiang Wang's Website"
 tags: [PyTorchTP, DL, DLpaper]
 image:
   feature:
