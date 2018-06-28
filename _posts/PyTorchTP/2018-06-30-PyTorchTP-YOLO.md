@@ -38,13 +38,17 @@ $$ \definecolor{lg}{RGB}{114,0,172} \definecolor{pi}{RGB}{18,110,213} \definecol
 
 ## 2.2 Pretraining
 
-原作將上述架構的前20層ConvLayer再補上一層avg-pooling layer和一層ConvLayer做pretraining，雖然YOLO針對的是PASCAL VOC但原作pretrain是使用ImageNet資料集(1000-class)，花了約一周訓練並在ImageNet2012上得到top5-acc. 88%。Pretrain完成後才再以完整架構(pretrain架構+4conv+1FC)做訓練，最後輸出一個7×7×30大小的tensor(為符合後面的演算法設計)。
+原作將上述架構的前20層ConvLayer再補上一層avg-pooling layer和一層ConvLayer做pretraining，雖然YOLO針對的是PASCAL VOC但原作pretrain是使用ImageNet資料集(1000-class)，花了約一周訓練並在ImageNet2012上得到top5-acc. 88%。Pretrain完成後才再以完整架構(pretrain架構+4conv+2FC)做訓練，最後輸出一個7×7×30大小的tensor(為符合後面的演算法設計)。
 
 ## 2.3 Bounding Box Regression
 
-YOLO會將一張圖分割成$\color{black}{S×S}$個cell而所有cell都會再做出$\color{black}{B}$個bounding box預測，每個bounding box代表一個物件的存在(每個物件中心所在的cell即做為該物件之代表性cell)，預測標的包含物件大小、中心位置、信心水準($p_i(c)$, 被定義為$\color{black}{P(Object)*IoU}$)，而每個cell同時也會輸出一組向量$\color{black}{C}$，其中每個值代表一個class在物件存在條件下出現的機率(即$\color{black}{P(Class_i \mid Object)}$)。原作$\color{black}{S=7}$, $\color{black}{B=2}$，而class數量為20，前述CNN分類器輸出的是一個大小為$\color{black}{7×7×(2×5+20)}$的tensor。下式之向量為tensor中第i個cell的代表輸出值。
+YOLO會將一張圖分割成$\color{black}{S×S}$個cell而所有cell都會再做出$\color{black}{B}$個bounding box預測，每個bounding box代表一個物件的存在(每個物件中心所在的cell即做為該物件之代表性cell)，預測標的包含物件大小、中心位置、信心水準($p_i(c)$, 被定義為$\color{black}{P(Object)*IoU}$)，而每個cell同時也會輸出一組向量$\color{black}{C}$，其中每個值代表一個class在物件存在條件下出現的機率(即$\color{black}{P(Class_i \mid Object)}$)。
 
-$$ \color{black}{[p_{i,1}(c) \, b_{xi,1} \, b_{yi,1} \, b_{wi,1} \, b_{hi,1} \, \mid \, p_{i,2}(c) \, b_{xi,2} \, b_{yi,2} \, b_{wi,2} \,  b_{hi,2} \mid C_1 \, C_2 \, C_3 \, ... \, C_{20}]^T} $$
+原作$\color{black}{S=7}$, $\color{black}{B=2}$，而class數量為20，前述CNN分類器輸出的是一個大小為$\color{black}{7×7×(2×5+20)}$的tensor。下式之向量為tensor中第$ \color{black}{i}$個cell的代表輸出值。
+
+$$ \color{black}{V = [Bbox1 \; \mid \; Bbox2 \; \mid \; C]^T} $$
+
+$$ \color{black}{=[p_{i,1}(c) \; b_{xi,1} \; b_{yi,1} \; b_{wi,1} \; b_{hi,1} \; \mid \; p_{i,2}(c) \; b_{xi,2} \; b_{yi,2} \; b_{wi,2} \;  b_{hi,2} \mid C_1 \; C_2 \; C_3 \; ... \; C_{20}]^T} $$
 
 其中的$\color{black}{b_x}$、$\color{black}{b_y}$代表的是bounding box中心位置，是以其所屬之cell的座標為基準，故只會介於$\color{black}{0}$、$\color{black}{1}$之間。$\color{black}{b_w}$、$\color{black}{b_h}$是以該bounding box之長寬除以整張圖的長寬，故也只會介於$\color{black}{0}$、$\color{black}{1}$之間。
 
@@ -74,19 +78,17 @@ $\color{black}{(1)(2)(3)}$三項分別計算bounding box的位置、大小、預
 
 第$\color{black}{(1)(2)(3)}$項中的$ \color{green}{\mathbb{1}_{ij}^{obj}}$ 代表第 $\color{black}{i}$ 個cell上的第$\color{black}{j}$個bounding box被指定為predictor(即該bounding box在第$\color{black}{i}$個cell上總共B個bounding box中具有最大的 $$ \color{black}{IoU_{pred}^{truth}} $$)，即**loss function中$\color{black}{(1)(2)(3)}$三項只需計算被指定為predictor之bounding box所預測的位置、尺寸、class出現機率誤差**。
 
-predictor優點???????????????????????
-
 相對的，第$\color{black}{(4)}$項中的$\color{pi}{\mathbb{1}_{ij}^{noobj}}$代表**所有沒有出現物件的cell上所有bounding box，若是做出了大於零的class機率預測便皆視為誤差**。
 
 第$\color{black}{(5)}$項中的$\color{lg}{\mathbb{1}_{i}^{obj}}$代表第$\color{black}{i}$個cell中有物件則為1否則為0，即loss function須計入出現物件所代表之cell所預測各個class出現機率(即物件出現機率confidence乘以向量$\color{black}{C}$)與真實值間的誤差。以下圖為例，若編號A~H的cell皆預測出有狗，但真實值為狗狗中心所在的cell D，故loss function第$\color{black}{(5)}$項在狗狗物件上只需要計算cell D。
 
 <p align="center"><img src="../../images/DL/YOLOv1/in.png" width="500"></p>
 
-## 2.5 Non-max Suppression
+## 2.5 Non-max Suppression [Constructing]
 
 
 
-## 2.6 Parameters
+## 2.6 Parameters [Constructing]
 
 ## 2.7 Techniques for Avoiding Overfitting
 
@@ -103,7 +105,7 @@ predictor優點???????????????????????
 
 ## **3. Discussion**
 
-## 3.0 mAP (mean Average Precision)
+## 3.0 mAP (mean Average Precision) [Constructing]
 
 ## 3.1 Limitation of YOLO v1
 
@@ -112,7 +114,7 @@ predictor優點???????????????????????
 3. CNN分類器架構中有多層max-pooling layer，使某些特徵消失。若是用更為細緻的CNN架構作為backbone分類器，則可能降低運行效率，使YOLO無法做到real-time檢測。(e.g. YOLO+VGG16只有21FPS)
 4. 雖然loss function中第$\color{black}{(2)}$項有考慮相同誤差在較大圖中的影響應該要較小，但在$\color{black}{IoU}$的計算中卻是沒有辦法做到同樣的處理。
 
-## 3.2 Comparison with Faster RCNN
+## 3.2 Comparison with Faster RCNN [Constructing]
 
 YOLO v1的發明是嶄新的作法，和當時最好的Faster RCNN相比更快，但是判斷正確率較低一些。原文有寫出YOLO和各種物件偵測系統演算法的比較，但筆者認為不是太重要，重要的是原作第四章中YOLO和Faster RCNN在VOC2007資料集上的比較結果，所以本文也就只針對這個來做敘述。
 
