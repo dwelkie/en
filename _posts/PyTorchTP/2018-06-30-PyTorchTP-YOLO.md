@@ -52,6 +52,8 @@ $$ \color{black}{=[p_{i,1}(c) \; b_{xi,1} \; b_{yi,1} \; b_{wi,1} \; b_{hi,1} \;
 
 其中的$\color{black}{b_x}$、$\color{black}{b_y}$代表的是bounding box中心位置，是以其所屬之cell的座標為基準，故只會介於$\color{black}{0}$、$\color{black}{1}$之間。$\color{black}{b_w}$、$\color{black}{b_h}$是以該bounding box之長寬除以整張圖的長寬，故也只會介於$\color{black}{0}$、$\color{black}{1}$之間。
 
+<p align="center"><img src="../../images/DL/YOLOv1/v.png" width="500"></p>
+
 訓練時每個cell會從$\color{black}{B}$個bounding box中選出一個和真實物件位置計算出的IoU最大的做loss function計算，但在預測時就會輸出$\color{black}{S×S×B}$個bounding box，便需要以Non-maximum Suppression(NMS、非極大抑制)輸出最後結果。YOLO的loss function和NMS用法後面都會再詳述。
 
 <p align="center"><img src="../../images/DL/YOLOv1/iou.png" width="800"></p>
