@@ -114,7 +114,7 @@ $\color{black}{(1)(2)(3)}$三項分別計算bounding box的位置、大小、預
 但NMS也有很大的機會會將出現位置重疊的多個物件刪除，故後來也有很多種改進版本(e.g. [這篇論文](https://arxiv.org/pdf/1704.04503.pdf){:target="_blank"})。YOLO v1沒有說明是用哪種NMS，但有提到NMS對YOLO v1來說效果不大，預測正確率在PASCAL VOC上只進步2%。
 
 <p align="center"><img src="../../images/DL/YOLOv1/NMS.png" width="500"></p>
-<p align="center"><i>Fig. 7. 左圖為NMS成功刪除多於預測的例子，然而在右圖則可能判斷為只有一隻馬。<br>(<a href="https://www.cnblogs.com/makefile/p/nms.html"> 左圖來源</a>、<a href="https://arxiv.org/pdf/1704.04503.pdf"> 右圖來源)</a></i> </p>
+<p align="center"><i>Fig. 7. 左圖為NMS成功刪除多餘預測的例子，然而在右圖則可能判斷為只有一隻馬。<br>(<a href="https://www.cnblogs.com/makefile/p/nms.html"> 左圖來源</a>、<a href="https://arxiv.org/pdf/1704.04503.pdf"> 右圖來源)</a></i> </p>
 
 ## 2.6 Hyper-parameters
 
