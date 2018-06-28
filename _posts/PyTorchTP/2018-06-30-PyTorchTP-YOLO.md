@@ -26,7 +26,7 @@ $$ \definecolor{lg}{RGB}{114,0,172} \definecolor{pi}{RGB}{18,110,213} \definecol
 
 論文其實閱讀上感覺並不困難，可能半天就能讀完，但有些實際運行方面的細節沒有寫出來，需要參考其他資料。本文為該論文的閱讀筆記，架構以我自己認為比較好懂得上重新編排(如果有人覺得還是很難懂可以底下留言跟我說XD)。
 
-YOLO v1的創新之處在於跳脫過去DPM之sliding window技巧(一張圖需要多次輸入進CNN)和RCNN使用的region proposal + classify + refine組合技，整體來說將物件偵測看作是一個regression問題，每張圖只需輸入進CNN分類器一次(故運行速度大增)，輸出的tensor被訓練為圖上不同位置的物件特徵偵測，最後再以其存在機率刪除多餘的預測框線作為最後結果。
+YOLO v1的創新之處在於跳脫過去DPM之sliding window技巧(一張圖需要多次輸入進CNN)和RCNN使用的region proposal + classify + refine組合技，整體來說將物件偵測看作是一個regression問題，每張圖只需輸入進CNN分類器一次(故運行速度大增)，輸出的tensor被訓練為圖上不同位置的物件特徵偵測，最後再以其存在機率刪除多餘的偵測框線作為最後結果。
 
 <p align="center"><img src="../../images/DL/YOLOv1/v1.png" width="800"></p>
 <p align="center"><i>Fig. 1. YOLO v1演算法示意圖。 </i> </p>
@@ -54,7 +54,7 @@ YOLO v1的創新之處在於跳脫過去DPM之sliding window技巧(一張圖需�
 
 先說明一下，為了方便講解，本文內的公式符號和原文內所用的不同。
 
-YOLO會將一張圖分割成$\color{black}{S×S}$個cell，而所有cell都會做出$\color{black}{B}$個bounding box預測，每個bounding box代表一個物件的存在(每個物件中心所在的cell即做為該物件之代表性cell)，預測標的包含物件大小、中心位置、信心水準($\color{black}{p_i(c)}$, 被定義為$\color{black}{P(Object)*IoU}$)。每個cell同時也會輸出一組向量$\color{black}{C}$，向量中每個值代表一個class在物件存在條件下出現的機率，即$\color{black}{P(Class_i \mid Object)}$。
+YOLO會將一張圖分割成$\color{black}{S×S}$個cell，而所有cell都會輸出$\color{black}{B}$個bounding box，每個bounding box代表一個物件的存在(每個物件中心所在的cell即做為該物件之代表性cell)，預測標的包含物件大小、中心位置、信心水準($\color{black}{p_i(c)}$, 被定義為$\color{black}{P(Object)*IoU}$)。每個cell同時也會輸出一組向量$\color{black}{C}$，向量中每個值代表一個class在物件存在條件下出現的機率，即$\color{black}{P(Class_i \mid Object)}$。
 
 原作$\color{black}{S=7}$、$\color{black}{B=2}$、class數量為20，故前述CNN分類器輸出的是一個大小為$\color{black}{7×7×(2×5+20)}$的tensor。下式之向量為tensor中第$ \color{black}{i}$個cell的代表輸出值。
 
@@ -70,7 +70,7 @@ $$ \color{black}{=[p_{i,1}(c) \; b_{xi,1} \; b_{yi,1} \; b_{wi,1} \; b_{hi,1} \;
 訓練時每個cell會從$\color{black}{B}$個bounding box中選出一個和真實物件位置計算出的IoU最大的做loss function計算，但在預測時就會輸出$\color{black}{S×S×B}$個bounding box，便需要以Non-maximum Suppression(NMS、非極大抑制)輸出最後結果。YOLO的loss function和NMS用法後面都會再詳述。
 
 <p align="center"><img src="../../images/DL/YOLOv1/iou.png" width="800"></p>
-<p align="center"><i>Fig. 4. Recall, Precision, IoU為判斷預測結果的方法。(來源: U of Pittsburgh，連結已失效)</i> </p>
+<p align="center"><i>Fig. 4. Recall, Precision, IoU為判斷結果好壞的標準。(來源: U of Pittsburgh，連結已失效)</i> </p>
 
 ## 2.4 Loss Function
 
@@ -88,7 +88,7 @@ $$ \color{black}{+ \sum_{c \in classes}} \color{lg}{\mathbb{1}_{i}^{obj}} \color
 
 $\color{black}{(1)(2)(4)}$中的$\color{orange}{\lambda_{coord}=5}$和$\color{red}{\lambda_{noobj}=0.5}$兩個參數是為了**加重懲罰圖片中有物件處之誤差，並減輕背景處誤差之懲罰**。因為圖片大部分cell中不會有值得關注的物件，若沒有這兩個參數，整個演算法會傾向圖中猜測沒有任何物件。
 
-$\color{black}{(1)(2)(3)}$三項分別計算bounding box的位置、大小、預測class機率(即向量$\color{black}{C}$)的誤差，其中計算大小的第$\color{black}{(2)}$項加上開根號是為了讓能夠做到讓**同樣的尺寸誤差在大圖中所受的懲罰較小**。以下圖為例，假使紅框為真實bounding box而藍框為預測的bounding box且長度皆大了真實值一相同值(e.g. 10px)，將尺寸開根號計算能將誤差在狗(較大圖)上的所受懲罰變得較車(較小圖)還來的小。
+$\color{black}{(1)(2)(3)}$三項分別計算bounding box的位置、大小、class存在機率(即向量$\color{black}{C}$)的誤差，其中計算大小的第$\color{black}{(2)}$項加上開根號是為了讓能夠做到讓**同樣的尺寸誤差在大圖中所受的懲罰較小**。以下圖為例，假使紅框為真實bounding box而藍框為預測的bounding box且長度皆大了真實值一相同值(e.g. 10px)，將尺寸開根號計算能將誤差在狗(較大圖)上的所受懲罰變得較車(較小圖)還來的小。
 
 <p align="center"><img src="../../images/DL/YOLOv1/in0.png" width="500"></p>
 <p align="center"><i>Fig. 5. 同樣數值的尺寸誤差在大圖中的影響較小，故loss function中該項以開根號計算。</i> </p>
@@ -104,17 +104,17 @@ $\color{black}{(1)(2)(3)}$三項分別計算bounding box的位置、大小、預
 
 ## 2.5 Non-max Suppression
 
-當物件偵測演算法做出多個bounding box預測後，但其中的多個bounding box可能是針對同一物件，這時便能用[NMS](https://www.semanticscholar.org/paper/Efficient-Non-Maximum-Suppression-Neubeck-Gool/50118c6bdcc5de696d31a22b11ed197024ac26ae){:target="_blank"}來做局部最大搜索，消除多餘的並留下存在機率較高的bounding box。基本的NMS做法如下
+當物件偵測演算法輸出多個bounding box後，但其中的多個bounding box可能是針對同一物件，這時便能用[NMS](https://www.semanticscholar.org/paper/Efficient-Non-Maximum-Suppression-Neubeck-Gool/50118c6bdcc5de696d31a22b11ed197024ac26ae){:target="_blank"}來做局部最大搜索，消除多餘的並留下存在機率較高的bounding box。基本的NMS做法如下
 
 1. 首先需要設定一threshold，通常介於0.3~0.5。
 2. 將每個bounding box依存在機率排序。
 3. 輸出存在機率最大的bounding box，刪除與其IoU大於threshold的所有bounding box。
 4. 將剩下的所有bounding box依照步驟三處理，直到沒有任何候選bounding box。
 
-但NMS也有很大的機會會將出現位置重疊的多個物件刪除，故後來也有很多種改進版本(e.g. [這篇論文](https://arxiv.org/pdf/1704.04503.pdf){:target="_blank"})。YOLO v1沒有說明是用哪種NMS，但有提到NMS對YOLO v1來說效果不大，預測正確率在PASCAL VOC上只進步2%。
+但NMS也有很大的機會會將出現位置重疊的多個物件刪除，故後來也有很多種改進版本(e.g. [這篇論文](https://arxiv.org/pdf/1704.04503.pdf){:target="_blank"})。YOLO v1沒有說明是用哪種NMS，但有提到NMS對YOLO v1來說效果不大，正確率在PASCAL VOC上只進步2%。
 
 <p align="center"><img src="../../images/DL/YOLOv1/NMS.png" width="500"></p>
-<p align="center"><i>Fig. 7. 左圖為NMS成功刪除多餘預測的例子，然而在右圖則可能判斷為只有一隻馬。<br>(<a href="https://www.cnblogs.com/makefile/p/nms.html"> 左圖來源</a>、<a href="https://arxiv.org/pdf/1704.04503.pdf"> 右圖來源)</a></i> </p>
+<p align="center"><i>Fig. 7. 左圖為NMS成功刪除多餘偵測的例子，然而在右圖則可能判斷為只有一隻馬。<br>(<a href="https://www.cnblogs.com/makefile/p/nms.html"> 左圖來源</a>、<a href="https://arxiv.org/pdf/1704.04503.pdf"> 右圖來源)</a></i> </p>
 
 ## 2.6 Hyper-parameters
 
@@ -142,7 +142,8 @@ $\color{black}{(1)(2)(3)}$三項分別計算bounding box的位置、大小、預
 
 ## 3.1 Limitation of YOLO v1
 
-1. 演算法上明顯的缺點是，每個cell上雖有B個bounding box做預測，但最後只能用最好的一個，限制了每個cell只能預測出一個物件，如果一個cell中有多個物件，或是幾個較大物件的中心剛好出現在同一個cell，可能就會做出錯誤判斷。
+1. 演算法上明顯的缺點是，每個cell上雖輸出B個bounding box，但卻只有一組class存在機率，限制了每個cell只能預測出一種物件，如果幾個較大物件的中心剛好出現在同一個cell，可能就會做出錯誤判斷。
+2. 如前面在NMS部分所述，如果多個物件位置重疊率高，可能因此被NMS判斷為同一物件。
 2. 如果要做預測的圖中所出現的物件的長寬比或排列方式較為異常(即訓練資料中不常見)，則YOLO並無這樣的泛化學習能力，而容易做出錯誤預測。
 3. CNN分類器架構中有多層max-pooling layer，使某些特徵消失。若是用更為細緻的CNN架構作為backbone分類器，則可能降低運行效率，使YOLO無法做到real-time檢測。(e.g. YOLO+VGG16只有21FPS)
 4. 雖然loss function中第$\color{black}{(2)}$項有考慮相同誤差在較大圖中的影響應該要較小，但在$\color{black}{IoU}$的計算中卻是沒有辦法做到同樣的處理。
