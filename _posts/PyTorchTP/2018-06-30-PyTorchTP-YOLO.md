@@ -91,7 +91,7 @@ $\color{black}{(1)(2)(4)}$中的$\color{orange}{\lambda_{coord}=5}$和$\color{re
 $\color{black}{(1)(2)(3)}$三項分別計算bounding box的位置、大小、class存在機率(即向量$\color{black}{C}$)的誤差，其中計算大小的第$\color{black}{(2)}$項加上開根號是為了讓能夠做到讓**同樣的尺寸誤差在大圖中所受的懲罰較小**。以下圖為例，假使紅框為真實bounding box而藍框為預測的bounding box且長度皆大了真實值一相同值(e.g. 10px)，將尺寸開根號計算能將誤差在狗(較大圖)上的所受懲罰變得較車(較小圖)還來的小。
 
 <p align="center"><img src="../../images/DL/YOLOv1/in0.png" width="500"></p>
-<p align="center"><i>Fig. 5. 同樣數值的尺寸誤差在大圖中的影響較小，故loss function中該項以開根號計算。</i> </p>
+<p align="center"><i>Fig. 5. 同樣數值大小的尺寸誤差在大圖中的影響較小，故loss function中該項以開根號計算。</i> </p>
 
 第$\color{black}{(1)(2)(3)}$項中的$ \color{green}{\mathbb{1}_{ij}^{obj}}$ 代表第 $\color{black}{i}$ 個cell上的第$\color{black}{j}$個bounding box被指定為predictor(即該bounding box在第$\color{black}{i}$個cell上總共B個bounding box中具有最大的 $$ \color{black}{IoU_{pred}^{truth}} $$)，即**loss function中$\color{black}{(1)(2)(3)}$三項只需計算被指定為predictor之bounding box所預測的位置、尺寸、class出現機率誤差**。
 
