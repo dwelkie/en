@@ -24,7 +24,7 @@ $$ \definecolor{lg}{RGB}{114,0,172} \definecolor{pi}{RGB}{18,110,213} \definecol
 
 [YOLO (You Only Look Once)][6]{:target="_blank"} 是[Joseph Redmon](https://pjreddie.com/){:target="_blank"}(他的[彩虹小馬CV](https://pjreddie.com/static/Redmon%20Resume.pdf){:target="_blank"})等人於2015年合著之real-time物件偵測(Object Detection)演算法，然而在2016和2018又再各推出了改良版YOLO(即[v2][5]{:target="_blank"}和[v3][4]{:target="_blank"})，可以說是目前該領域表現最佳之演算法。
 
-論文其實閱讀上感覺並不困難，可能半天就能讀完，但有些實際運行方面的細節沒有寫出來，需要參考其他資料。本文為該論文的閱讀筆記，架構以我自己認為比較好懂得上重新編排(如果有人覺得還是很難懂可以底下留言跟我說XD)。
+論文其實閱讀上感覺並不困難，可能半天就能讀完，但有些實際運行方面的細節沒有寫出來，需要參考其他資料。本文為該論文的閱讀筆記，架構以我自己認為比較好懂得順序重新編排(如果有人覺得還是很難懂可以底下留言跟我說XD)。
 
 YOLO v1的創新之處在於跳脫過去DPM之sliding window技巧(一張圖需要多次輸入進CNN)和RCNN使用的region proposal + classify + refine組合技，整體來說將物件偵測看作是一個regression問題，每張圖只需輸入進CNN分類器一次(故運行速度大增)，輸出的tensor被訓練為圖上不同位置的物件特徵偵測，最後再以其存在機率刪除多餘的偵測框線作為最後結果。
 
@@ -42,9 +42,9 @@ YOLO v1的創新之處在於跳脫過去DPM之sliding window技巧(一張圖需�
 <p align="center"><img src="../../images/DL/YOLOv1/backbone.png" width="800"></p>
 <p align="center"><i>Fig. 2. YOLO v1所使用之CNN分類器架構。 </i> </p>
 
-上圖為YOLO所用之CNN分類器架構，共24層ConvLayer和2層FC Layer，參考GoogLeNet的架構但把Inception直接用1*1 Conv取代。(筆者認為上圖中為圖片標記的尺寸似乎有些地方有錯，不過這不是很重要就是了，下面寫的convolution資訊就能夠複製作法，而且YOLO也能替換用其他分類器。)
+上圖為YOLO所用之CNN分類器架構，共24層ConvLayer和2層FC Layer，參考GoogLeNet的架構但把Inception直接用1*1 Conv取代。(筆者認為上圖中為圖片標記的尺寸似乎有些地方有錯，不過這沒有很重要就是了，下面寫的convolution資訊就能夠複製作法，而且YOLO也能替換用其他分類器。)
 
-另外，該架構使用的activaiton function是Leaky ReLU(可以看我之前寫的[ReLU相關介紹](https://mattwang44.github.io/en/articles/PyTorchTP-AlexNet/#21-relu){:target="_blank"})，主要優點為運算速度和ReLU差不多快但不會丟失負值訊息。
+另外，該架構使用的activaiton function是Leaky ReLU(可以看我之前寫的[ReLU相關介紹](https://mattwang44.github.io/en/articles/PyTorchTP-AlexNet/#21-relu){:target="_blank"})，主要優點為運算速度和ReLU差不多快但不會完全丟失負值訊息。
 
 ## 2.2 Pretraining
 
@@ -54,15 +54,17 @@ YOLO v1的創新之處在於跳脫過去DPM之sliding window技巧(一張圖需�
 
 先說明一下，為了方便講解，本文內的公式符號和原文內所用的不同。
 
-YOLO會將一張圖分割成$\color{black}{S×S}$個cell，而所有cell都會輸出$\color{black}{B}$個bounding box，每個bounding box代表一個物件的存在(每個物件中心所在的cell即做為該物件之代表性cell)，預測標的包含物件大小、中心位置、信心水準($\color{black}{p_i(c)}$, 被定義為$\color{black}{P(Object)*IoU}$)。每個cell同時也會輸出一組向量$\color{black}{C}$，向量中每個值代表一個class在物件存在條件下出現的機率，即$\color{black}{P(Class_i \mid Object)}$。
+YOLO會將一張圖分割成$\color{black}{S×S}$個cell，而所有cell都會輸出$\color{black}{B}$個bounding box，每個bounding box代表一個物件的存在(每個物件中心所在的cell即做為該物件之代表性cell)，預測標的包含物件大小、中心位置、信心水準($\color{black}{C}$, 被定義為$\color{black}{P(Object)*IoU}$，即有物件出現則計算$\color{black}{IoU}$，若無則為0)。
+
+每個cell同時也會輸出一組向量$\color{black}{p(c)$，向量中每個值代表一個class在物件存在條件下出現的機率，即$\color{black}{P(Class_i \mid Object)}$。
 
 原作$\color{black}{S=7}$、$\color{black}{B=2}$、class數量為20，故前述CNN分類器輸出的是一個大小為$\color{black}{7×7×(2×5+20)}$的tensor。下式之向量為tensor中第$ \color{black}{i}$個cell的代表輸出值。
 
-$$ \color{black}{V = [Bbox1 \; \mid \; Bbox2 \; \mid \; C]} $$
+$$ \color{black}{V_i = [Bbox1_i \; \mid \; Bbox2_i \; \mid \; p_i(C)]} $$
 
-$$ \color{black}{=[p_{i,1}(c) \; b_{xi,1} \; b_{yi,1} \; b_{wi,1} \; b_{hi,1} \; \mid \; p_{i,2}(c) \; b_{xi,2} \; b_{yi,2} \; b_{wi,2} \;  b_{hi,2} \mid C_1 \; C_2 \; C_3 \; ... \; C_{20}]} $$
+$$ \color{black}{=[ C_{i,1} \; b_{xi,1} \; b_{yi,1} \; b_{wi,1} \; b_{hi,1} \; \mid \; C_{i,2} \; b_{xi,2} \; b_{yi,2} \; b_{wi,2} \;  b_{hi,2} \mid p_{i}(c_1) \; p_{i}(c_2) \; p_{i}(c_3) \; ... \; p_{i}(c_20)]} $$
 
-如下圖所示，上式中的$\color{black}{b_x}$、$\color{black}{b_y}$代表的是bounding box中心位置，是以其所屬之cell的座標為基準，故只會介於$\color{black}{0}$、$\color{black}{1}$之間。$\color{black}{b_w}$、$\color{black}{b_h}$是以該bounding box之長寬除以整張圖的長寬，故也只會介於$\color{black}{0}$、$\color{black}{1}$之間。
+如下圖所示，上式中的$\color{black}{b_x}$、$\color{black}{b_y}$代表的是bounding box中心位置，是以其所屬之cell的座標為基準，故只會介於$\color{black}{0}$、$\color{black}{1}$之間。$\color{black}{b_w}$、$\color{black}{b_h}$是以該bounding box之長寬除以整張圖的長寬，故也只會介於$\color{black}{0}$、$\color{black}{1}$之間。$\color{black}{p(c_k)}$為在該cell有物件出現條件下之$\color{black}{c_k}$類別出現機率。
 
 <p align="center"><img src="../../images/DL/YOLOv1/v.png" width="500"></p>
 <p align="center"><i>Fig. 3. $\color{black}{b_x}$、$\color{black}{b_y}、\color{black}{b_w}$、$\color{black}{b_h}$之計算方法。</i> </p>
@@ -88,16 +90,16 @@ $$ \color{black}{+ \sum_{c \in classes}} \color{lg}{\mathbb{1}_{i}^{obj}} \color
 
 $\color{black}{(1)(2)(4)}$中的$\color{orange}{\lambda_{coord}=5}$和$\color{red}{\lambda_{noobj}=0.5}$兩個參數是為了**加重懲罰圖片中有物件處之誤差，並減輕背景處誤差之懲罰**。因為圖片大部分cell中不會有值得關注的物件，若沒有這兩個參數，整個演算法會傾向圖中猜測沒有任何物件。
 
-$\color{black}{(1)(2)(3)}$三項分別計算bounding box的位置、大小、class存在機率(即向量$\color{black}{C}$)的誤差，其中計算大小的第$\color{black}{(2)}$項加上開根號是為了讓能夠做到讓**同樣的尺寸誤差在大圖中所受的懲罰較小**。以下圖為例，假使紅框為真實bounding box而藍框為預測的bounding box且長度皆大了真實值一相同值(e.g. 10px)，將尺寸開根號計算能將誤差在狗(較大圖)上的所受懲罰變得較車(較小圖)還來的小。
+$\color{black}{(1)(2)(3)}$三項分別計算bounding box的位置、大小、class存在機率(即向量$\color{black}{p(c)}$)的誤差，其中計算大小的第$\color{black}{(2)}$項加上開根號是為了讓能夠做到讓**同樣的尺寸誤差在大圖中所受的懲罰較小**。以下圖為例，假使紅框為真實bounding box而藍框為預測的bounding box且長度皆大了真實值一相同值(e.g. 10px)，將尺寸開根號計算能將誤差在狗(較大圖)上的所受懲罰變得較車(較小圖)還來的小。
 
 <p align="center"><img src="../../images/DL/YOLOv1/in0.png" width="500"></p>
 <p align="center"><i>Fig. 5. 同樣數值大小的尺寸誤差在大圖中的影響較小，故loss function中該項以開根號計算。</i> </p>
 
 第$\color{black}{(1)(2)(3)}$項中的$ \color{green}{\mathbb{1}_{ij}^{obj}}$ 代表第 $\color{black}{i}$ 個cell上的第$\color{black}{j}$個bounding box被指定為predictor(即該bounding box在第$\color{black}{i}$個cell上總共B個bounding box中具有最大的 $$ \color{black}{IoU_{pred}^{truth}} $$)，即**loss function中$\color{black}{(1)(2)(3)}$三項只需計算被指定為predictor之bounding box所預測的位置、尺寸、class出現機率誤差**。
 
-相對的，第$\color{black}{(4)}$項中的$\color{pi}{\mathbb{1}_{ij}^{noobj}}$代表非predictor之cell，該項即**所有沒有被指定為predictor的bounding box，若是做出了大於零的class機率預測便皆視為誤差**。
+相對的，第$\color{black}{(4)}$項中的$\color{pi}{\mathbb{1}_{ij}^{noobj}}$代表不包含物件之cell，該項即**所有其所屬cell沒出現物件的bounding box，若是做出了大於零的class機率預測便皆視為誤差**。如同$ \color{green}{\mathbb{1}_{ij}^{obj}}$，這裡也只取所有bounding box中$\color{black}{C}$最大的做計算。
 
-第$\color{black}{(5)}$項中的$\color{lg}{\mathbb{1}_{i}^{obj}}$代表第$\color{black}{i}$個cell中有物件則為1否則為0，即loss function須計入出現物件所代表之cell所預測各個class出現機率(即物件出現機率confidence乘以向量$\color{black}{C}$)與真實值間的誤差。以下圖為例，若編號A~H的cell皆預測出有狗，但真實值為狗狗中心所在的cell D，故loss function第$\color{black}{(5)}$項在狗狗物件上只需要計算cell D。
+第$\color{black}{(5)}$項中的$\color{lg}{\mathbb{1}_{i}^{obj}}$代表第$\color{black}{i}$個cell中有物件則為1否則為0，即loss function須計入出現物件所代表之cell所預測各個class出現機率與真實值間的誤差。以下圖為例，若編號A~H的cell皆預測出有狗，但真實值為狗狗中心所在的cell D，故loss function第$\color{black}{(5)}$項在狗狗物件上只需要計算cell D。
 
 <p align="center"><img src="../../images/DL/YOLOv1/in.png" width="500"></p>
 <p align="center"><i>Fig. 6. 每個物件只有其中心所在cell作為代表。以圖中狗為例，cell D為其代表。 </i> </p>
