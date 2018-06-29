@@ -190,6 +190,7 @@ YOLO在即時偵測系統當中準確率最高，而Fast YOLO(CNN分類器只含
 6. mAP
    * [知乎: mean average precision（MAP）在计算机视觉中是如何计算和应用的？](https://www.zhihu.com/question/41540197){:target="_blank"}
    * [Victor Lavrenko's YouTube Channle](https://www.youtube.com/watch?v=pM6DJ0ZZee0){:target="_blank"}
+7. 感謝郭宗賢大哥一眼看穿我寫錯的部分！
 99. 和YOLO論文無關的[Mathjax數學式上色方法](http://adereth.github.io/blog/2013/11/29/colorful-equations/){:target="_blank"}
 
 
