@@ -56,13 +56,13 @@ YOLO v1的創新之處在於跳脫過去DPM之sliding window技巧(一張圖需�
 
 YOLO會將一張圖分割成$\color{black}{S×S}$個cell，而所有cell都會輸出$\color{black}{B}$個bounding box，每個bounding box代表一個物件的存在(每個物件中心所在的cell即做為該物件之代表性cell)，預測標的包含物件大小、中心位置、信心水準($\color{black}{C}$, 被定義為$\color{black}{P(Object)*IoU}$，即有物件出現則計算$\color{black}{IoU}$，若無則為0)。
 
-每個cell同時也會輸出一組向量$\color{black}{p(c)$，向量中每個值代表一個class在物件存在條件下出現的機率，即$\color{black}{P(Class_i \mid Object)}$。
+每個cell同時也會輸出一組向量$\color{black}{p(c)}$，向量中每個值代表一個class在物件存在條件下出現的機率，即$\color{black}{P(Class_i \mid Object)}$。
 
 原作$\color{black}{S=7}$、$\color{black}{B=2}$、class數量為20，故前述CNN分類器輸出的是一個大小為$\color{black}{7×7×(2×5+20)}$的tensor。下式之向量為tensor中第$ \color{black}{i}$個cell的代表輸出值。
 
 $$ \color{black}{V_i = [Bbox1_i \; \mid \; Bbox2_i \; \mid \; p_i(C)]} $$
 
-$$ \color{black}{=[ C_{i,1} \; b_{xi,1} \; b_{yi,1} \; b_{wi,1} \; b_{hi,1} \; \mid \; C_{i,2} \; b_{xi,2} \; b_{yi,2} \; b_{wi,2} \;  b_{hi,2} \mid p_{i}(c_1) \; p_{i}(c_2) \; p_{i}(c_3) \; ... \; p_{i}(c_20)]} $$
+$$ \color{black}{=[ C_{i,1} \; b_{xi,1} \; b_{yi,1} \; b_{wi,1} \; b_{hi,1} \; \mid \; C_{i,2} \; b_{xi,2} \; b_{yi,2} \; b_{wi,2} \;  b_{hi,2} \mid p_{i}(c_1) \; p_{i}(c_2) \; p_{i}(c_3) \; ... \; p_{i}(c_{20})]} $$
 
 如下圖所示，上式中的$\color{black}{b_x}$、$\color{black}{b_y}$代表的是bounding box中心位置，是以其所屬之cell的座標為基準，故只會介於$\color{black}{0}$、$\color{black}{1}$之間。$\color{black}{b_w}$、$\color{black}{b_h}$是以該bounding box之長寬除以整張圖的長寬，故也只會介於$\color{black}{0}$、$\color{black}{1}$之間。$\color{black}{p(c_k)}$為在該cell有物件出現條件下之$\color{black}{c_k}$類別出現機率。
 
@@ -95,9 +95,9 @@ $\color{black}{(1)(2)(3)}$三項分別計算bounding box的位置、大小、cla
 <p align="center"><img src="../../images/DL/YOLOv1/in0.png" width="500"></p>
 <p align="center"><i>Fig. 5. 同樣數值大小的尺寸誤差在大圖中的影響較小，故loss function中該項以開根號計算。</i> </p>
 
-第$\color{black}{(1)(2)(3)}$項中的$ \color{green}{\mathbb{1}_{ij}^{obj}}$ 代表第 $\color{black}{i}$ 個cell上的第$\color{black}{j}$個bounding box被指定為predictor(即該bounding box在第$\color{black}{i}$個cell上總共B個bounding box中具有最大的 $$ \color{black}{IoU_{pred}^{truth}} $$)，即**loss function中$\color{black}{(1)(2)(3)}$三項只需計算被指定為predictor之bounding box所預測的位置、尺寸、class出現機率誤差**。
+第$\color{black}{(1)(2)(3)}$項中的$ \color{green}{\mathbb{1}_{ij}^{obj}}$ 代表第 $\color{black}{i}$ 個cell上的第$\color{black}{j}$個bounding box被指定為predictor(即該bounding box在第$\color{black}{i}$個cell上總共B個bounding box中具有最大的 $$ \color{black}{IoU_{pred}^{truth}} $$)，即**loss function中$\color{black}{(1)(2)(3)}$三項只需計算被指定為predictor之bounding box所預測的位置、尺寸、物件存在機率誤差**。
 
-相對的，第$\color{black}{(4)}$項中的$\color{pi}{\mathbb{1}_{ij}^{noobj}}$代表不包含物件之cell，該項即**所有其所屬cell沒出現物件的bounding box，若是做出了大於零的class機率預測便皆視為誤差**。如同$ \color{green}{\mathbb{1}_{ij}^{obj}}$，這裡也只取所有bounding box中$\color{black}{C}$最大的做計算。
+相對的，第$\color{black}{(4)}$項中的$\color{pi}{\mathbb{1}_{ij}^{noobj}}$代表不包含物件之cell，該項即**所有其所屬cell沒出現物件的bounding box，若是做出了大於零的物件存在機率預測便皆視為誤差**。如同$$ \color{green}{\mathbb{1}_{ij}^{obj}} $$，這裡也只取所有bounding box中$\color{black}{C}$最大的做計算。
 
 第$\color{black}{(5)}$項中的$\color{lg}{\mathbb{1}_{i}^{obj}}$代表第$\color{black}{i}$個cell中有物件則為1否則為0，即loss function須計入出現物件所代表之cell所預測各個class出現機率與真實值間的誤差。以下圖為例，若編號A~H的cell皆預測出有狗，但真實值為狗狗中心所在的cell D，故loss function第$\color{black}{(5)}$項在狗狗物件上只需要計算cell D。
 
@@ -190,7 +190,7 @@ YOLO在即時偵測系統當中準確率最高，而Fast YOLO(CNN分類器只含
 6. mAP
    * [知乎: mean average precision（MAP）在计算机视觉中是如何计算和应用的？](https://www.zhihu.com/question/41540197){:target="_blank"}
    * [Victor Lavrenko's YouTube Channle](https://www.youtube.com/watch?v=pM6DJ0ZZee0){:target="_blank"}
-7. 感謝郭宗賢大哥一眼看穿我寫錯的部分！
+7. 感謝[郭宗賢](https://www.facebook.com/profile.php?id=100010060475075){:target="_blank"}大哥一眼看穿我寫錯的部分！
 99. 和YOLO論文無關的[Mathjax數學式上色方法](http://adereth.github.io/blog/2013/11/29/colorful-equations/){:target="_blank"}
 
 
