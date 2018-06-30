@@ -48,7 +48,7 @@ YOLO v1的創新之處在於跳脫過去DPM之sliding window技巧(一張圖需�
 
 ## 2.2 Pretraining
 
-原作將上述架構的前20層ConvLayer再補上一層avg-pooling layer和一層ConvLayer做pretraining，雖然YOLO針對的是PASCAL VOC但原作pretrain是使用ImageNet資料集(1000-class)，花了約一周訓練並在ImageNet2012上得到top5-acc. 88%。Pretrain完成後才再以完整架構(pretrain架構+4conv+2FC)做訓練，最後輸出一個$\color{black}{7×7×30}$大小的tensor(為符合後面的演算法設計)。
+原作將上述架構的前20層ConvLayer再補上一層avg-pooling layer和一層FC Layer做pretraining，雖然YOLO針對的是PASCAL VOC但原作pretrain是使用ImageNet資料集(1000-class)，花了約一周訓練並在ImageNet2012上得到top5-acc. 88%。Pretrain完成後才再以完整架構(pretrain架構+4conv+2FC)做訓練，最後輸出一個$\color{black}{7×7×30}$大小的tensor(為符合後面的演算法設計)。
 
 ## 2.3 Bounding Box Regression
 
@@ -97,7 +97,7 @@ $\color{black}{(1)(2)(3)}$三項分別計算bounding box的位置、大小、cla
 
 第$\color{black}{(1)(2)(3)}$項中的$ \color{green}{\mathbb{1}_{ij}^{obj}}$ 代表第 $\color{black}{i}$ 個cell上的第$\color{black}{j}$個bounding box被指定為predictor(即該bounding box在第$\color{black}{i}$個cell上總共B個bounding box中具有最大的 $$ \color{black}{IoU_{pred}^{truth}} $$)，即**loss function中$\color{black}{(1)(2)(3)}$三項只需計算被指定為predictor之bounding box所預測的位置、尺寸、物件存在機率誤差**。
 
-相對的，第$\color{black}{(4)}$項中的$\color{pi}{\mathbb{1}_{ij}^{noobj}}$代表不包含物件之cell，該項即**所有其所屬cell沒出現物件的bounding box，若是做出了大於零的物件存在機率預測便皆視為誤差**。如同$$ \color{green}{\mathbb{1}_{ij}^{obj}} $$，這裡也只取所有bounding box中$\color{black}{C}$最大的做計算。
+相對的，第$\color{black}{(4)}$項中的$\color{pi}{\mathbb{1}_{ij}^{noobj}}$代表不包含物件之cell，該項即**所有其所屬cell沒出現物件的bounding box，若是做出了大於零的物件存在機率預測便皆視為誤差**。如同$$ \color{green}{\mathbb{1}_{ij}^{obj}} $$，這裡也只取cell上所有bounding box中$\color{black}{C}$最大的做計算。
 
 第$\color{black}{(5)}$項中的$\color{lg}{\mathbb{1}_{i}^{obj}}$代表第$\color{black}{i}$個cell中有物件則為1否則為0，即loss function須計入出現物件所代表之cell所預測各個class出現機率與真實值間的誤差。以下圖為例，若編號A~H的cell皆預測出有狗，但真實值為狗狗中心所在的cell D，故loss function第$\color{black}{(5)}$項在狗狗物件上只需要計算cell D。
 
