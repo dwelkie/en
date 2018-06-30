@@ -24,9 +24,9 @@ $$ \definecolor{lg}{RGB}{114,0,172} \definecolor{pi}{RGB}{18,110,213} \definecol
 
 [YOLO (You Only Look Once)][6]{:target="_blank"} 是[Joseph Redmon](https://pjreddie.com/){:target="_blank"}(他的[彩虹小馬CV](https://pjreddie.com/static/Redmon%20Resume.pdf){:target="_blank"})等人於2015年合著之real-time物件偵測(Object Detection)演算法，然而在2016和2018又再各推出了改良版YOLO(即[v2][5]{:target="_blank"}和[v3][4]{:target="_blank"})，可以說是目前該領域表現最佳之演算法。
 
-論文其實閱讀上感覺並不困難，可能半天就能讀完，但有些實際運行方面的細節沒有寫出來，需要參考其他資料。本文為該論文的閱讀筆記，架構以我自己認為比較好懂得順序重新編排(如果有人覺得還是很難懂可以底下留言跟我說XD)。
+本文為YOLO v1論文的閱讀筆記，架構以我自己認為比較好懂得順序重新編排(如果有人覺得還是很難懂可以底下留言跟我說XD)。論文其實閱讀上感覺並不困難，可能一天就能讀完，但不少實際運行方面的細節沒有寫出來，需要參考其他資料。(讀完論文到寫出這篇文章花了快一周...)
 
-YOLO v1的創新之處在於跳脫過去DPM之sliding window技巧(一張圖需要多次輸入進CNN)和RCNN使用的region proposal + classify + refine組合技，整體來說將物件偵測看作是一個regression問題，每張圖只需輸入進CNN分類器一次(故運行速度大增)，輸出的tensor被訓練為圖上不同位置的物件特徵偵測，最後再以其存在機率刪除多餘的偵測框線作為最後結果。
+YOLO v1的創新之處在於跳脫過去DPM之sliding window技巧(一張圖需要多次輸入進CNN)和RCNN使用的region proposal + classify + refine組合技，整體來說將物件偵測看作是一個regression問題，每張圖只需輸入進CNN分類器一次(故運行速度大增)，輸出的tensor被訓練為圖上不同位置的物件特徵偵測結果，最後再以其存在機率判斷刪除多餘的偵測框線作為最後結果。
 
 <p align="center"><img src="../../images/DL/YOLOv1/v1.png" width="800"></p>
 <p align="center"><i>Fig. 1. YOLO v1演算法示意圖。 </i> </p>
