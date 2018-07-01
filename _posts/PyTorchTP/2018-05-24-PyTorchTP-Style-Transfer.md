@@ -13,7 +13,7 @@ date: 2018-05-22
 fbcomments: true
 ---
 <img src="" width="800">
-
+ 
 {% include toc.html %}
 
 本周實作主題由我主講，有興趣可以看[講解影片](https://www.youtube.com/watch?v=G3gd5jo5nJA){:target="_blank"}。這篇內容比較簡單，所以我講解重點擺在讓大家理解論文內容，若理解論文應該可以很快看懂code。
