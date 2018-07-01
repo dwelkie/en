@@ -1,15 +1,15 @@
 ---
 layout: article
-title: "PyTorch Taipei 2018 week17: YOLO v1"
-modified: 2018-06-27
+title: "PyTorch Taipei 2018 week18: SSD"
+modified: 2018-07-01
 categories: articles
-description: "YOLO v1 跳脫過去物件偵測演算法region proposal技巧，大幅提升運算效率。 | Wei-Hsiang Wang's Website"
+description: "Single shot multibox detector(SSD)為2016年發表的real-time物件偵測演算法，承襲YOLO v1一樣只需要將圖片輸入CNN一次，但能夠從不同捲積層的feature maps偵測物件，準確率和運行速度都比YOLO v1更加提升。 | Convolution Neural Network, CNN, Deep Learning, real-time object detection | Wei-Hsiang Wang's Website"
 tags: [PyTorchTP, DL, DLpaper]
 image:
   feature:
-  teaser: yologo.png
-  thumb: yologo.png
-date: 2018-06-27
+  teaser: DL/SSD/logo.png
+  thumb: DL/SSD/logo.png
+date: 2018-07-01
 fbcomments: true
 ---
 
@@ -19,6 +19,17 @@ fbcomments: true
 $$ \definecolor{lg}{RGB}{114,0,172} \definecolor{pi}{RGB}{18,110,213} \definecolor{og}{RGB}{217,86,16} \definecolor{f}{RGB}{45,177,93}$$
 <img src="" width="800">
 {% include toc.html %}
+
+## **1. Intro**
+
+
+
+
+
+
+
+
+
 
 ## **1. Intro**
 
