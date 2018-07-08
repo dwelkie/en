@@ -7,7 +7,7 @@ modified: 2018-03-30
 tags: []
 image:
   feature:
-fbcomments: yes
+fbcomments: no
 #TopicShare: true
 
 #<div class="tiles">

@@ -11,11 +11,11 @@ description: "PyTorch Taiwan是Marcel Wang先生為促進台灣深度學習發�
 TopicShare: true
 ---
 
-我目前是讀書會聯絡人之一，後來我為讀書會創了一個[GitHub page](https://pytorchtaipei.github.io){:target="_blank"}(原先整理在這一頁的資料連結也移到了[這裡](https://pytorchtaipei.github.io/records/2018/spring/){:target="_blank"})，未來讀書會相關消息就統一發布在這個網站之下。
+我目前是讀書會聯絡人之一，後來我為讀書會創了一個[GitHub page](https://pytorchtaipei.github.io){:target="_blank"}(原先整理在這一頁的資料連結也移到了[這裡](https://pytorchtaipei.github.io/records/2018/spring/){:target="_blank"})，未來讀書會相關消息就都統一發布在這個網站之下。
 
 ### 論文筆記
 
-希望每周讀完論文、聽完講解後，能夠消化吸收再寫出一篇整理，目前穩定遲交中...<br>因為論文和比賽完全停擺中冏，有朝一日會認真完成的...
+希望每周讀完論文、聽完講解後，能夠消化吸收再寫出一篇整理，目前穩定遲交中...<br>因為碩士論文和比賽完全停擺中冏，有朝一日會認真完成的...
 
 <div class="tiles">
 {% for post in site.tags.DLpaper %}
@@ -23,6 +23,7 @@ TopicShare: true
 {% endfor %}
 </div><!-- /.tiles -->
 
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 ### 實作練習
 
