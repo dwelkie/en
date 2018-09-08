@@ -1,14 +1,14 @@
 # Site navigation links
 
-- title: CV
-  url: /cv/
-  excerpt: "Me in 2 pages"
-  image: cv.gif
-
 - title: Study Notes
   url: /notes/
-  excerpt: "ML/DL, Python, C++, Database,..."
+  excerpt: "ML/DL, Python, Database,..."
   image: bat.gif
+
+- title: Blog
+  url: /blog/
+  excerpt: "misc"
+  image: nav1.gif
 
 - title: Projects
   url: /projects/
