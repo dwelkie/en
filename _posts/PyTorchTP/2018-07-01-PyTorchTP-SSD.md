@@ -16,6 +16,7 @@ fbcomments: true
 <script type="text/x-mathjax-config">
   MathJax.Hub.Config({ TeX: { extensions: ["color.js"] }});
 </script>
+$$ \definecolor{lg}{RGB}{114,0,172} \definecolor{pi}{RGB}{18,110,213} \definecolor{og}{RGB}{217,86,16} \definecolor{f}{RGB}{45,177,93}$$
 
 <img src="" width="800">
 {% include toc.html %}
@@ -110,5 +111,3 @@ $$ \hat{c}^p_i = \frac{exp(c^p_i)}{\sum_p exp(c^p_i)} $$
 [4]: https://pjreddie.com/media/files/papers/YOLOv3.pdf
 [5]: https://arxiv.org/pdf/1612.08242
 [6]: https://arxiv.org/pdf/1506.02640
-
-$$ \definecolor{lg}{RGB}{114,0,172} \definecolor{pi}{RGB}{18,110,213} \definecolor{og}{RGB}{217,86,16} \definecolor{f}{RGB}{45,177,93}$$
